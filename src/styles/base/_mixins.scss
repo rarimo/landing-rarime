@@ -1,0 +1,105 @@
+@mixin clearfix() {
+  &::after {
+    display: block;
+    clear: both;
+    content: '';
+  }
+}
+
+@mixin aspect-ratio($ratio) {
+  @include clearfix;
+
+  position: relative;
+  display: block;
+
+  &::before {
+    width: to-rem(1);
+    height: 0;
+    margin-left: to-rem(-1);
+    content: '';
+    float: left;
+    padding-block-start: calc(100% / #{$ratio});
+  }
+}
+
+@mixin bg-rect(
+  $rect-size: var(--primary-bg-rect-size),
+  $rect-color: var(--bg-rect-border-color)
+) {
+  background-image: linear-gradient(
+      to right,
+      #{$rect-color} var(--bg-rect-border-size),
+      transparent var(--bg-rect-border-size)
+    ),
+    linear-gradient(
+      to bottom,
+      #{$rect-color} var(--bg-rect-border-size),
+      transparent var(--bg-rect-border-size)
+    );
+  background-size: #{$rect-size} #{$rect-size};
+  background-repeat: repeat;
+}
+
+@mixin noise-bg($bg-color: var(--primary-bg-color)) {
+  &,
+  > * {
+    position: relative;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: calc(var(--bg-rect-border-size) * -1);
+    right: 0;
+    bottom: 0;
+    left: calc(var(--bg-rect-border-size) * -1);
+    background-image: url('/img/bg/noise.png');
+    background-repeat: repeat;
+    background-size: 100vw to-rem(600);
+
+    @supports (background-image: url('/img/bg/noise.webp')) {
+      background-image: url('/img/bg/noise.webp');
+    }
+
+    @if $bg-color == var(--primary-bg-color) {
+      // filter: invert(0.2) opacity(0.6);
+    } @else {
+      filter: invert(0.4) opacity(0.3);
+    }
+  }
+}
+
+@mixin block-with-bg-border($bg-color: var(--primary-bg-color)) {
+  background-color: $bg-color;
+  border-top: var(--bg-rect-border-size) solid var(--bg-rect-border-color);
+  border-right: none;
+  border-bottom: none;
+  border-left: var(--bg-rect-border-size) solid var(--bg-rect-border-color);
+
+  @include noise-bg($bg-color);
+}
+
+@mixin hover() {
+  @media all and (hover: hover) {
+    &:hover,
+    &:focus-visible {
+      @content;
+    }
+  }
+}
+
+@mixin mobile-hover() {
+  @media all and (hover: none) {
+    &:hover {
+      @content;
+    }
+  }
+}
+
+@mixin redefine-aos-prop($animation) {
+  html:not(.no-js) & {
+    &[data-aos='#{$animation}'] {
+      @content;
+    }
+  }
+}

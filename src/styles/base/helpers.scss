@@ -1,0 +1,23 @@
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  width: to-rem(1);
+  height: to-rem(1);
+  padding: 0;
+  border: 0;
+  margin: calc(#{to-rem(1)} * -1);
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  white-space: nowrap;
+}
+
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.overflow-hidden {
+  // stylelint-disable-next-line declaration-no-important
+  overflow: hidden !important;
+}
