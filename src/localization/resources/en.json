@@ -20,6 +20,36 @@
     "btn-cancel": "Cancel",
     "btn-install": "Install",
     "card-text-1": "Add social identity and manage directly from the wallet",
-    "card-text-2": "Connect with Rarime snap"
+    "card-text-2": "Connect with Rarime snap",
+    "modal-one-text": "Audited by Halborn",
+    "modal-two-footer-title": "Proof of humanity",
+    "modal-two-footer-text": "SSI Credential",
+    "modal-two-footer-tag": "BIOMETRICS"
+  },
+  "home-banner": {
+    "text-1": "to preserve full user control, the Private Key is",
+    "text-bold": " never accessed by The Rarime snap.",
+    "text-2": "Even if the wallet is unlocked or compromised, the PK cannot be stolen."
+  },
+  "home-identity-section": {
+    "title-1": "Add any identity credential",
+    "title-2": "With no added effort",
+    "title-content-section": "Identity Providers",
+    "resources": {
+      "title-1": "Age credentials",
+      "title-2": "Twitter handle",
+      "title-3": "Proof of Humanity",
+      "title-4": "Gitcoin Passport",
+      "subTitle-1": "ID Partners",
+      "subTitle-2": "@rarimo_protocol",
+      "subTitle-3": "Worldcoin",
+      "subTitle-4": "Sybil badge",
+      "tag-1": "OFF CHAIN",
+      "tag-2": "SOCIAL",
+      "tag-3": "BIOMETRICS",
+      "tag-4": "MULTICHAIN"
+    }
   }
+
+
 }

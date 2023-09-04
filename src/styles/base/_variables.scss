@@ -71,7 +71,7 @@
 
   // Base
   --container-max-width: 100%;
-  --container-side-padding: #{to-rem(176)};
+  --container-side-padding: #{to-rem(140)};
   --primary-border-radius: #{to-rem(4)};
 
   @include respond-above(medium) {
@@ -87,7 +87,7 @@
 
   @include respond-above(large) {
     --container-max-width: #{to-rem(1320)};
-    --container-side-padding: #{to-rem(140)};
+    --container-side-padding: #{to-rem(60)};
   }
 
   @include respond-above(xlarge) {
