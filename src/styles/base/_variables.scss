@@ -30,7 +30,7 @@
   --z-app-sidebar: 20;
   --z-main-overlay: 18;
   --z-app-bar: 14;
-  --z-lottie-animation: 5;
+  --z-icons: 5;
   --z-default: 1;
   --z-hidden: -1;
 
@@ -80,24 +80,24 @@
 
 
   @include respond-above(medium) {
-    --container-max-width: #{to-rem(1140)};
+    --container-max-width: #{to-rem(1100)};
     --primary-bg-rect-size: #{to-rem(66)};
     --container-side-padding: #{to-rem(20)};
   }
 
   @include respond-above(xmedium) {
-    --container-max-width: #{to-rem(1220)};
+    --container-max-width: #{to-rem(1260)};
     --container-side-padding: #{to-rem(40)};
   }
 
   @include respond-above(large) {
-    --container-max-width: #{to-rem(1360)};
+    --container-max-width: #{to-rem(1400)};
     --container-side-padding: #{to-rem(60)};
   }
 
   @include respond-above(xlarge) {
     --container-max-width: #{to-rem(1560)};
-    --container-side-padding: #{to-rem(176)};
+    --container-side-padding: #{to-rem(80)};
   }
 
   // Common

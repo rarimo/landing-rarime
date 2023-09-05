@@ -19,10 +19,11 @@
 .home-tiles-section__tile{
   border-radius: 32px;
   background: var(--col-white-primary);
-  width: 49%;
+  width: calc( ( 100% - 24px ) / 2 );
   padding: to-rem(56) to-rem(56) to-rem(32);
   height: to-rem(789);
   overflow: hidden;
+  position: relative;
 }
 
 .home-tiles-section__tile-title{
@@ -259,7 +260,7 @@
   box-shadow: var(--default-box-shadow);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: to-rem(161);
   height: to-rem(146);
@@ -310,4 +311,87 @@
   position: absolute;
   bottom: 3px;
   right: 0;
+}
+
+.home-tiles-section__tile-decor-1{
+  position: absolute;
+  width: 115%;
+  aspect-ratio: 1/1;
+  left: -46px;
+  bottom: -350px;
+  border-radius: 740px;
+  border: 1px solid rgba(var(--col-green-primary-rgb), 0.25);
+  z-index: var(--z-default);
+}
+
+.home-tiles-section__tile-decor-2{
+  position: absolute;
+  width: 100%;
+  aspect-ratio: 1/1;
+  left: 0;
+  bottom: -345px;
+  border-radius: 647px;
+  border: 1px solid rgba(var(--col-green-primary-rgb), 0.15);
+}
+
+.home-tiles-section__tile-decor-3{
+  position: absolute;
+  width: 87.5%;
+  aspect-ratio: 1/1;
+  bottom: -328px;
+  border-radius: 542px;
+  border: 1px solid rgba(var(--col-green-primary-rgb), 0.10);
+}
+
+.home-tiles-section__tile-zkevm-icon-wrapper{
+  position: absolute;
+  left: 40%;
+  top: -30px;
+  z-index: var(--z-icons);
+  border-radius: 1475px;
+  background: #8937E9;
+  width: 60px;
+  height: 60px;
+  color: var(--col-total-white);
+  font-size: to-rem(13);
+  font-weight: 600;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-tiles-section__tile-avalanche-icon-wrapper{
+  position: absolute;
+  top: 5%;
+  right: 16%;
+  z-index: var(--z-icons);
+}
+
+.home-tiles-section__tile-binance-icon-wrapper{
+  position: absolute;
+  top: -23px;
+  right: 33.5%;
+  z-index: var(--z-icons);
+}
+
+.home-tiles-section__tile-ether-icon-wrapper {
+  position: absolute;
+  top: 32px;
+  left: 13%;
+  z-index: var(--z-icons);
+  border-radius: 1000px;
+  background: #E9E9E9;
+  width: 96px;
+  height: 96px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-tiles-section__tile-polygon-icon-wrapper{
+  position: absolute;
+  top: 18%;
+  left: 6.5%;
+  z-index: var(--z-icons);
 }

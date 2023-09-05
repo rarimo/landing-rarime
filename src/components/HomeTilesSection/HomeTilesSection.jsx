@@ -111,7 +111,36 @@ const HomeTilesSection = () => {
             <p className="home-tiles-section__tile-description">
               {t('home-tiles-section.tile-2-description')}
             </p>
-            <div className="home-tiles-section__tile-content"></div>
+            <div className="home-tiles-section__tile-content home-tiles-section__tile-decor__wrapper">
+              <div className="home-tiles-section__tile-decor-1">
+                <div className="home-tiles-section__tile-avalanche-icon-wrapper">
+                  <img
+                    src="/static/img/avalanche-icon.png"
+                    alt="avalanche icon"
+                  />
+                </div>
+                <div className="home-tiles-section__tile-ether-icon-wrapper">
+                  <svg height="44" width="68">
+                    <use href="/icons/sprite.svg#icon-ether"></use>
+                  </svg>
+                </div>
+              </div>
+              <div className="home-tiles-section__tile-decor-2">
+                <div className="home-tiles-section__tile-zkevm-icon-wrapper">
+                  zkEVM
+                </div>
+              </div>
+              <div className="home-tiles-section__tile-decor-3">
+                <div className="home-tiles-section__tile-binance-icon-wrapper">
+                  <img src="/static/img/binance-icon.png" alt="binance icon" />
+                </div>
+                <div className="home-tiles-section__tile-polygon-icon-wrapper">
+                  <svg height="37" width="37">
+                    <use href="/icons/sprite.svg#icon-polygon-small"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div className="home-tiles-section__footer">

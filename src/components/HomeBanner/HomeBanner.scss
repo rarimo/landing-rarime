@@ -3,11 +3,12 @@
   background: rgba(var(--col-green-primary-rgb), 0.1);
   max-width: 80%;
   margin-top: var(--margin-top-default);
-
+  position: relative;
+  overflow: hidden;
 }
+
 .home-banner__wrraper{
   padding: to-rem(80) 20%;
-
 }
 
 .home-banner__text{
@@ -37,4 +38,36 @@
   margin-right: auto;
   margin-left: auto;
   margin-bottom: to-rem(24);
+}
+
+.home-banner__decor-1{
+  position: absolute;
+  top: -365px;
+  left: 9.24%;
+  width: 81.5%;
+  aspect-ratio : 1 / 1;
+  border-radius: 81.5%;
+  border: 1px solid rgba(77, 176, 148, 0.20);
+  z-index: var(--z-default);
+}
+
+.home-banner__decor-2{
+  position: absolute;
+  top: -237px;
+  left:  14.3%;
+  width: 71.2%;
+  aspect-ratio : 1 / 1;
+  border-radius: 71.2%;
+  border: 1px solid rgba(77, 176, 148, 0.20);
+  z-index: var(--z-default);
+}
+
+.home-banner__decor-3{
+  top: -109px;
+  left: 20.1%;
+  position: absolute;
+  width: 59.7%;
+  aspect-ratio : 1 / 1;
+  border-radius: 59.7%;
+  border: 1px solid rgba(77, 176, 148, 0.20);
 }

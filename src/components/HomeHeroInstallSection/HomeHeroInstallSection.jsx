@@ -105,6 +105,7 @@ const HomeHeroInstallSection = () => {
           </div>
         </div>
       </div>
+      <div className="home-hero-install-section__decor" />
     </div>
   );
 };

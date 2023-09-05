@@ -21,6 +21,9 @@ const HomeBanner = () => {
           <span className="home-banner__text-2">{t('home-banner.text-2')}</span>
         </div>
       </div>
+      <div className="home-banner__decor-1" />
+      <div className="home-banner__decor-2" />
+      <div className="home-banner__decor-3" />
     </div>
   );
 };

@@ -1,0 +1,69 @@
+.home-identity-issuers{
+  margin-top: var(--margin-top-default);
+}
+
+.home-identity-issuers__wrapper{
+  padding: to-rem(115) to-rem(105);
+  background: var(--col-white-primary);
+  border-radius: to-rem(32);
+}
+
+.home-identity-issuers__title{
+  color: var(--col-primary-black-primary);
+  text-align: center;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.home-identity-issuers__title-2{
+  font-weight: 700;
+}
+
+.home-identity-issuers__list{
+  margin-top: to-rem(105);
+  display: flex;
+  justify-content: space-between;
+}
+
+.home-identity-issuers__list-item{
+  padding: to-rem(48);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 16px;
+  background: var(--col-total-white);
+  box-shadow: var(--default-box-shadow);
+  width: calc( ( 100% - 81px ) / 4 );
+}
+
+.home-identity-issuers__list-item-text{
+  margin-top: to-rem(32);
+  color: var(--col-primary-black);
+  font-size: to-rem(20);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.home-identity-issuers__list-item-img-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: to-rem(42);
+  width: to-rem(64);
+  height: to-rem(64);
+  background: var(--col-primary-black);
+
+}
+
+.civic-icon{
+  background: #FB7C3F;
+}
+
+.unstoppable-domains-icon{
+  background: #2E65F5;
+}
+
+.gitcoin-icon{
+  background: #0C110F;
+}

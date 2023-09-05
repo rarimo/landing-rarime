@@ -1,6 +1,6 @@
 {
   "app": {
-    "title": "Rarime"
+    "title": "rariME"
   },
   "header": {
     "button": "Install rarime snap"
@@ -74,7 +74,23 @@
     "dapp-text": "DApp",
     "dapp-arrow-text-1": "Are you 18?",
     "dapp-arrow-text-2": "Yes"
+  },
+  "home-identity-issuers": {
+    "title-1": "Identity Issuers ",
+    "title-2": "Onboarded",
+    "civic": "Civic",
+    "worldcoin": "Worldcoin",
+    "unstoppable-domains": "Unstoppable domains",
+    "gitcoin": "Gitcoin"
+  },
+  "home-question-section":{
+    "title-1": "Are you an ",
+    "title-2": "identity issuer?",
+    "item-1-text": "Get in touch with us",
+    "item-2-text": "Add support of your credentials"
+  },
+  "footer": {
+    "date": "© 2023",
+    "button": "Install rarime snap"
   }
-
-
 }
