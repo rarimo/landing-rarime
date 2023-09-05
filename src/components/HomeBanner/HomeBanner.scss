@@ -2,7 +2,7 @@
   border-radius: 32px;
   background: rgba(var(--col-green-primary-rgb), 0.1);
   max-width: 80%;
-  margin-top: to-rem(120);
+  margin-top: var(--margin-top-default);
 
 }
 .home-banner__wrraper{
@@ -36,4 +36,5 @@
   justify-content: center;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: to-rem(24);
 }

@@ -9,6 +9,8 @@
   --col-total-white-rgb: #{$col-total-white-rgb};
   --col-total-black: #{$col-total-black};
   --col-total-black-rgb: #{$col-total-black-rgb};
+  --col-white-primary: #{$col-white-primary};
+  --col-white-primery-rgb: #{$col-white-primary-rgb};
   --col-white-secondary: #{$col-white-secondary};
   --col-white-secondary-rgb: #{$col-white-secondary-rgb};
 
@@ -73,30 +75,35 @@
   --container-max-width: 100%;
   --container-side-padding: #{to-rem(140)};
   --primary-border-radius: #{to-rem(4)};
+  --tile-bg-width: #{to-rem(945)};
+  --tile-bg-height: #{to-rem(590)};
+
 
   @include respond-above(medium) {
-    --container-max-width: #{to-rem(1100)};
+    --container-max-width: #{to-rem(1140)};
     --primary-bg-rect-size: #{to-rem(66)};
     --container-side-padding: #{to-rem(20)};
   }
 
   @include respond-above(xmedium) {
-    --container-max-width: #{to-rem(1180)};
+    --container-max-width: #{to-rem(1220)};
     --container-side-padding: #{to-rem(40)};
   }
 
   @include respond-above(large) {
-    --container-max-width: #{to-rem(1320)};
+    --container-max-width: #{to-rem(1360)};
     --container-side-padding: #{to-rem(60)};
   }
 
   @include respond-above(xlarge) {
-    --container-max-width: #{to-rem(1520)};
+    --container-max-width: #{to-rem(1560)};
     --container-side-padding: #{to-rem(176)};
   }
 
   // Common
   --scrollbar-color: var(--primary-text-color);
+  --margin-top-default: #{to-rem(120)};
+  --default-box-shadow: 0 3px 16px 0 rgba(0, 0, 0, 0.04), 0 1px 1px 0 rgba(0, 0, 0, 0.05);
 
   // App bar
   --app-bar-height: #{to-rem(100)};

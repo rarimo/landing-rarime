@@ -49,6 +49,31 @@
       "tag-3": "BIOMETRICS",
       "tag-4": "MULTICHAIN"
     }
+  },
+  "home-tiles-section": {
+    "title-1-part-1": "Protect",
+    "title-1-part-2": "Your privacy",
+    "title-2-part-1": "Blockchain",
+    "title-2-part-2": "Agnostics",
+    "title-3-part-1": "Own",
+    "title-3-part-2": "Your Data",
+    "title-4-part-1": "User",
+    "title-4-part-2": "Dashboard",
+    "tile-1-description": "Disclose ony what you need, whenever you need (Selective disclosure, ZKPs)",
+    "tile-2-description": "Use your social identity cross-chain and connect to different dApps seamlessly",
+    "tile-3-description": "Safeguard your personal data by keeping it encrypted and under your control at all times",
+    "tile-4-description": "Manage all your credentials in one simple dashboard",
+    "tile-card-name": "Alfredo Vetrovs",
+    "tile-card-followers": "44 000 Followers",
+    "proof-of-age-title": "Proof of age",
+    "proof-of-age-subtitle": "Provided by URtime",
+    "proof-of-age-text": "33 years old",
+    "proof-of-age-footer-text": "ISSUED ON",
+    "proof-of-age-footer-date": "20 August, 2023",
+    "proof-of-age-footer-description": "Self-sovereign Identity",
+    "dapp-text": "DApp",
+    "dapp-arrow-text-1": "Are you 18?",
+    "dapp-arrow-text-2": "Yes"
   }
 
 
