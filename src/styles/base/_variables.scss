@@ -36,7 +36,7 @@
 
   // Text variables
   /* stylelint-disable max-line-length */
-  --primary-font-family: 'Inter', -apple-system, 'BlinkMacSystemFont',
+  --primary-font-family: 'Euclid Circular B;', -apple-system, 'BlinkMacSystemFont',
     'Segoe UI', 'Roboto', 'Oxygen-Sans', 'Ubuntu', 'Cantarell', 'Helvetica Neue',
     sans-serif;
   --secondary-font-family: 'Oswald', -apple-system, 'BlinkMacSystemFont',
@@ -104,10 +104,9 @@
   --scrollbar-color: var(--primary-text-color);
   --margin-top-default: #{to-rem(120)};
   --default-box-shadow: 0 3px 16px 0 rgba(0, 0, 0, 0.04), 0 1px 1px 0 rgba(0, 0, 0, 0.05);
-
+  --border-decor-primary: 1px solid rgba(77, 176, 148, 0.20);
   // App bar
   --app-bar-height: #{to-rem(100)};
-  --app-bar-logo-color: var(--primary-title-color);
 
   // App footer
   --app-footer-logo-color: var(--primary-title-color);

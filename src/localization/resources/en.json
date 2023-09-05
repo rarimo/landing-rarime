@@ -73,7 +73,8 @@
     "proof-of-age-footer-description": "Self-sovereign Identity",
     "dapp-text": "DApp",
     "dapp-arrow-text-1": "Are you 18?",
-    "dapp-arrow-text-2": "Yes"
+    "dapp-arrow-text-2": "Yes",
+    "icon-zkevm": "zkEVM"
   },
   "home-identity-issuers": {
     "title-1": "Identity Issuers ",

@@ -84,7 +84,7 @@ const HomeTilesSection = () => {
                       {t('home-tiles-section.dapp-arrow-text-1')}
                       <img
                         className="home-tiles-section__tile-protect-vector"
-                        src="/static/img/vector-dapp-1.png"
+                        src="/static/img/vector-dapp-1.webp"
                         alt="vector"
                       />
                     </div>
@@ -92,7 +92,7 @@ const HomeTilesSection = () => {
                       {t('home-tiles-section.dapp-arrow-text-2')}
                       <img
                         className="home-tiles-section__tile-protect-vector-2"
-                        src="/static/img/vector-dapp-2.png"
+                        src="/static/img/vector-dapp-2.webp"
                         alt="vector"
                       />
                     </div>
@@ -114,10 +114,9 @@ const HomeTilesSection = () => {
             <div className="home-tiles-section__tile-content home-tiles-section__tile-decor__wrapper">
               <div className="home-tiles-section__tile-decor-1">
                 <div className="home-tiles-section__tile-avalanche-icon-wrapper">
-                  <img
-                    src="/static/img/avalanche-icon.png"
-                    alt="avalanche icon"
-                  />
+                  <svg height="61" width="61">
+                    <use href="/icons/sprite.svg#icon-avalanche"></use>
+                  </svg>
                 </div>
                 <div className="home-tiles-section__tile-ether-icon-wrapper">
                   <svg height="44" width="68">
@@ -127,12 +126,14 @@ const HomeTilesSection = () => {
               </div>
               <div className="home-tiles-section__tile-decor-2">
                 <div className="home-tiles-section__tile-zkevm-icon-wrapper">
-                  zkEVM
+                  {t('home-tiles-section.icon-zkevm')}
                 </div>
               </div>
               <div className="home-tiles-section__tile-decor-3">
                 <div className="home-tiles-section__tile-binance-icon-wrapper">
-                  <img src="/static/img/binance-icon.png" alt="binance icon" />
+                  <svg height="62" width="62">
+                    <use href="/icons/sprite.svg#icon-binance"></use>
+                  </svg>
                 </div>
                 <div className="home-tiles-section__tile-polygon-icon-wrapper">
                   <svg height="37" width="37">
