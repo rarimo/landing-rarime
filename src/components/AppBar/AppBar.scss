@@ -29,6 +29,9 @@
   border-radius: to-rem(100);
   color: var(--col-green-primary);
   pointer-events: none;
+  @include respond-to(medium) {
+    padding: to-rem(6) to-rem(12);
+  }
 }
 
 .app-bar__button-text{
@@ -36,6 +39,9 @@
   font-weight: 600;
   text-transform: capitalize;
   font-size: to-rem(14);
+  @include respond-to(medium) {
+    font-size: to-rem(12);
+  }
 }
 
 .app-bar__logo{
@@ -47,4 +53,5 @@
   color: var(--col-total-white);
   padding-left: to-rem(14);
   font-size: to-rem(24);
+
 }

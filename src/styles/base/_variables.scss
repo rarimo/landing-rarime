@@ -73,16 +73,21 @@
 
   // Base
   --container-max-width: 100%;
-  --container-side-padding: #{to-rem(140)};
+  --container-side-padding: #{to-rem(20)};
   --primary-border-radius: #{to-rem(4)};
-  --tile-bg-width: #{to-rem(945)};
-  --tile-bg-height: #{to-rem(590)};
+  --tile-bg-width: #{to-rem(526)};
+  --tile-bg-height: #{to-rem(328)};
+  --margin-top-default: #{to-rem(55)};
 
 
   @include respond-above(medium) {
     --container-max-width: #{to-rem(1100)};
     --primary-bg-rect-size: #{to-rem(66)};
     --container-side-padding: #{to-rem(20)};
+    --tile-bg-width: #{to-rem(945)};
+    --tile-bg-height: #{to-rem(590)};
+    --margin-top-default: #{to-rem(120)};
+
   }
 
   @include respond-above(xmedium) {
@@ -102,7 +107,6 @@
 
   // Common
   --scrollbar-color: var(--primary-text-color);
-  --margin-top-default: #{to-rem(120)};
   --default-box-shadow: 0 3px 16px 0 rgba(0, 0, 0, 0.04), 0 1px 1px 0 rgba(0, 0, 0, 0.05);
   --border-decor-primary: 1px solid rgba(77, 176, 148, 0.20);
   // App bar

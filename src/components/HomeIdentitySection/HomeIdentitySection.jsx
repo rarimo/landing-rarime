@@ -23,13 +23,15 @@ const HomeIdentitySection = () => {
               <div className="home-identity-section__row">
                 <div className="home-identity-section__circle"></div>
                 <div className="home-identity-section__circle"></div>
-                <div className="home-identity-section__circle green"></div>
+                <div className="home-identity-section__circle green">
+                  <div className="home-identity-section__line-mobile" />
+                </div>
                 <div className="home-identity-section__circle">
                   <div className="home-identity-section__line" />
                 </div>
                 <div className="home-identity-section__circle"></div>
               </div>
-              <div className="home-identity-section__row">
+              <div className="home-identity-section__row mobile-hidden">
                 <div className="home-identity-section__circle green">
                   <div className="home-identity-section__line" />
                 </div>
@@ -38,7 +40,7 @@ const HomeIdentitySection = () => {
                 <div className="home-identity-section__circle"></div>
                 <div className="home-identity-section__circle"></div>
               </div>
-              <div className="home-identity-section__row">
+              <div className="home-identity-section__row mobile-hidden">
                 <div className="home-identity-section__circle"></div>
                 <div className="home-identity-section__circle"></div>
                 <div className="home-identity-section__circle"></div>
@@ -47,7 +49,7 @@ const HomeIdentitySection = () => {
                   <div className="home-identity-section__line" />
                 </div>
               </div>
-              <div className="home-identity-section__row">
+              <div className="home-identity-section__row mobile-hidden">
                 <div className="home-identity-section__circle"></div>
                 <div className="home-identity-section__circle green">
                   <div className="home-identity-section__line" />
@@ -63,10 +65,14 @@ const HomeIdentitySection = () => {
               <div key={idx} className="home-identity-section__resource">
                 <div className="home-identity-section__resource-info">
                   <div
-                    className="home-identity-section__resource-img"
+                    className="home-identity-section__resource-img-wrapper"
                     style={{ background: resource.imgBg }}
                   >
-                    <img src={resource.img} alt="icon" />
+                    <img
+                      src={resource.img}
+                      alt="icon"
+                      className="home-identity-section__resource-img"
+                    />
                   </div>
                   <div className="home-identity-section__resource-text">
                     <p className="home-identity-section__resource-title">

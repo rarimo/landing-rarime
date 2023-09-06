@@ -63,7 +63,7 @@ const HomeTilesSection = () => {
                     </div>
                   </div>
                   <div className="home-tiles-section__tile-lock-card">
-                    <img src="/static/img/lock-img.png" alt="Lock img" />
+                    <img src="/static/img/lock-img.png" alt="Lock img" className="home-tiles-section__tile-lock-card-img" />
                   </div>
                 </div>
                 <div className="home-tiles-section__tile-protect-footer">
@@ -114,12 +114,12 @@ const HomeTilesSection = () => {
             <div className="home-tiles-section__tile-content home-tiles-section__tile-decor__wrapper">
               <div className="home-tiles-section__tile-decor-1">
                 <div className="home-tiles-section__tile-avalanche-icon-wrapper">
-                  <svg height="61" width="61">
+                  <svg className="home-tiles-section__tile-avalanche-icon">
                     <use href="/icons/sprite.svg#icon-avalanche"></use>
                   </svg>
                 </div>
                 <div className="home-tiles-section__tile-ether-icon-wrapper">
-                  <svg height="44" width="68">
+                  <svg className="home-tiles-section__tile-ether-icon">
                     <use href="/icons/sprite.svg#icon-ether"></use>
                   </svg>
                 </div>
@@ -131,12 +131,12 @@ const HomeTilesSection = () => {
               </div>
               <div className="home-tiles-section__tile-decor-3">
                 <div className="home-tiles-section__tile-binance-icon-wrapper">
-                  <svg height="62" width="62">
+                  <svg className="home-tiles-section__tile-binance-icon">
                     <use href="/icons/sprite.svg#icon-binance"></use>
                   </svg>
                 </div>
                 <div className="home-tiles-section__tile-polygon-icon-wrapper">
-                  <svg height="37" width="37">
+                  <svg className="home-tiles-section__tile-polygon-icon">
                     <use href="/icons/sprite.svg#icon-polygon-small"></use>
                   </svg>
                 </div>

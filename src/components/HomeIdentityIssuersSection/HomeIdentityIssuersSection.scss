@@ -6,6 +6,9 @@
   padding: to-rem(115) to-rem(105);
   background: var(--col-white-primary);
   border-radius: to-rem(32);
+  @include respond-to(medium) {
+    padding: to-rem(32) to-rem(40);
+  }
 }
 
 .home-identity-issuers__title{
@@ -23,6 +26,10 @@
   margin-top: to-rem(105);
   display: flex;
   justify-content: space-between;
+  @include respond-to(medium) {
+    margin-top: to-rem(24);
+    flex-wrap: wrap;
+  }
 }
 
 .home-identity-issuers__list-item{
@@ -35,6 +42,11 @@
   background: var(--col-total-white);
   box-shadow: var(--default-box-shadow);
   width: calc( ( 100% - 81px ) / 4 );
+  @include respond-to(medium) {
+    padding: to-rem(24);
+    width: calc( ( 100% - 16px ) / 2 );
+    margin-top: to-rem(16);
+  }
 }
 
 .home-identity-issuers__list-item-text{
@@ -43,6 +55,12 @@
   font-size: to-rem(20);
   font-weight: 500;
   white-space: nowrap;
+  @include respond-to(medium) {
+    white-space: normal;
+    font-size: to-rem(16);
+    text-align: center;
+    margin-top: to-rem(24);
+  }
 }
 
 .home-identity-issuers__list-item-img-wrapper {
@@ -53,8 +71,19 @@
   width: to-rem(64);
   height: to-rem(64);
   background: var(--col-primary-black);
-
+  @include respond-to(medium) {
+    width: to-rem(40);
+    height: to-rem(40);
+  }
 }
+
+.home-identity-issuers__list-item-img{
+  @include respond-to(medium) {
+    width: to-rem(24);
+    height: to-rem(24);
+  }
+}
+
 
 .civic-icon{
   background: #FB7C3F;
@@ -66,4 +95,10 @@
 
 .gitcoin-icon{
   background: #0C110F;
+  @include respond-to(medium) {
+    img{
+      width: to-rem(16);
+      height: to-rem(16);
+    }
+  }
 }

@@ -174,3 +174,9 @@ img {
 .green {
   background-color: var(--col-green-primary)!important;
 }
+
+.mobile-hidden {
+  @include respond-to(medium) {
+    display: none!important;
+  }
+}

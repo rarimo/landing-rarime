@@ -1,14 +1,16 @@
 .home-banner{
-  border-radius: 32px;
-  background: rgba(var(--col-green-primary-rgb), 0.1);
-  max-width: 80%;
   margin-top: var(--margin-top-default);
   position: relative;
   overflow: hidden;
 }
 
 .home-banner__wrraper{
+  background: rgba(var(--col-green-primary-rgb), 0.1);
+  border-radius: 32px;
   padding: to-rem(80) 20%;
+    @include respond-to(medium) {
+      padding: to-rem(40) to-rem(27.5);
+    }
 }
 
 .home-banner__text{
@@ -20,6 +22,11 @@
   line-height: to-rem(30);
   text-transform: capitalize;
   text-align: center;
+  @include respond-to(medium) {
+    font-size: to-rem(16);
+    line-height: to-rem(24);
+
+  }
 }
 
 .home-banner__text-bold{
