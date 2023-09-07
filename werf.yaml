@@ -24,7 +24,7 @@ shell:                      # Shell сборочные инструкции.
   - yarn build
 
 ---
-image: frontend
+image: web
 from: nginx:stable-alpine
 docker:
   WORKDIR: /usr/share/nginx
