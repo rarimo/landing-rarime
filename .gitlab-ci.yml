@@ -3,7 +3,7 @@ default:
       name: "tokend/werf:0.0.15"
       entrypoint: [""]
   services:
-        - name: docker:20-dind
+        - name: docker:dind
           alias: docker
           # in our experience although you'd assume this would be sufficient, this did 
           # nothing to prevent connection errors without `DOCKER_TLS_CERTDIR` being set 
