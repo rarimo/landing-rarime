@@ -23,8 +23,11 @@ variables:
   SERVICE: $CI_PROJECT_NAME
   REGISTRY: registry.gitlab.com/$CI_PROJECT_NAMESPACE/$CI_PROJECT_NAME
   IMAGE_NAME: $REGISTRY:$CI_COMMIT_SHA
-  WERF_LOG_COLOR_MODE: 'on'
+  WERF_LOG_COLOR_MODE: "on"
   WERF_IMAGES_REPO: $CI_REGISTRY_IMAGE
+  WERF_BUILDAH_MODE: auto
+  WERF_ENABLE_PROCESS_EXTERMINATOR: 1
+
 
 .before_script_template: &before_script_templ
   before_script:
