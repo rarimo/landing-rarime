@@ -1,0 +1,30 @@
+.app-footer {
+  margin-top: var(--margin-top-default);
+  margin-bottom: to-rem(42);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-footer__button{
+  display: flex;
+  align-items: center;
+  padding: to-rem(10) to-rem(16);
+  border: 1px solid var(--col-green-primary);
+  border-radius: to-rem(100);
+  color: var(--col-green-primary);
+  pointer-events: none;
+  @include respond-to(medium) {
+    padding: to-rem(6) to-rem(12);
+  }
+}
+
+.app-footer__button-text{
+  padding-left: to-rem(8);
+  font-weight: 600;
+  text-transform: capitalize;
+  font-size: to-rem(14);
+  @include respond-to(medium) {
+    font-size: to-rem(12);
+  }
+}

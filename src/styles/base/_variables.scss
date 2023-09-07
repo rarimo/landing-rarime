@@ -1,0 +1,118 @@
+@use 'sass:color';
+@import '@/styles/colors';
+
+:root,
+::before,
+::after {
+  // Primary colors
+  --col-total-white: #{$col-total-white};
+  --col-total-white-rgb: #{$col-total-white-rgb};
+  --col-total-black: #{$col-total-black};
+  --col-total-black-rgb: #{$col-total-black-rgb};
+  --col-white-primary: #{$col-white-primary};
+  --col-white-primery-rgb: #{$col-white-primary-rgb};
+  --col-white-secondary: #{$col-white-secondary};
+  --col-white-secondary-rgb: #{$col-white-secondary-rgb};
+
+  --col-white-alpha: rgba(#{$col-total-white-rgb}, 84%);
+  --col-white-min-alpha: rgba(#{$col-total-white-rgb}, 10%);
+  --col-primary-black: #{$col-black-primary};
+  --col-primary-black-rgb: #{$col-black-primary-rgb};
+  --col-green-primary: #{$col-green-primary};
+  --col-green-primary-rgb: #{$col-green-primary-rgb};
+  --col-blue-primary: #{$col-blue-primary};
+  --col-blue-primary-rgb: #{$col-blue-primary-rgb};
+  --col-secondary-black: #{$col-black-secondary};
+  --col-secondary-black-rgb: #{$col-black-secondary-rgb};
+
+
+  // Z-indexes
+  --z-app-sidebar: 20;
+  --z-main-overlay: 18;
+  --z-app-bar: 14;
+  --z-icons: 5;
+  --z-default: 1;
+  --z-hidden: -1;
+
+  // Text variables
+  /* stylelint-disable max-line-length */
+  --primary-font-family: 'Euclid Circular B;', -apple-system, 'BlinkMacSystemFont',
+    'Segoe UI', 'Roboto', 'Oxygen-Sans', 'Ubuntu', 'Cantarell', 'Helvetica Neue',
+    sans-serif;
+  --secondary-font-family: 'Oswald', -apple-system, 'BlinkMacSystemFont',
+    'Segoe UI', 'Roboto', 'Oxygen-Sans', 'Ubuntu', 'Cantarell', 'Helvetica Neue',
+    sans-serif;
+  /* stylelint-enable max-line-length */
+
+  --p-size: #{to-rem(14)};
+  --h1-size: #{to-rem(56)};
+  --h2-size: #{to-rem(32)};
+  --h3-size: #{to-rem(24)};
+  --h4-size: #{to-rem(32)};
+  --h5-size: #{to-rem(16)};
+  --h6-size: #{to-rem(16)};
+  --overline-size: #{to-rem(14)};
+
+  @include respond-above(medium) {
+    --p-size: var(--p-size-medium);
+    --h1-size: var(--h1-size-medium);
+    --h2-size: var(--h2-size-medium);
+    --h3-size: var(--h3-size-medium);
+    --h4-size: var(--h4-size-medium);
+  }
+
+  @include respond-above(xlarge) {
+    --p-size: #{to-rem(14)};
+    --h1-size: #{to-rem(148)};
+    --h2-size: #{to-rem(48)};
+    --h3-size: #{to-rem(40)};
+    --h4-size: #{to-rem(32)};
+    --h5-size: #{to-rem(20)};
+    --h6-size: #{to-rem(18)};
+  }
+
+  // Base
+  --container-max-width: 100%;
+  --container-side-padding: #{to-rem(20)};
+  --primary-border-radius: #{to-rem(4)};
+  --tile-bg-width: #{to-rem(526)};
+  --tile-bg-height: #{to-rem(328)};
+  --margin-top-default: #{to-rem(55)};
+
+
+  @include respond-above(medium) {
+    --container-max-width: #{to-rem(1100)};
+    --primary-bg-rect-size: #{to-rem(66)};
+    --container-side-padding: #{to-rem(20)};
+    --tile-bg-width: #{to-rem(945)};
+    --tile-bg-height: #{to-rem(590)};
+    --margin-top-default: #{to-rem(120)};
+
+  }
+
+  @include respond-above(xmedium) {
+    --container-max-width: #{to-rem(1260)};
+    --container-side-padding: #{to-rem(40)};
+  }
+
+  @include respond-above(large) {
+    --container-max-width: #{to-rem(1400)};
+    --container-side-padding: #{to-rem(60)};
+  }
+
+  @include respond-above(xlarge) {
+    --container-max-width: #{to-rem(1560)};
+    --container-side-padding: #{to-rem(80)};
+  }
+
+  // Common
+  --scrollbar-color: var(--primary-text-color);
+  --default-box-shadow: 0 3px 16px 0 rgba(0, 0, 0, 0.04), 0 1px 1px 0 rgba(0, 0, 0, 0.05);
+  --border-decor-primary: 1px solid rgba(77, 176, 148, 0.20);
+  // App bar
+  --app-bar-height: #{to-rem(100)};
+
+  // App footer
+  --app-footer-logo-color: var(--primary-title-color);
+
+}
