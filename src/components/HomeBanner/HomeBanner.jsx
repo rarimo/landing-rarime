@@ -2,15 +2,20 @@ import './HomeBanner.scss';
 
 import { useTranslation } from 'react-i18next';
 
+import { SvgWrapper } from '@/components';
+
 const HomeBanner = () => {
   const { t } = useTranslation();
   return (
     <div className="home-banner container">
-      <div className="home-banner__wrraper">
+      <div className="home-banner__wrapper">
         <div className="home-banner__icon">
-          <svg height="40" width="40">
-            <use href="/icons/sprite.svg#icon-shield-check"></use>
-          </svg>
+          <SvgWrapper
+            iconClass="app-footer__button-icon"
+            height="40"
+            width="40"
+            idIcon="icon-shield-check"
+          />
         </div>
 
         <div className="home-banner__text">

@@ -41,10 +41,10 @@
   border-radius: 16px;
   background: var(--col-total-white);
   box-shadow: var(--default-box-shadow);
-  width: calc((100% - 81px) / 4);
+  width: calc((100% - var(--sum-of-padding-bettwen-blocks)) / 4);
   @include respond-to(medium) {
     padding: to-rem(24);
-    width: calc((100% - 16px) / 2);
+    width: calc((100% - var(--sum-of-padding-bettwen-blocks-mobile)) / 2);
     margin-top: to-rem(16);
   }
 }
@@ -84,17 +84,16 @@
   }
 }
 
-
-.civic-icon {
-  background: #FB7C3F;
+.home-identity-issuers__civic-icon {
+  background: #fb7c3f;
 }
 
-.unstoppable-domains-icon {
-  background: #2E65F5;
+.home-identity-issuers__unstoppable-domains-icon {
+  background: #2e65f5;
 }
 
-.gitcoin-icon {
-  background: #0C110F;
+.home-identity-issuers__gitcoin-icon {
+  background: #0c110f;
   @include respond-to(medium) {
     img {
       width: to-rem(16);

@@ -1,12 +1,13 @@
 import { lazy, Suspense } from 'react';
 import { Navigate, useRoutes } from 'react-router-dom';
+
 import { ROUTES_PATHS } from '@/const';
 import useRouteLocation from '@/hooks/useRouteLocation';
 import MainLayout from '@/layouts/MainLayout';
 
 const HomePage = lazy(() => import('@/pages/HomePage'));
 
-const AppRoutes = () => {
+export const AppRoutes = () => {
   const { displayLocation } = useRouteLocation();
 
   const routes = [
@@ -32,5 +33,3 @@ const AppRoutes = () => {
 
   return <Suspense fallback={<></>}>{renderRoutes}</Suspense>;
 };
-
-export default AppRoutes;

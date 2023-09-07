@@ -2,6 +2,8 @@ import './HomeTilesSection.scss';
 
 import { useTranslation } from 'react-i18next';
 
+import { SvgWrapper } from '@/components';
+
 const HomeTilesSection = () => {
   const { t } = useTranslation();
   return (
@@ -31,13 +33,12 @@ const HomeTilesSection = () => {
                           {t('home-tiles-section.proof-of-age-subtitle')}
                         </span>
                       </div>
-                      <svg
-                        className="home-tiles-section__proof-of-age-icon"
+                      <SvgWrapper
+                        iconClass="home-tiles-section__proof-of-age-icon"
                         height="24"
                         width="24"
-                      >
-                        <use href="/icons/sprite.svg#icon-check-box"></use>
-                      </svg>
+                        idIcon="icon-check-box"
+                      />
                     </div>
                     <div className="home-tiles-section__proof-of-age-text-wrapper">
                       <p className="home-tiles-section__proof-of-age-text">
@@ -63,18 +64,21 @@ const HomeTilesSection = () => {
                     </div>
                   </div>
                   <div className="home-tiles-section__tile-lock-card">
-                    <img src="/static/img/lock-img.png" alt="Lock img" className="home-tiles-section__tile-lock-card-img" />
+                    <img
+                      src="/static/img/lock-img.png"
+                      alt="Lock img"
+                      className="home-tiles-section__tile-lock-card-img"
+                    />
                   </div>
                 </div>
                 <div className="home-tiles-section__tile-protect-footer">
                   <div className="home-tiles-section__tile-protect-dapp">
-                    <svg
-                      className="home-tiles-section__dapp-icon"
+                    <SvgWrapper
+                      iconClass="home-tiles-section__dapp-icon"
                       height="27"
                       width="27"
-                    >
-                      <use href="/icons/sprite.svg#icon-language"></use>
-                    </svg>
+                      idIcon="icon-language"
+                    />
                     <span className="home-tiles-section__dapp-text">
                       {t('home-tiles-section.dapp-text')}
                     </span>
@@ -114,14 +118,16 @@ const HomeTilesSection = () => {
             <div className="home-tiles-section__tile-content home-tiles-section__tile-decor__wrapper">
               <div className="home-tiles-section__tile-decor-1">
                 <div className="home-tiles-section__tile-avalanche-icon-wrapper">
-                  <svg className="home-tiles-section__tile-avalanche-icon">
-                    <use href="/icons/sprite.svg#icon-avalanche"></use>
-                  </svg>
+                  <SvgWrapper
+                    iconClass="home-tiles-section__tile-avalanche-icon"
+                    idIcon="icon-avalanche"
+                  />
                 </div>
                 <div className="home-tiles-section__tile-ether-icon-wrapper">
-                  <svg className="home-tiles-section__tile-ether-icon">
-                    <use href="/icons/sprite.svg#icon-ether"></use>
-                  </svg>
+                  <SvgWrapper
+                    iconClass="home-tiles-section__tile-ether-icon"
+                    idIcon="icon-ether"
+                  />
                 </div>
               </div>
               <div className="home-tiles-section__tile-decor-2">
@@ -131,14 +137,16 @@ const HomeTilesSection = () => {
               </div>
               <div className="home-tiles-section__tile-decor-3">
                 <div className="home-tiles-section__tile-binance-icon-wrapper">
-                  <svg className="home-tiles-section__tile-binance-icon">
-                    <use href="/icons/sprite.svg#icon-binance"></use>
-                  </svg>
+                  <SvgWrapper
+                    iconClass="home-tiles-section__tile-binance-icon"
+                    idIcon="icon-binance"
+                  />
                 </div>
                 <div className="home-tiles-section__tile-polygon-icon-wrapper">
-                  <svg className="home-tiles-section__tile-polygon-icon">
-                    <use href="/icons/sprite.svg#icon-polygon-small"></use>
-                  </svg>
+                  <SvgWrapper
+                    iconClass="home-tiles-section__tile-polygon-icon"
+                    idIcon="icon-polygon-small"
+                  />
                 </div>
               </div>
             </div>
@@ -182,13 +190,12 @@ const HomeTilesSection = () => {
                     <div className="home-tiles-section__tile-subtitle-skeleton"></div>
                   </div>
                 </div>
-                <svg
-                  className="home-tiles-section__tile-button-icon"
+                <SvgWrapper
+                  iconClass="home-tiles-section__tile-button-icon"
+                  idIcon="icon-more-light"
                   height="24"
                   width="25"
-                >
-                  <use href="/icons/sprite.svg#icon-more-light"></use>
-                </svg>
+                />
               </div>
             </div>
           </div>
@@ -208,44 +215,39 @@ const HomeTilesSection = () => {
                   <div className="home-tiles-section__tile-dashboard-toolbar-dot"></div>
                   <div className="home-tiles-section__tile-dashboard-toolbar-dot"></div>
                   <div className="home-tiles-section__tile-dashboard-toolbar-dot"></div>
-                  <svg
-                    className="home-tiles-section__tile-toolbar-icon"
+                  <SvgWrapper
+                    iconClass="home-tiles-section__tile-toolbar-icon"
+                    idIcon="icon-toolbar"
                     height="14"
                     width="14"
-                  >
-                    <use href="/icons/sprite.svg#icon-toolbar"></use>
-                  </svg>
-                  <svg
-                    className="home-tiles-section__tile-arrow-left-icon"
+                  />
+                  <SvgWrapper
+                    iconClass="home-tiles-section__tile-arrow-left-icon"
+                    idIcon="icon-arrow"
                     height="14"
                     width="14"
                     color="rgba(45, 48, 57, 0.6)"
-                  >
-                    <use href="/icons/sprite.svg#icon-arrow"></use>
-                  </svg>
-                  <svg
-                    className="home-tiles-section__tile-arrow-right-icon"
+                  />
+                  <SvgWrapper
+                    iconClass="home-tiles-section__tile-arrow-right-icon"
+                    idIcon="icon-arrow"
                     height="14"
                     width="14"
                     color="rgba(45, 48, 57, 0.2)"
-                  >
-                    <use href="/icons/sprite.svg#icon-arrow"></use>
-                  </svg>
-                  <svg
-                    className="home-tiles-section__tile-reload-icon"
+                  />
+                  <SvgWrapper
+                    iconClass="home-tiles-section__tile-reload-icon"
+                    idIcon="icon-reload"
                     height="14"
                     width="14"
-                  >
-                    <use href="/icons/sprite.svg#icon-reload"></use>
-                  </svg>
+                  />
                   <div className="home-tiles-section__tile-dashboard-field">
-                    <svg
-                      className="home-tiles-section__tile-lock-icon"
+                    <SvgWrapper
+                      iconClass="home-tiles-section__tile-lock-icon"
+                      idIcon="icon-lock"
                       height="10"
                       width="10"
-                    >
-                      <use href="/icons/sprite.svg#icon-lock"></use>
-                    </svg>
+                    />
                   </div>
                 </div>
                 <div className="home-tiles-section__tile-dashboard-background" />

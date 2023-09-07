@@ -2,6 +2,8 @@ import './HomeQuestionSection.scss';
 
 import { useTranslation } from 'react-i18next';
 
+import { SvgWrapper } from '@/components';
+
 const HomeQuestionSection = () => {
   const { t } = useTranslation();
   return (
@@ -15,27 +17,25 @@ const HomeQuestionSection = () => {
         </h2>
         <div className="home-question-section__content">
           <div className="home-question-section__content-item">
-            <svg
-              className="home-question-section__arrow-right-icon"
+            <SvgWrapper
+              iconClass="home-question-section__arrow-right-icon"
               height="24"
               width="24"
               color="rgba(45, 48, 57, 0.4)"
-            >
-              <use href="/icons/sprite.svg#icon-arrow"></use>
-            </svg>
+              idIcon="icon-arrow"
+            />
             <p className="home-question-section__content-item-text">
               {t('home-question-section.item-1-text')}
             </p>
           </div>
           <div className="home-question-section__content-item">
-            <svg
-              className="home-question-section__arrow-right-icon"
+            <SvgWrapper
+              iconClass="home-question-section__arrow-right-icon"
               height="24"
               width="24"
               color="rgba(45, 48, 57, 0.4)"
-            >
-              <use href="/icons/sprite.svg#icon-arrow"></use>
-            </svg>
+              idIcon="icon-arrow"
+            />
             <p className="home-question-section__content-item-text">
               {t('home-question-section.item-2-text')}
             </p>

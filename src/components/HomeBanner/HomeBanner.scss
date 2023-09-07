@@ -4,7 +4,7 @@
   overflow: hidden;
 }
 
-.home-banner__wrraper {
+.home-banner__wrapper {
   background: rgba(var(--col-green-primary-rgb), 0.1);
   border-radius: to-rem(32);
   padding: to-rem(80) 20%;
@@ -25,7 +25,6 @@
   @include respond-to(medium) {
     font-size: to-rem(16);
     line-height: to-rem(24);
-
   }
 }
 
@@ -37,8 +36,8 @@
   width: to-rem(72);
   height: to-rem(72);
   border-radius: to-rem(16) to-rem(16) to-rem(32) to-rem(32);
-  background: linear-gradient(221deg, #52B69A 0%, #3B9F83 100%);
-  box-shadow: 0 6px 24px 0 rgba(82, 182, 154, 32%);
+  background: linear-gradient(221deg, #52b69a 0%, #3b9f83 100%);
+  box-shadow: var(--secondary-box-shadow);
   display: flex;
   align-items: center;
   justify-content: center;

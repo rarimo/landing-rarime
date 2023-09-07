@@ -4,7 +4,7 @@
 
 .home-question-section_wrapper {
   border-radius: to-rem(32);
-  background: linear-gradient(247deg, var(--col-green-primary) -4.88%, #3B9F83 100%);
+  background: linear-gradient(247deg, var(--col-green-primary) -4.88%, #3b9f83 100%);
   box-shadow: var(--default-box-shadow);
   padding: to-rem(115) to-rem(105);
   display: flex;
@@ -12,7 +12,7 @@
   justify-content: center;
 
   @include respond-to(medium) {
-    padding: to-rem(32)
+    padding: to-rem(32);
   }
 }
 

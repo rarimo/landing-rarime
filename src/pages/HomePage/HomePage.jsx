@@ -1,9 +1,11 @@
-import HomeBanner from '@/components/HomeBanner';
-import HomeHeroSection from '@/components/HomeHeroSection';
-import HomeIdentityIssuersSection from '@/components/HomeIdentityIssuersSection';
-import HomeIdentitySection from '@/components/HomeIdentitySection';
-import HomeQuestionSection from '@/components/HomeQuestionSection';
-import HomeTilesSection from '@/components/HomeTilesSection';
+import {
+  HomeBanner,
+  HomeHeroSection,
+  HomeIdentityIssuersSection,
+  HomeIdentitySection,
+  HomeQuestionSection,
+  HomeTilesSection,
+} from '@/components';
 
 const HomePage = () => {
   return (

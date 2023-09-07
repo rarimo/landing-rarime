@@ -2,7 +2,7 @@ import './HomeHeroSection.scss';
 
 import { useTranslation } from 'react-i18next';
 
-import HomeHeroInstallSection from '@/components/HomeHeroInstallSection/index.js';
+import { HomeHeroInstallSection, SvgWrapper } from '@/components';
 import { COMPONENT_NODE_IDS } from '@/const';
 
 const HomeHeroSection = () => {
@@ -33,13 +33,12 @@ const HomeHeroSection = () => {
             </h5>
 
             <button className="home-hero-section__install-button">
-              <svg
-                className="home-hero-section__install-button-icon"
+              <SvgWrapper
+                iconClass="home-hero-section__install-button-icon"
                 height="24"
                 width="24"
-              >
-                <use href="/icons/sprite.svg#icon-hero-section-button"></use>
-              </svg>
+                idIcon="icon-hero-section-button"
+              />
               <span className="home-hero-section__install-button-text">
                 {t('header.button')}
               </span>

@@ -17,7 +17,7 @@ const HomeIdentityIssuersSection = () => {
         </h2>
         <div className="home-identity-issuers__list">
           <div className="home-identity-issuers__list-item">
-            <div className="home-identity-issuers__list-item-img-wrapper civic-icon">
+            <div className="home-identity-issuers__list-item-img-wrapper home-identity-issuers__civic-icon">
               <img
                 src="/static/img/civic.png"
                 alt="icon civic"
@@ -41,7 +41,7 @@ const HomeIdentityIssuersSection = () => {
             </p>
           </div>
           <div className="home-identity-issuers__list-item">
-            <div className="home-identity-issuers__list-item-img-wrapper unstoppable-domains-icon">
+            <div className="home-identity-issuers__list-item-img-wrapper home-identity-issuers__unstoppable-domains-icon">
               <img
                 src="/static/img/unstoppable-domains.png"
                 alt="Unstoppable domains icon"
@@ -53,7 +53,7 @@ const HomeIdentityIssuersSection = () => {
             </p>
           </div>
           <div className="home-identity-issuers__list-item">
-            <div className="home-identity-issuers__list-item-img-wrapper gitcoin-icon">
+            <div className="home-identity-issuers__list-item-img-wrapper home-identity-issuers__gitcoin-icon">
               <img
                 src="/static/img/gitcoin.png"
                 alt="Gitcoin icon"

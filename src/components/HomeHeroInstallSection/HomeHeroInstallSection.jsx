@@ -2,6 +2,8 @@ import './HomeHeroInstallSection.scss';
 
 import { useTranslation } from 'react-i18next';
 
+import { SvgWrapper } from '@/components';
+
 const HomeHeroInstallSection = () => {
   const { t } = useTranslation();
   return (
@@ -20,14 +22,16 @@ const HomeHeroInstallSection = () => {
             <div className="home-hero-install-section__header-icon">
               <div className="home-hero-install-section__icon-wrapper">
                 <div className="home-hero-install-section__button-icon">
-                  <svg className="home-hero-install-section__button-svg">
-                    <use href="/icons/sprite.svg#icon-hero-install-section"></use>
-                  </svg>
+                  <SvgWrapper
+                    iconClass="home-hero-install-section__button-svg"
+                    idIcon="icon-hero-install-section"
+                  />
                 </div>
                 <div className="home-hero-install-section__button-icon-metamask">
-                  <svg className="home-hero-install-section__button-svg-metamask">
-                    <use href="/icons/sprite.svg#icon-logo-metamask"></use>
-                  </svg>
+                  <SvgWrapper
+                    iconClass="home-hero-install-section__button-svg-metamask"
+                    idIcon="icon-logo-metamask"
+                  />
                 </div>
               </div>
             </div>
@@ -74,14 +78,16 @@ const HomeHeroInstallSection = () => {
         <div className="home-hero-install-section__modal-one">
           <div className="home-hero-install-section__modal-one-icon-wrapper">
             <div className="home-hero-install-section__modal-one-icon">
-              <svg className="home-hero-install-section__modal-one-svg">
-                <use href="/icons/sprite.svg#icon-polygon"></use>
-              </svg>
+              <SvgWrapper
+                iconClass="home-hero-install-section__modal-one-svg"
+                idIcon="icon-polygon"
+              />
             </div>
             <div className="home-hero-install-section__modal-one-icon-halborn-wrapper">
-              <svg className="home-hero-install-section__modal-one-icon-halborn">
-                <use href="/icons/sprite.svg#icon-halborn"></use>
-              </svg>
+              <SvgWrapper
+                iconClass="home-hero-install-section__modal-one-icon-halborn"
+                idIcon="icon-halborn"
+              />
             </div>
           </div>
           <span className="home-hero-install-section__modal-one-text">
@@ -90,9 +96,10 @@ const HomeHeroInstallSection = () => {
         </div>
         <div className="home-hero-install-section__modal-two">
           <div className="home-hero-install-section__modal-two-header">
-            <svg className="home-hero-install-section__modal-two-header-icon">
-              <use href="/icons/sprite.svg#icon-polygon-badge"></use>
-            </svg>
+            <SvgWrapper
+              iconClass="home-hero-install-section__modal-two-header-icon"
+              idIcon="icon-polygon-badge"
+            />
           </div>
           <div className="home-hero-install-section__modal-two-footer">
             <p className="home-hero-install-section__modal-two-footer-title">

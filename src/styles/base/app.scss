@@ -5,7 +5,7 @@ html {
   flex-direction: column;
   font-family: var(--primary-font-family);
   word-spacing: to-rem(1);
-  text-rendering: optimizeLegibility;
+  text-rendering: optimizelegibility;
   /* stylelint-disable-next-line property-no-vendor-prefix */
   -ms-text-size-adjust: 100%;
   /* stylelint-disable-next-line property-no-vendor-prefix */
@@ -172,11 +172,11 @@ img {
 }
 
 .green {
-  background-color: var(--col-green-primary)!important;
+  background-color: var(--col-green-primary) !important;
 }
 
 .mobile-hidden {
   @include respond-to(medium) {
-    display: none!important;
+    display: none !important;
   }
 }

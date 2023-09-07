@@ -3,6 +3,9 @@ import './HomeIdentitySection.scss';
 import { resources } from '@static/template-data/resources';
 import cn from 'classnames';
 import { useTranslation } from 'react-i18next';
+
+import { SvgWrapper } from '@/components';
+
 const HomeIdentitySection = () => {
   const { t } = useTranslation();
   return (
@@ -92,13 +95,12 @@ const HomeIdentitySection = () => {
                   </div>
                 </div>
                 <div className="home-identity-section__resource-button">
-                  <svg
-                    className="home-identity-section__resource-button-icon"
+                  <SvgWrapper
+                    iconClass="home-identity-section__resource-button-icon"
                     height="24"
                     width="25"
-                  >
-                    <use href="/icons/sprite.svg#icon-more"></use>
-                  </svg>
+                    idIcon="icon-more"
+                  />
                 </div>
               </div>
             ))}
@@ -111,13 +113,12 @@ const HomeIdentitySection = () => {
                 </div>
               </div>
               <div className="home-identity-section__resource-button">
-                <svg
-                  className="home-identity-section__resource-button-icon"
+                <SvgWrapper
+                  iconClass="home-identity-section__resource-button-icon"
                   height="24"
                   width="25"
-                >
-                  <use href="/icons/sprite.svg#icon-more-light"></use>
-                </svg>
+                  idIcon="icon-more-light"
+                />
               </div>
             </div>
           </div>

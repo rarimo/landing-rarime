@@ -2,9 +2,9 @@ import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Outlet } from 'react-router-dom';
 
-import AppBar from '@/components/AppBar';
-import AppFooter from '@/components/AppFooter';
-import RouteTransition from '@/components/RouteTransition';
+import { AppBar } from '@/components';
+import { AppFooter } from '@/components';
+import { RouteTransition } from '@/components';
 
 const MainLayout = () => {
   const { t } = useTranslation();

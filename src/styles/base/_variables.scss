@@ -2,8 +2,8 @@
 @import '@/styles/colors';
 
 :root,
-::before,
-::after {
+:before,
+:after {
   // Primary colors
   --col-total-white: #{$col-total-white};
   --col-total-white-rgb: #{$col-total-white-rgb};
@@ -24,7 +24,7 @@
   --col-blue-primary-rgb: #{$col-blue-primary-rgb};
   --col-secondary-black: #{$col-black-secondary};
   --col-secondary-black-rgb: #{$col-black-secondary-rgb};
-
+  --col-secondary-border: #dbdddc;
 
   // Z-indexes
   --z-app-sidebar: 20;
@@ -79,7 +79,6 @@
   --tile-bg-height: #{to-rem(328)};
   --margin-top-default: #{to-rem(55)};
 
-
   @include respond-above(medium) {
     --container-max-width: #{to-rem(1100)};
     --primary-bg-rect-size: #{to-rem(66)};
@@ -87,7 +86,6 @@
     --tile-bg-width: #{to-rem(945)};
     --tile-bg-height: #{to-rem(590)};
     --margin-top-default: #{to-rem(120)};
-
   }
 
   @include respond-above(xmedium) {
@@ -108,11 +106,14 @@
   // Common
   --scrollbar-color: var(--primary-text-color);
   --default-box-shadow: 0 3px 16px 0 rgba(0, 0, 0, 4%), 0 1px 1px 0 rgba(0, 0, 0, 5%);
+  --secondary-box-shadow: 0 6px 24px 0 rgba(82, 182, 154, 32%);
   --border-decor-primary: 1px solid rgba(77, 176, 148, 20%);
+  --sum-of-padding-bettwen-blocks: 81px;
+  --sum-of-padding-bettwen-blocks-mobile: 16px;
+
   // App bar
   --app-bar-height: #{to-rem(100)};
 
   // App footer
   --app-footer-logo-color: var(--primary-title-color);
-
 }

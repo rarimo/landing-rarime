@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 
 import { CONFIG } from '@/config';
-import useAppContext from '@/hooks/useAppContext';
+import { useAppContext } from '@/hooks';
 
 const useNavigation = () => {
   const { setNeedSkipAnimation } = useAppContext();

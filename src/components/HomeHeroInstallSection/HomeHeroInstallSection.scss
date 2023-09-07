@@ -33,7 +33,7 @@
 
 .home-hero-install-section__header-navigation {
   &-step, &-back {
-    color: #69737C;
+    color: #69737c;
     font-size: to-rem(15);
     font-weight: 600;
     @include respond-to(medium) {
@@ -54,7 +54,6 @@
   position: relative;
 }
 
-
 .home-hero-install-section__icon-wrapper {
   position: relative;
 }
@@ -67,7 +66,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #EBEBEB;
+  border: 1px solid #ebebeb;
 }
 
 .home-hero-install-section__button-icon {
@@ -143,7 +142,7 @@
   align-content: space-evenly;
   font-size: to-rem(13);
   padding: to-rem(15) 0 0;
-  border-top: 1px solid #DBDDDC;
+  border-top: 1px solid var(--col-secondary-border);
 }
 
 .home-hero-install-section__footer-btn-install {
@@ -171,7 +170,7 @@
 
 .home-hero-install-section__content-card {
   padding: to-rem(15) 0;
-  border-bottom: 1px solid #DBDDDC;
+  border-bottom: 1px solid var(--col-secondary-border);
   display: flex;
   align-items: center;
   margin-top: to-rem(30);
@@ -201,7 +200,7 @@
   flex-direction: column;
   padding: to-rem(18);
   border-radius: to-rem(13);
-  background: #D1FD51;
+  background: #d1fd51;
   @include respond-to(medium) {
     padding: to-rem(10);
     left: to-rem(-60);
@@ -293,7 +292,7 @@
 
 .home-hero-install-section__modal-two-footer-text {
   display: inline-block;
-  color: rgba(var(--col-primary-black-rgb), 0.60);
+  color: rgba(var(--col-primary-black-rgb), 0.6);
   font-size: to-rem(11);
   font-weight: 400;
   margin-top: to-rem(7);
@@ -362,4 +361,3 @@
     width: to-rem(20);
   }
 }
-

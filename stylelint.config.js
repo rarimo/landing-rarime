@@ -46,15 +46,16 @@ module.exports = {
     'media-feature-name-no-unknown': [true, { severity: 'warning' }],
     'comment-no-empty': [true, { severity: 'warning' }],
     'no-duplicate-at-import-rules': [true, { severity: 'warning' }],
+    'no-extra-semicolons': [true, { severity: 'warning' }],
     'number-max-precision': [6, { severity: 'warning' }],
     'time-min-milliseconds': [50, { severity: 'warning' }],
     'unit-disallowed-list': [
-      ['px', 'cm', 'mm', 'pt', 'in', 'pc'],
+      ['cm', 'mm', 'pt', 'in', 'pc'],
       {
         severity: 'warning',
         /**
-         * it's not working with '["px", "dpi"]' syntax as in example
-         * in the docs so we need to use this hack with regex.
+         * it's not working with '["px", "dpi"]' syntax as in example in the docs
+         * so we need to use this hack with regex.
          */
         ignoreMediaFeatureNames: {
           px: [/a-zA-Z0-9/],
@@ -94,32 +95,150 @@ module.exports = {
         ],
       },
     ],
-    'declaration-block-no-redundant-longhand-properties': null,
+    'declaration-block-no-redundant-longhand-properties': [
+      true,
+      { severity: 'warning' },
+    ],
     'declaration-no-important': [true, { severity: 'warning' }],
     'declaration-block-single-line-max-declarations': [
       1,
       { severity: 'warning' },
     ],
+    'selector-max-empty-lines': [0, { severity: 'warning' }],
     'at-rule-no-vendor-prefix': [true, { severity: 'warning' }],
     'no-unknown-animations': [true, { severity: 'warning' }],
+    'color-hex-case': ['lower', { severity: 'warning' }],
     'color-hex-length': ['long', { severity: 'warning' }],
     'font-family-name-quotes': [
       'always-unless-keyword',
       { severity: 'warning' },
     ],
     'font-weight-notation': ['numeric', { severity: 'warning' }],
+    'function-comma-newline-after': [
+      'always-multi-line',
+      { severity: 'warning' },
+    ],
+    'function-comma-newline-before': [
+      'never-multi-line',
+      { severity: 'warning' },
+    ],
+    'function-comma-space-after': [
+      'always-single-line',
+      { severity: 'warning' },
+    ],
+    'function-comma-space-before': ['never', { severity: 'warning' }],
+    'function-max-empty-lines': [0, { severity: 'warning' }],
+    'function-parentheses-newline-inside': [
+      'always-multi-line',
+      { severity: 'warning' },
+    ],
+    'function-parentheses-space-inside': [
+      'never-single-line',
+      { severity: 'warning' },
+    ],
     'function-url-quotes': ['always', { severity: 'warning' }],
+    'function-whitespace-after': ['always', { severity: 'warning' }],
+    'number-leading-zero': ['always', { severity: 'warning' }],
+    'number-no-trailing-zeros': [true, { severity: 'warning' }],
+    'string-quotes': ['single', { severity: 'warning' }],
     'length-zero-no-unit': [true, { severity: 'warning' }],
-    'value-keyword-case': [
-      'lower',
-      { severity: 'warning', camelCaseSvgKeywords: true },
+    'unit-case': ['lower', { severity: 'warning' }],
+    'value-keyword-case': ['lower', { severity: 'warning' }],
+    'value-list-comma-space-after': [
+      'always-single-line',
+      { severity: 'warning' },
+    ],
+    'value-list-comma-space-before': ['never', { severity: 'warning' }],
+    'value-list-max-empty-lines': [0, { severity: 'warning' }],
+    'property-case': ['lower', { severity: 'warning' }],
+    'declaration-bang-space-after': ['never', { severity: 'warning' }],
+    'declaration-bang-space-before': ['always', { severity: 'warning' }],
+    'declaration-colon-space-after': [
+      'always-single-line',
+      { severity: 'warning' },
+    ],
+    'declaration-colon-space-before': ['never', { severity: 'warning' }],
+    'declaration-block-semicolon-newline-after': [
+      'always-multi-line',
+      { severity: 'warning' },
+    ],
+    'declaration-block-semicolon-space-after': [
+      'always-single-line',
+      { severity: 'warning' },
+    ],
+    'declaration-block-trailing-semicolon': ['always', { severity: 'warning' }],
+    'block-closing-brace-empty-line-before': ['never', { severity: 'warning' }],
+    'block-closing-brace-newline-after': [
+      'always',
+      { severity: 'warning', ignoreAtRules: ['if', 'else'] },
+    ],
+    'block-closing-brace-space-before': [
+      'always-single-line',
+      { severity: 'warning' },
+    ],
+    'block-opening-brace-newline-after': [
+      'always-multi-line',
+      { severity: 'warning' },
+    ],
+    'block-opening-brace-space-after': [
+      'always-single-line',
+      { severity: 'warning' },
+    ],
+    'block-opening-brace-space-before': ['always', { severity: 'warning' }],
+    'selector-attribute-brackets-space-inside': [
+      'never',
+      { severity: 'warning' },
+    ],
+    'selector-attribute-operator-space-after': [
+      'never',
+      { severity: 'warning' },
+    ],
+    'selector-attribute-operator-space-before': [
+      'never',
+      { severity: 'warning' },
     ],
     'selector-attribute-quotes': ['always', { severity: 'warning' }],
+    'selector-combinator-space-after': ['always', { severity: 'warning' }],
+    'selector-combinator-space-before': ['always', { severity: 'warning' }],
+    'selector-pseudo-class-case': ['lower', { severity: 'warning' }],
+    'selector-pseudo-class-parentheses-space-inside': [
+      'never',
+      { severity: 'warning' },
+    ],
+    'selector-pseudo-element-case': ['lower', { severity: 'warning' }],
     'selector-pseudo-element-colon-notation': [
-      'double',
+      'single',
       { severity: 'warning' },
     ],
     'selector-type-case': ['lower', { severity: 'warning' }],
+    'selector-list-comma-space-after': [
+      'always-single-line',
+      { severity: 'warning' },
+    ],
+    'selector-list-comma-space-before': ['never', { severity: 'warning' }],
+    'media-feature-colon-space-after': ['always', { severity: 'warning' }],
+    'media-feature-colon-space-before': ['never', { severity: 'warning' }],
+    'media-feature-name-case': ['lower', { severity: 'warning' }],
+    'media-feature-parentheses-space-inside': [
+      'never',
+      { severity: 'warning' },
+    ],
+    'media-feature-range-operator-space-after': [
+      'always',
+      { severity: 'warning' },
+    ],
+    'media-feature-range-operator-space-before': [
+      'always',
+      { severity: 'warning' },
+    ],
+    'media-query-list-comma-newline-after': [
+      'always-multi-line',
+      { severity: 'warning' },
+    ],
+    'media-query-list-comma-space-after': [
+      'always-single-line',
+      { severity: 'warning' },
+    ],
     'at-rule-empty-line-before': [
       'always',
       {
@@ -134,11 +253,27 @@ module.exports = {
         ],
       },
     ],
+    'at-rule-name-case': ['lower', { severity: 'warning' }],
+    'at-rule-name-space-after': ['always', { severity: 'warning' }],
+    'at-rule-semicolon-newline-after': ['always', { severity: 'warning' }],
+    'at-rule-semicolon-space-before': ['never', { severity: 'warning' }],
     'comment-whitespace-inside': ['always', { severity: 'warning' }],
-    'max-nesting-depth': [
-      2,
-      { ignore: ['blockless-at-rules', 'pseudo-classes'] },
+    linebreaks: ['unix', { severity: 'warning' }],
+    'max-empty-lines': [
+      1,
+      {
+        severity: 'warning',
+        ignore: ['comments'],
+      },
     ],
+    'max-line-length': [
+      80,
+      {
+        severity: 'warning',
+        ignore: ['comments'],
+      },
+    ],
+    'no-eol-whitespace': [true, { severity: 'warning' }],
     /**
      * disallow to use defined properties without variables
      */
@@ -150,8 +285,8 @@ module.exports = {
         ignoreKeywords: {
           // '' means default, for all
           '': ['currentColor', 'transparent', 'inherit', 'initial'],
-          fill: ['none', 'currentColor', 'transparent'],
-          stroke: ['none', 'currentColor', 'transparent'],
+          fill: ['none'],
+          stroke: ['none'],
         },
       },
     ],
@@ -183,4 +318,4 @@ module.exports = {
     'color-function-notation': null,
     'selector-not-notation': 'simple',
   },
-};
+}

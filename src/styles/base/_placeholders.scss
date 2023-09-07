@@ -45,13 +45,13 @@
   font-weight: 600;
   transition: color var(--hover-transition);
 
-  &::after {
+  &:after {
     position: absolute;
     left: 0;
     bottom: -#{to-rem(1)};
     width: 100%;
     height: to-rem(1);
-    background-color: currentColor;
+    background-color: currentcolor;
     content: '';
     transition: background-color var(--hover-transition);
   }
