@@ -12,7 +12,7 @@ git:                        # Секция с директивами для до
   stageDependencies:        # Настройка перевыполнения сборочных инструкций при изменениях определённых файлов в репозитории.
     install:                # Для стадии Install.
     - package.json 
-    - package-lock.json
+    - yarn.lock
     setup:                  # Для стадии Setup.
     - "**/*"
 shell:                      # Shell сборочные инструкции.
