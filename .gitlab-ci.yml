@@ -42,9 +42,9 @@ stages:
 
 Build and Publish:
   stage: build-and-publish
-  # only:
-  #   refs:
-  #     - development
+  only:
+    refs:
+      - development
   <<: *before_script_templ
   script:
     - . $(werf ci-env gitlab --as-file)
@@ -68,9 +68,9 @@ Build and Publish Tag:
 Deploy to Staging:
   image: dtzar/helm-kubectl:latest
   stage: deploy
-  # only:
-  #   refs:
-  #     - development
+  only:
+    refs:
+      - development
   script:
     - mkdir ~/.kube/
     - echo ${kuberconfig} | base64 -d > config
