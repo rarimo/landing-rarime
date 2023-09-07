@@ -8,27 +8,6 @@ import { ROUTES_PATHS } from '@/const';
 
 const AppBar = () => {
   const { t } = useTranslation();
-
-  const connectToSnap = async () =>{
-    try {
-      const result = await window.ethereum.request({
-        method: 'wallet_requestSnaps',
-        params: {
-          'npm:@metamask/example-snap': {},
-          'npm:fooSnap': {
-            // The optional version argument allows requesting a SemVer version
-            // range, with the same semantics as npm package.json ranges.
-            version: '^1.0.2',
-          },
-        },
-      });
-
-      console.log(result);
-
-    } catch (error) {
-      console.log(error);
-    }
-  }
   return (
     <header className="app-bar">
       <div className="app-bar__container">
@@ -42,7 +21,7 @@ const AppBar = () => {
             />
             <span className="app-bar__logo-title">{t('app.title')}</span>
           </Link>
-          <button className="app-bar__button" onClick={connectToSnap}>
+          <button className="app-bar__button">
             <Icon
               iconClass="app-bar__button-icon"
               height="24"
