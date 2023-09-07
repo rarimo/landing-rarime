@@ -107,8 +107,8 @@
 
   // Common
   --scrollbar-color: var(--primary-text-color);
-  --default-box-shadow: 0 3px 16px 0 rgba(0, 0, 0, 0.04), 0 1px 1px 0 rgba(0, 0, 0, 0.05);
-  --border-decor-primary: 1px solid rgba(77, 176, 148, 0.20);
+  --default-box-shadow: 0 3px 16px 0 rgba(0, 0, 0, 4%), 0 1px 1px 0 rgba(0, 0, 0, 5%);
+  --border-decor-primary: 1px solid rgba(77, 176, 148, 20%);
   // App bar
   --app-bar-height: #{to-rem(100)};
 

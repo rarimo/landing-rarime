@@ -12,16 +12,16 @@
   transition-timing-function: var(--fade-transition-timing-function);
 }
 
-.app-bar__container{
+.app-bar__container {
   padding: to-rem(26) 0;
 }
 
-.app-bar__content{
+.app-bar__content {
   display: flex;
   justify-content: space-between;
 }
 
-.app-bar__button{
+.app-bar__button {
   display: flex;
   align-items: center;
   padding: to-rem(10) to-rem(16);
@@ -34,7 +34,7 @@
   }
 }
 
-.app-bar__button-text{
+.app-bar__button-text {
   padding-left: to-rem(8);
   font-weight: 600;
   text-transform: capitalize;
@@ -44,12 +44,12 @@
   }
 }
 
-.app-bar__logo{
+.app-bar__logo {
   display: flex;
   align-items: center;
 }
 
-.app-bar__logo-title{
+.app-bar__logo-title {
   color: var(--col-total-white);
   padding-left: to-rem(14);
   font-size: to-rem(24);

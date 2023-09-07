@@ -1,19 +1,19 @@
-.home-banner{
+.home-banner {
   margin-top: var(--margin-top-default);
   position: relative;
   overflow: hidden;
 }
 
-.home-banner__wrraper{
+.home-banner__wrraper {
   background: rgba(var(--col-green-primary-rgb), 0.1);
-  border-radius: 32px;
+  border-radius: to-rem(32);
   padding: to-rem(80) 20%;
-    @include respond-to(medium) {
-      padding: to-rem(40) to-rem(27.5);
-    }
+  @include respond-to(medium) {
+    padding: to-rem(40) to-rem(27.5);
+  }
 }
 
-.home-banner__text{
+.home-banner__text {
   margin-left: auto;
   margin-right: auto;
   color: var(--col-primary-black);
@@ -29,16 +29,16 @@
   }
 }
 
-.home-banner__text-bold{
+.home-banner__text-bold {
   font-weight: 700;
 }
 
-.home-banner__icon{
+.home-banner__icon {
   width: to-rem(72);
   height: to-rem(72);
-  border-radius: 16px 16px 32px 32px;
+  border-radius: to-rem(16) to-rem(16) to-rem(32) to-rem(32);
   background: linear-gradient(221deg, #52B69A 0%, #3B9F83 100%);
-  box-shadow: 0 6px 24px 0 rgba(82, 182, 154, 0.32);
+  box-shadow: 0 6px 24px 0 rgba(82, 182, 154, 32%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -47,34 +47,34 @@
   margin-bottom: to-rem(24);
 }
 
-.home-banner__decor-1{
+.home-banner__decor-1 {
   position: absolute;
-  top: -365px;
+  top: to-rem(-365);
   left: 9.24%;
   width: 81.5%;
-  aspect-ratio : 1 / 1;
+  aspect-ratio: 1 / 1;
   border-radius: 81.5%;
   border: var(--border-decor-primary);
   z-index: var(--z-default);
 }
 
-.home-banner__decor-2{
+.home-banner__decor-2 {
   position: absolute;
-  top: -237px;
-  left:  14.3%;
+  top: to-rem(-237);
+  left: 14.3%;
   width: 71.2%;
-  aspect-ratio : 1 / 1;
+  aspect-ratio: 1 / 1;
   border-radius: 71.2%;
   border: var(--border-decor-primary);
   z-index: var(--z-default);
 }
 
-.home-banner__decor-3{
-  top: -109px;
+.home-banner__decor-3 {
+  top: to-rem(-109);
   left: 20.1%;
   position: absolute;
   width: 59.7%;
-  aspect-ratio : 1 / 1;
+  aspect-ratio: 1 / 1;
   border-radius: 59.7%;
   border: var(--border-decor-primary);
 }

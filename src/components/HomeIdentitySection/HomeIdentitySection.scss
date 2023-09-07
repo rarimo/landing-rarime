@@ -2,7 +2,7 @@
   margin-top: var(--margin-top-default);
 }
 
-.home-identity-section__content-wrapper{
+.home-identity-section__content-wrapper {
   display: flex;
   justify-content: space-between;
   margin-top: var(--margin-top-default);
@@ -19,7 +19,7 @@
   text-align: center;
   font-size: to-rem(68);
   font-weight: 700;
-  line-height: 88px;
+  line-height: to-rem(88);
   text-transform: capitalize;
   @include respond-to(medium) {
     font-size: to-rem(32);
@@ -38,7 +38,7 @@
   color: var(--col-green-primary);
 }
 
-.home-identity-section__providers{
+.home-identity-section__providers {
   @include respond-to(medium) {
     display: flex;
     align-items: center;
@@ -77,18 +77,19 @@
 }
 
 .home-identity-section__circle {
-  width: 40px;
-  height: 40px;
+  width: to-rem(40);
+  height: to-rem(40);
   background-color: #EBEEF1;
   border-radius: 50%;
   position: relative;
   z-index: var(--z-default);
   @include respond-to(medium) {
     width: to-rem(28);
-    height: to-rem(28);  }
+    height: to-rem(28);
+  }
 }
 
-.home-identity-section__dev-resources{
+.home-identity-section__dev-resources {
   display: flex;
   flex-direction: column;
   z-index: var(--z-default);
@@ -97,9 +98,9 @@
   }
 }
 
-.home-identity-section__resource{
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-  background: #FFF;
+.home-identity-section__resource {
+  border-bottom: 1px solid rgba(0, 0, 0, 5%);
+  background: #FFFFFF;
   padding: to-rem(24);
   display: flex;
   align-items: center;
@@ -111,7 +112,7 @@
   }
 }
 
-.home-identity-section__resource-info{
+.home-identity-section__resource-info {
   display: flex;
   align-items: center;
 }
@@ -126,7 +127,7 @@
   }
 }
 
-.home-identity-section__resource-subtitle{
+.home-identity-section__resource-subtitle {
   color: rgba(var(--col-primary-black-rgb), 0.60);
   font-weight: 400;
   @include respond-to(medium) {
@@ -134,7 +135,7 @@
   }
 }
 
-.home-identity-section__resource-tag{
+.home-identity-section__resource-tag {
   margin-left: to-rem(8);
   font-size: to-rem(10);
   font-weight: 600;
@@ -145,7 +146,7 @@
   }
 }
 
-.home-identity-section__resource-img-wrapper{
+.home-identity-section__resource-img-wrapper {
   width: to-rem(48);
   height: to-rem(48);
   border-radius: to-rem(100);
@@ -155,7 +156,8 @@
   margin-right: to-rem(16);
   @include respond-to(medium) {
     width: to-rem(31);
-    height: to-rem(31);  }
+    height: to-rem(31);
+  }
 }
 
 .home-identity-section__resource-img {
@@ -164,59 +166,60 @@
   }
 }
 
-.tag-purple{
+.tag-purple {
   color: #8247E5;
-  background: rgba(130, 71, 229, 0.05);
+  background: rgba(130, 71, 229, 5%);
 }
 
-.tag-violet{
+.tag-violet {
   color: #767DFF;
-  background: rgba(118, 125, 255, 0.05);
+  background: rgba(118, 125, 255, 5%);
 }
 
-.tag-gray{
-  color: #000;
-  background: rgba(0, 0, 0, 0.05);
+.tag-gray {
+  color: #000000;
+  background: rgba(0, 0, 0, 5%);
 }
 
-.tag-blue{
+.tag-blue {
   color: #4799E5;
-  background: rgba(71, 153, 229, 0.05);
+  background: rgba(71, 153, 229, 5%);
 }
 
-.home-identity-section__resource-img-skeleton{
+.home-identity-section__resource-img-skeleton {
   border-radius: to-rem(100);
   background: rgba(var(--col-primary-black-rgb), 0.05);
 }
 
-.home-identity-section__resource-title-skeleton{
+.home-identity-section__resource-title-skeleton {
   border-radius: to-rem(20);
   background: rgba(var(--col-primary-black-rgb), 0.05);
   width: to-rem(148);
   height: to-rem(14);
 }
 
-.home-identity-section__resource-subtitle-skeleton{
+.home-identity-section__resource-subtitle-skeleton {
   border-radius: to-rem(20);
   background: rgba(var(--col-primary-black-rgb), 0.05);
   width: to-rem(37);
   height: to-rem(12);
 }
 
-.home-identity-section__line{
+.home-identity-section__line {
   position: absolute;
-  top: 20px;
-  left: 40px;
+  top: to-rem(20);
+  left: to-rem(40);
   border-bottom: 3px dashed #CDD2D8;
   width: 45vw;
   @include respond-to(medium) {
-   display: none;
+    display: none;
   }
-  &-mobile{
+
+  &-mobile {
     @include respond-to(medium) {
       position: absolute;
-      top: 28px;
-      left: 12.5px;
+      top: to-rem(28);
+      left: to-rem(12.5);
       height: to-rem(60);
       border-right: 3px dashed #CDD2D8;
     }

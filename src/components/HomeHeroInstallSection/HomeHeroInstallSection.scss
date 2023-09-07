@@ -8,7 +8,7 @@
   position: relative;
   @include respond-to(medium) {
     position: absolute;
-    top: 120px;
+    top: to-rem(120);
     z-index: var(--z-default);
     padding: to-rem(8) to-rem(8) to-rem(40);
     max-width: 30%;
@@ -71,18 +71,18 @@
 }
 
 .home-hero-install-section__button-icon {
-  width: 56px;
-  height: 56px;
+  width: to-rem(56);
+  height: to-rem(56);
   @include respond-to(medium) {
-    width: 30px;
-    height: 30px;
+    width: to-rem(30);
+    height: to-rem(30);
   }
 }
 
 .home-hero-install-section__button-icon-metamask {
   position: absolute;
-  bottom: 5px;
-  right: 5px;
+  bottom: 0;
+  right: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -90,7 +90,7 @@
   height: to-rem(24);
   border-radius: 100%;
   background: var(--col-total-white);
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.04), 0 2px 6px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 4%), 0 2px 6px 0 rgba(0, 0, 0, 5%);
   @include respond-to(medium) {
     width: to-rem(13);
     height: to-rem(13);
@@ -100,11 +100,11 @@
 }
 
 .home-hero-install-section__button-svg-metamask {
-  height: 16px;
-  width: 14px;
+  height: to-rem(16);
+  width: to-rem(14);
   @include respond-to(medium) {
-    width: 8px;
-    height: 7px;
+    width: to-rem(8);
+    height: to-rem(7);
   }
 }
 
@@ -195,8 +195,8 @@
 
 .home-hero-install-section__modal-one {
   position: absolute;
-  top: 65px;
-  left: -120px;
+  top: to-rem(65);
+  left: to-rem(-120);
   display: flex;
   flex-direction: column;
   padding: to-rem(18);
@@ -204,8 +204,8 @@
   background: #D1FD51;
   @include respond-to(medium) {
     padding: to-rem(10);
-    left: -60px;
-    top: 35px;
+    left: to-rem(-60);
+    top: to-rem(35);
   }
 }
 
@@ -219,11 +219,11 @@
 }
 
 .home-hero-install-section__modal-one-svg {
-  width: 49px;
-  height: 49px;
+  width: to-rem(49);
+  height: to-rem(49);
   @include respond-to(medium) {
-    width: 26px;
-    height: 26px;
+    width: to-rem(26);
+    height: to-rem(26);
   }
 }
 
@@ -236,27 +236,27 @@
 
 .home-hero-install-section__modal-one-icon-halborn-wrapper {
   position: absolute;
-  bottom: -10px;
-  right: -7px;
+  bottom: to-rem(-10);
+  right: to-rem(-7);
   @include respond-to(medium) {
-    bottom: -4px;
-    right: -2px;
+    bottom: to-rem(-4);
+    right: to-rem(-2);
   }
 }
 
 .home-hero-install-section__modal-one-icon-halborn {
-  width: 37px;
-  height: 37px;
+  width: to-rem(37);
+  height: to-rem(37);
   @include respond-to(medium) {
-    width: 16px;
-    height: 16px;
+    width: to-rem(16);
+    height: to-rem(16);
   }
 }
 
 .home-hero-install-section__modal-two {
   position: absolute;
-  top: 250px;
-  right: -70px;
+  top: to-rem(250);
+  right: to-rem(-70);
   display: flex;
   flex-direction: column;
   padding: to-rem(18);
@@ -264,7 +264,7 @@
   background: var(--col-total-white);
   @include respond-to(medium) {
     border-radius: to-rem(7);
-    top: 90px;
+    top: to-rem(90);
     padding: to-rem(8);
   }
 }
@@ -321,15 +321,15 @@
 
 .home-hero-install-section__decor {
   position: absolute;
-  width: 475px;
-  height: 475px;
-  border-radius: 475px;
-  left: -50px;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.20) -23.89%, rgba(255, 255, 255, 0.00) 100%);
+  width: to-rem(475);
+  height: to-rem(475);
+  border-radius: to-rem(475);
+  left: to-rem(-50);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 20%) -23.89%, rgba(255, 255, 255, 0%) 100%);
   @include respond-to(medium) {
-    width: 258px;
-    height: 258px;
-    left: -33px;
+    width: to-rem(258);
+    height: to-rem(258);
+    left: to-rem(-33);
   }
 }
 
@@ -338,28 +338,28 @@
   @include respond-to(medium) {
     display: block;
     position: absolute;
-    left: 15px;
-    top: 140px;
+    left: to-rem(15);
+    top: to-rem(140);
     width: 90vw;
-    height: 296px;
-    background: linear-gradient(180deg, rgba(0, 8, 20, 0.00) 0%, #000814 100%);
+    height: to-rem(296);
+    background: linear-gradient(180deg, rgba(0, 8, 20, 0%) 0%, #000814 100%);
     z-index: var(--z-default);
   }
 }
 
 .home-hero-install-section__content-card-img {
   @include respond-to(medium) {
-    height: 13px;
-    width: 13px;
+    height: to-rem(13);
+    width: to-rem(13);
   }
 }
 
 .home-hero-install-section__modal-two-header-icon {
-  height: 38px;
-  width: 38px;
+  height: to-rem(38);
+  width: to-rem(38);
   @include respond-to(medium) {
-    height: 20px;
-    width: 20px;
+    height: to-rem(20);
+    width: to-rem(20);
   }
 }
 

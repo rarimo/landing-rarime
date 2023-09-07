@@ -1,12 +1,14 @@
 import './AppBar.scss';
+
+import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import { ROUTES_PATHS } from "@/const/index.js";
-import { useTranslation } from "react-i18next";
+
+import { ROUTES_PATHS } from '@/const';
 
 const AppBar = () => {
   const { t } = useTranslation();
   return (
-    <header className='app-bar'>
+    <header className="app-bar">
       <div className="app-bar__container">
         <div className="app-bar__content container">
           <Link className="app-bar__logo" to={ROUTES_PATHS.home}>

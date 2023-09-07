@@ -20,7 +20,7 @@
 }
 
 .home-tiles-section__tile {
-  border-radius: 32px;
+  border-radius: to-rem(32);
   background: var(--col-white-primary);
   width: calc((100% - 24px) / 2);
   padding: to-rem(56) to-rem(56) to-rem(32);
@@ -148,7 +148,7 @@
 
 .home-tiles-section__tile-card-img-key-wrapper {
   margin-top: to-rem(12);
-  filter: drop-shadow(0px 6px 24px rgba(82, 182, 154, 0.32));
+  filter: drop-shadow(0 6px 24px rgba(82, 182, 154, 32%));
   @include respond-to(medium) {
     width: to-rem(16);
     height: to-rem(16);
@@ -157,7 +157,7 @@
 
 .home-tiles-section__tile-user-img-wrapper {
   fill: linear-gradient(247deg, #52B69A -4.88%, #3B9F83 100%);
-  filter: drop-shadow(0px 6px 24px rgba(82, 182, 154, 0.32));
+  filter: drop-shadow(0 6px 24px rgba(82, 182, 154, 32%));
   @include respond-to(medium) {
     width: to-rem(36);
     height: to-rem(36);
@@ -192,7 +192,7 @@
   width: to-rem(8);
   height: to-rem(8);
   border-radius: to-rem(4);
-  background: rgba(45, 48, 57, 0.16);
+  background: rgba(45, 48, 57, 16%);
   margin-right: to-rem(5);
 }
 
@@ -210,7 +210,7 @@
   width: to-rem(165);
   height: to-rem(21);
   border-radius: to-rem(5);
-  background: rgba(45, 48, 57, 0.10);
+  background: rgba(45, 48, 57, 10%);
   display: flex;
   align-items: center;
   padding-left: to-rem(5);
@@ -227,7 +227,7 @@
 .home-tiles-section__proof-of-age {
   border-radius: to-rem(16);
   background: linear-gradient(247deg, var(--col-green-primary) -4.88%, #3B9F83 100%);
-  box-shadow: 0 6px 24px 0 rgba(82, 182, 154, 0.32);
+  box-shadow: 0 6px 24px 0 rgba(82, 182, 154, 32%);
   padding: to-rem(24);
   display: flex;
   flex-direction: column;
@@ -338,7 +338,7 @@
 
 .home-tiles-section__tile-protect-dapp {
   padding: to-rem(24);
-  border-radius: 16px;
+  border-radius: to-rem(16);
   background: var(--col-total-white);
   box-shadow: var(--default-box-shadow);
   display: flex;
@@ -397,16 +397,16 @@
 
 .home-tiles-section__tile-protect-vector {
   position: absolute;
-  bottom: -3px;
-  right: -2px;
+  bottom: to-rem(-3);
+  right: to-rem(-2);
 }
 
 .home-tiles-section__tile-protect-vector-2 {
   position: absolute;
-  bottom: 3px;
+  bottom: to-rem(3);
   right: 0;
   @include respond-to(medium) {
-    right: -1px;
+    right: to-rem(-1);
   }
 }
 
@@ -414,16 +414,16 @@
   position: absolute;
   width: 115%;
   aspect-ratio: 1/1;
-  left: -46px;
-  bottom: -350px;
-  border-radius: 740px;
+  left: to-rem(-46);
+  bottom: to-rem(-350);
+  border-radius: to-rem(740);
   border: 1px solid rgba(var(--col-green-primary-rgb), 0.25);
   z-index: var(--z-default);
   @include respond-to(medium) {
-    width: 434px;
-    height: 434px;
-    border-radius: 434px;
-    bottom: -180px;
+    width: to-rem(434);
+    height: to-rem(434);
+    border-radius: to-rem(434);
+    bottom: to-rem(-180);
   }
 }
 
@@ -432,14 +432,14 @@
   width: 100%;
   aspect-ratio: 1/1;
   left: 0;
-  bottom: -345px;
-  border-radius: 647px;
+  bottom: to-rem(-345);
+  border-radius: to-rem(647);
   border: 1px solid rgba(var(--col-green-primary-rgb), 0.15);
   @include respond-to(medium) {
-    width: 380px;
-    height: 380px;
-    border-radius: 380px;
-    bottom: -200px;
+    width: to-rem(380);
+    height: to-rem(380);
+    border-radius: to-rem(380);
+    bottom: to-rem(-200);
   }
 }
 
@@ -451,22 +451,22 @@
   border-radius: 542px;
   border: 1px solid rgba(var(--col-green-primary-rgb), 0.10);
   @include respond-to(medium) {
-    width: 318px;
-    height: 318px;
-    border-radius: 318px;
-    bottom: -200px;
+    width: to-rem(318);
+    height: to-rem(318);
+    border-radius: to-rem(318);
+    bottom: to-rem(-200);
   }
 }
 
 .home-tiles-section__tile-zkevm-icon-wrapper {
   position: absolute;
   left: 40%;
-  top: -30px;
+  top: to-rem(-30);
   z-index: var(--z-icons);
-  border-radius: 1475px;
+  border-radius: to-rem(1475);
   background: #8937E9;
-  width: 60px;
-  height: 60px;
+  width: to-rem(60);
+  height: to-rem(60);
   color: var(--col-total-white);
   font-size: to-rem(13);
   font-weight: 600;
@@ -475,10 +475,10 @@
   justify-content: center;
   align-items: center;
   @include respond-to(medium) {
-    width: 34px;
-    height: 34px;
+    width: to-rem(34);
+    height: to-rem(34);
     font-size: to-rem(7.5);
-    top: -15px;
+    top: to-rem(-15);
   }
 }
 
@@ -489,59 +489,59 @@
   z-index: var(--z-icons);
 }
 
-.home-tiles-section__tile-avalanche-icon{
-  width: 61px;
-  height: 61px;
+.home-tiles-section__tile-avalanche-icon {
+  width: to-rem(61);
+  height: to-rem(61);
   @include respond-to(medium) {
-    width: 35px;
-    height: 35px;
+    width: to-rem(35);
+    height: to-rem(35);
   }
 }
 
 .home-tiles-section__tile-binance-icon-wrapper {
   position: absolute;
-  top: -23px;
+  top: to-rem(-23);
   right: 33.5%;
   z-index: var(--z-icons);
   @include respond-to(medium) {
-    top: -13px;
+    top: to-rem(-13);
   }
 }
 
-.home-tiles-section__tile-binance-icon{
-  width: 61px;
-  height: 61px;
+.home-tiles-section__tile-binance-icon {
+  width: to-rem(61);
+  height: to-rem(61);
   @include respond-to(medium) {
-    width: 36px;
-    height: 36px;
+    width: to-rem(36);
+    height: to-rem(36);
   }
 }
 
 .home-tiles-section__tile-ether-icon-wrapper {
   position: absolute;
-  top: 32px;
+  top: to-rem(32);
   left: 13%;
   z-index: var(--z-icons);
-  border-radius: 1000px;
+  border-radius: to-rem(1000);
   background: #E9E9E9;
-  width: 96px;
-  height: 96px;
+  width: to-rem(96);
+  height: to-rem(96);
   display: flex;
   justify-content: center;
   align-items: center;
   @include respond-to(medium) {
-    width: 56px;
-    height: 56px;
-    top: 25px;
+    width: to-rem(56);
+    height: to-rem(56);
+    top: to-rem(25);
   }
 }
 
-.home-tiles-section__tile-ether-icon{
-  height: 44px;
-  width: 68px;
+.home-tiles-section__tile-ether-icon {
+  height: to-rem(44);
+  width: to-rem(68);
   @include respond-to(medium) {
-    height: 32px;
-    width: 54px;
+    height: to-rem(32);
+    width: to-rem(54);
   }
 }
 
@@ -552,11 +552,11 @@
   z-index: var(--z-icons);
 }
 
-.home-tiles-section__tile-polygon-icon{
-  width: 37px;
-  height: 37px;
+.home-tiles-section__tile-polygon-icon {
+  width: to-rem(37);
+  height: to-rem(37);
   @include respond-to(medium) {
-    width: 21px;
-    height: 21px;
+    width: to-rem(21);
+    height: to-rem(21);
   }
 }
