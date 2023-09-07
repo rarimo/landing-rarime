@@ -160,7 +160,7 @@
 
 .home-identity-section__resource-img {
   @include respond-to(medium) {
-    width: 50%;
+    max-width: 50%;
   }
 }
 

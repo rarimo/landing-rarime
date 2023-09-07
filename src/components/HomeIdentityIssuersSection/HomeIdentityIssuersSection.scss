@@ -41,10 +41,10 @@
   border-radius: 16px;
   background: var(--col-total-white);
   box-shadow: var(--default-box-shadow);
-  width: calc((100% - var(--sum-of-padding-bettwen-blocks)) / 4);
+  width: calc((100% - var(--sum-of-padding-between-blocks)) / 4);
   @include respond-to(medium) {
     padding: to-rem(24);
-    width: calc((100% - var(--sum-of-padding-bettwen-blocks-mobile)) / 2);
+    width: calc((100% - var(--sum-of-padding-between-blocks-mobile)) / 2);
     margin-top: to-rem(16);
   }
 }
@@ -72,15 +72,15 @@
   height: to-rem(64);
   background: var(--col-primary-black);
   @include respond-to(medium) {
-    width: to-rem(40);
-    height: to-rem(40);
+    max-width: to-rem(40);
+    max-height: to-rem(40);
   }
 }
 
 .home-identity-issuers__list-item-img {
   @include respond-to(medium) {
-    width: to-rem(24);
-    height: to-rem(24);
+    max-width: to-rem(24);
+    max-height: to-rem(24);
   }
 }
 
@@ -96,8 +96,8 @@
   background: #0c110f;
   @include respond-to(medium) {
     img {
-      width: to-rem(16);
-      height: to-rem(16);
+      max-width: to-rem(16);
+      max-height: to-rem(16);
     }
   }
 }

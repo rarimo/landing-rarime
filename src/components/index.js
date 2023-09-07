@@ -8,4 +8,4 @@ export { default as HomeIdentitySection } from './HomeIdentitySection/HomeIdenti
 export { default as HomeQuestionSection } from './HomeQuestionSection/HomeQuestionSection';
 export { default as HomeTilesSection } from './HomeTilesSection/HomeTilesSection';
 export { default as RouteTransition } from './RouteTransition/RouteTransition';
-export { default as SvgWrapper } from './SvgWrapper';
+export { default as SvgWrapper } from './Icon';

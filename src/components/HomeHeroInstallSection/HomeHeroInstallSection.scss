@@ -348,8 +348,8 @@
 
 .home-hero-install-section__content-card-img {
   @include respond-to(medium) {
-    height: to-rem(13);
-    width: to-rem(13);
+    max-height: to-rem(13);
+    max-width: to-rem(13);
   }
 }
 
