@@ -1,0 +1,62 @@
+%visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  width: to-rem(1);
+  height: to-rem(1);
+  padding: 0;
+  border: 0;
+  margin: calc(#{to-rem(1)} * -1);
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  white-space: nowrap;
+}
+
+%text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+%accent-bg-plh,
+%accent-bg-plh ::before,
+%accent-bg-plh ::after {
+  --primary-title-color: var(--col-primary-black);
+  --primary-text-color: var(--col-black-alpha);
+  --bg-rect-border-color: var(--col-black-min-alpha);
+
+  color: var(--primary-text-color);
+}
+
+%primary-bg-plh,
+%primary-bg-plh ::before,
+%primary-bg-plh ::after {
+  --primary-title-color: var(--col-total-white);
+  --primary-text-color: var(--col-primary-grey);
+  --bg-rect-border-color: var(--col-white-min-alpha);
+
+  color: var(--primary-text-color);
+}
+
+%external-link {
+  position: relative;
+  color: var(--primary-text-color);
+  font-size: to-rem(14);
+  line-height: 1.2;
+  font-weight: 600;
+  transition: color var(--hover-transition);
+
+  &:after {
+    position: absolute;
+    left: 0;
+    bottom: -#{to-rem(1)};
+    width: 100%;
+    height: to-rem(1);
+    background-color: currentcolor;
+    content: '';
+    transition: background-color var(--hover-transition);
+  }
+
+  @include hover {
+    color: var(--primary-title-color);
+  }
+}

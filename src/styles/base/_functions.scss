@@ -1,0 +1,21 @@
+@use 'sass:math';
+
+@function to-rem($px) {
+  $rem-value: math.div($px, 16) + rem;
+  @return $rem-value;
+}
+
+@function vh($vh) {
+   @return calc(var(--vh, 1vh) * #{$vh});
+}
+
+@function hex-to-rgb($color) {
+  @return red($color) + ', ' + green($color) + ', ' + blue($color);
+}
+
+@function bg-space($mult) {
+  $space-in-rect-value: calc(
+    var(--primary-bg-rect-size, #{to-rem(66)}) * #{$mult}
+  );
+  @return $space-in-rect-value;
+}

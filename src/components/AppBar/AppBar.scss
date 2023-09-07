@@ -1,0 +1,55 @@
+.app-bar {
+  position: fixed;
+  z-index: var(--z-app-bar);
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: var(--col-primary-black);
+  overflow: hidden;
+  height: var(--app-bar-height);
+  transition-property: background-color, transform;
+  transition-duration: var(--slow-transition-duration);
+  transition-timing-function: var(--fade-transition-timing-function);
+}
+
+.app-bar__container {
+  padding: to-rem(26) 0;
+}
+
+.app-bar__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.app-bar__button {
+  display: flex;
+  align-items: center;
+  padding: to-rem(10) to-rem(16);
+  border: 1px solid var(--col-green-primary);
+  border-radius: to-rem(100);
+  color: var(--col-green-primary);
+  @include respond-to(medium) {
+    padding: to-rem(6) to-rem(12);
+  }
+}
+
+.app-bar__button-text {
+  padding-left: to-rem(8);
+  font-weight: 600;
+  text-transform: capitalize;
+  font-size: to-rem(14);
+  @include respond-to(medium) {
+    font-size: to-rem(12);
+  }
+}
+
+.app-bar__logo {
+  display: flex;
+  align-items: center;
+}
+
+.app-bar__logo-title {
+  color: var(--col-total-white);
+  padding-left: to-rem(14);
+  font-size: to-rem(24);
+}

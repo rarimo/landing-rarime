@@ -1,0 +1,79 @@
+.home-banner {
+  margin-top: var(--margin-top-default);
+  position: relative;
+  overflow: hidden;
+}
+
+.home-banner__wrapper {
+  background: rgba(var(--col-green-primary-rgb), 0.1);
+  border-radius: to-rem(32);
+  padding: to-rem(80) 20%;
+  @include respond-to(medium) {
+    padding: to-rem(40) to-rem(27.5);
+  }
+}
+
+.home-banner__text {
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--col-primary-black);
+  font-size: to-rem(20);
+  font-weight: 400;
+  line-height: to-rem(30);
+  text-transform: capitalize;
+  text-align: center;
+  @include respond-to(medium) {
+    font-size: to-rem(16);
+    line-height: to-rem(24);
+  }
+}
+
+.home-banner__text-bold {
+  font-weight: 700;
+}
+
+.home-banner__icon {
+  width: to-rem(72);
+  height: to-rem(72);
+  border-radius: to-rem(16) to-rem(16) to-rem(32) to-rem(32);
+  background: linear-gradient(221deg, #52b69a 0%, #3b9f83 100%);
+  box-shadow: var(--secondary-box-shadow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: to-rem(24);
+}
+
+.home-banner__decor-1 {
+  position: absolute;
+  top: to-rem(-365);
+  left: 9.24%;
+  width: 81.5%;
+  aspect-ratio: 1 / 1;
+  border-radius: 81.5%;
+  border: var(--border-decor-primary);
+  z-index: var(--z-default);
+}
+
+.home-banner__decor-2 {
+  position: absolute;
+  top: to-rem(-237);
+  left: 14.3%;
+  width: 71.2%;
+  aspect-ratio: 1 / 1;
+  border-radius: 71.2%;
+  border: var(--border-decor-primary);
+  z-index: var(--z-default);
+}
+
+.home-banner__decor-3 {
+  top: to-rem(-109);
+  left: 20.1%;
+  position: absolute;
+  width: 59.7%;
+  aspect-ratio: 1 / 1;
+  border-radius: 59.7%;
+  border: var(--border-decor-primary);
+}

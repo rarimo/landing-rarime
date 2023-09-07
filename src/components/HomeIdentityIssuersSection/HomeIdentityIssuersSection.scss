@@ -1,0 +1,103 @@
+.home-identity-issuers {
+  margin-top: var(--margin-top-default);
+}
+
+.home-identity-issuers__wrapper {
+  padding: to-rem(115) to-rem(105);
+  background: var(--col-white-primary);
+  border-radius: to-rem(32);
+  @include respond-to(medium) {
+    padding: to-rem(32) to-rem(40);
+  }
+}
+
+.home-identity-issuers__title {
+  color: var(--col-primary-black-primary);
+  text-align: center;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.home-identity-issuers__title-2 {
+  font-weight: 700;
+}
+
+.home-identity-issuers__list {
+  margin-top: to-rem(105);
+  display: flex;
+  justify-content: space-between;
+  @include respond-to(medium) {
+    margin-top: to-rem(24);
+    flex-wrap: wrap;
+  }
+}
+
+.home-identity-issuers__list-item {
+  padding: to-rem(48);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 16px;
+  background: var(--col-total-white);
+  box-shadow: var(--default-box-shadow);
+  width: calc((100% - var(--sum-of-padding-between-blocks)) / 4);
+  @include respond-to(medium) {
+    padding: to-rem(24);
+    width: calc((100% - var(--sum-of-padding-between-blocks-mobile)) / 2);
+    margin-top: to-rem(16);
+  }
+}
+
+.home-identity-issuers__list-item-text {
+  margin-top: to-rem(32);
+  color: var(--col-primary-black);
+  font-size: to-rem(20);
+  font-weight: 500;
+  white-space: nowrap;
+  @include respond-to(medium) {
+    white-space: normal;
+    font-size: to-rem(16);
+    text-align: center;
+    margin-top: to-rem(24);
+  }
+}
+
+.home-identity-issuers__list-item-img-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: to-rem(42);
+  width: to-rem(64);
+  height: to-rem(64);
+  background: var(--col-primary-black);
+  @include respond-to(medium) {
+    max-width: to-rem(40);
+    max-height: to-rem(40);
+  }
+}
+
+.home-identity-issuers__list-item-img {
+  @include respond-to(medium) {
+    max-width: to-rem(24);
+    max-height: to-rem(24);
+  }
+}
+
+.home-identity-issuers__civic-icon {
+  background: #fb7c3f;
+}
+
+.home-identity-issuers__unstoppable-domains-icon {
+  background: #2e65f5;
+}
+
+.home-identity-issuers__gitcoin-icon {
+  background: #0c110f;
+  @include respond-to(medium) {
+    img {
+      max-width: to-rem(16);
+      max-height: to-rem(16);
+    }
+  }
+}
