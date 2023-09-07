@@ -2,7 +2,7 @@ import './HomeQuestionSection.scss';
 
 import { useTranslation } from 'react-i18next';
 
-import { SvgWrapper } from '@/components';
+import { Icon } from '@/components';
 
 const HomeQuestionSection = () => {
   const { t } = useTranslation();
@@ -17,7 +17,7 @@ const HomeQuestionSection = () => {
         </h2>
         <div className="home-question-section__content">
           <div className="home-question-section__content-item">
-            <SvgWrapper
+            <Icon
               iconClass="home-question-section__arrow-right-icon"
               height="24"
               width="24"
@@ -29,7 +29,7 @@ const HomeQuestionSection = () => {
             </p>
           </div>
           <div className="home-question-section__content-item">
-            <SvgWrapper
+            <Icon
               iconClass="home-question-section__arrow-right-icon"
               height="24"
               width="24"

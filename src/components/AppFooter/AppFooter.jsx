@@ -2,7 +2,7 @@ import './AppFooter.scss';
 
 import { useTranslation } from 'react-i18next';
 
-import { SvgWrapper } from '@/components';
+import { Icon } from '@/components';
 
 const AppFooter = () => {
   const { t } = useTranslation();
@@ -12,7 +12,7 @@ const AppFooter = () => {
         <span>{t('footer.date')}</span>
       </div>
       <button className="app-footer__button">
-        <SvgWrapper
+        <Icon
           iconClass="app-footer__button-icon"
           height="24"
           width="24"

@@ -2,7 +2,7 @@ import './HomeBanner.scss';
 
 import { useTranslation } from 'react-i18next';
 
-import { SvgWrapper } from '@/components';
+import { Icon } from '@/components';
 
 const HomeBanner = () => {
   const { t } = useTranslation();
@@ -10,7 +10,7 @@ const HomeBanner = () => {
     <div className="home-banner container">
       <div className="home-banner__wrapper">
         <div className="home-banner__icon">
-          <SvgWrapper
+          <Icon
             iconClass="app-footer__button-icon"
             height="40"
             width="40"

@@ -2,7 +2,7 @@ import './HomeHeroInstallSection.scss';
 
 import { useTranslation } from 'react-i18next';
 
-import { SvgWrapper } from '@/components';
+import { Icon } from '@/components';
 
 const HomeHeroInstallSection = () => {
   const { t } = useTranslation();
@@ -22,13 +22,13 @@ const HomeHeroInstallSection = () => {
             <div className="home-hero-install-section__header-icon">
               <div className="home-hero-install-section__icon-wrapper">
                 <div className="home-hero-install-section__button-icon">
-                  <SvgWrapper
+                  <Icon
                     iconClass="home-hero-install-section__button-svg"
                     idIcon="icon-hero-install-section"
                   />
                 </div>
                 <div className="home-hero-install-section__button-icon-metamask">
-                  <SvgWrapper
+                  <Icon
                     iconClass="home-hero-install-section__button-svg-metamask"
                     idIcon="icon-logo-metamask"
                   />
@@ -82,13 +82,13 @@ const HomeHeroInstallSection = () => {
         <div className="home-hero-install-section__modal-one">
           <div className="home-hero-install-section__modal-one-icon-wrapper">
             <div className="home-hero-install-section__modal-one-icon">
-              <SvgWrapper
+              <Icon
                 iconClass="home-hero-install-section__modal-one-svg"
                 idIcon="icon-polygon"
               />
             </div>
             <div className="home-hero-install-section__modal-one-icon-halborn-wrapper">
-              <SvgWrapper
+              <Icon
                 iconClass="home-hero-install-section__modal-one-icon-halborn"
                 idIcon="icon-halborn"
               />
@@ -100,7 +100,7 @@ const HomeHeroInstallSection = () => {
         </div>
         <div className="home-hero-install-section__modal-two">
           <div className="home-hero-install-section__modal-two-header">
-            <SvgWrapper
+            <Icon
               iconClass="home-hero-install-section__modal-two-header-icon"
               idIcon="icon-polygon-badge"
             />

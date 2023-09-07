@@ -2,7 +2,7 @@ import './HomeTilesSection.scss';
 
 import { useTranslation } from 'react-i18next';
 
-import { SvgWrapper } from '@/components';
+import { Icon } from '@/components';
 
 const HomeTilesSection = () => {
   const { t } = useTranslation();
@@ -33,7 +33,7 @@ const HomeTilesSection = () => {
                           {t('home-tiles-section.proof-of-age-subtitle')}
                         </span>
                       </div>
-                      <SvgWrapper
+                      <Icon
                         iconClass="home-tiles-section__proof-of-age-icon"
                         height="24"
                         width="24"
@@ -73,7 +73,7 @@ const HomeTilesSection = () => {
                 </div>
                 <div className="home-tiles-section__tile-protect-footer">
                   <div className="home-tiles-section__tile-protect-dapp">
-                    <SvgWrapper
+                    <Icon
                       iconClass="home-tiles-section__dapp-icon"
                       height="27"
                       width="27"
@@ -118,13 +118,13 @@ const HomeTilesSection = () => {
             <div className="home-tiles-section__tile-content home-tiles-section__tile-decor__wrapper">
               <div className="home-tiles-section__tile-decor-1">
                 <div className="home-tiles-section__tile-avalanche-icon-wrapper">
-                  <SvgWrapper
+                  <Icon
                     iconClass="home-tiles-section__tile-avalanche-icon"
                     idIcon="icon-avalanche"
                   />
                 </div>
                 <div className="home-tiles-section__tile-ether-icon-wrapper">
-                  <SvgWrapper
+                  <Icon
                     iconClass="home-tiles-section__tile-ether-icon"
                     idIcon="icon-ether"
                   />
@@ -137,13 +137,13 @@ const HomeTilesSection = () => {
               </div>
               <div className="home-tiles-section__tile-decor-3">
                 <div className="home-tiles-section__tile-binance-icon-wrapper">
-                  <SvgWrapper
+                  <Icon
                     iconClass="home-tiles-section__tile-binance-icon"
                     idIcon="icon-binance"
                   />
                 </div>
                 <div className="home-tiles-section__tile-polygon-icon-wrapper">
-                  <SvgWrapper
+                  <Icon
                     iconClass="home-tiles-section__tile-polygon-icon"
                     idIcon="icon-polygon-small"
                   />
@@ -190,7 +190,7 @@ const HomeTilesSection = () => {
                     <div className="home-tiles-section__tile-subtitle-skeleton"></div>
                   </div>
                 </div>
-                <SvgWrapper
+                <Icon
                   iconClass="home-tiles-section__tile-button-icon"
                   idIcon="icon-more-light"
                   height="24"
@@ -215,34 +215,34 @@ const HomeTilesSection = () => {
                   <div className="home-tiles-section__tile-dashboard-toolbar-dot"></div>
                   <div className="home-tiles-section__tile-dashboard-toolbar-dot"></div>
                   <div className="home-tiles-section__tile-dashboard-toolbar-dot"></div>
-                  <SvgWrapper
+                  <Icon
                     iconClass="home-tiles-section__tile-toolbar-icon"
                     idIcon="icon-toolbar"
                     height="14"
                     width="14"
                   />
-                  <SvgWrapper
+                  <Icon
                     iconClass="home-tiles-section__tile-arrow-left-icon"
                     idIcon="icon-arrow"
                     height="14"
                     width="14"
                     color="rgba(45, 48, 57, 0.6)"
                   />
-                  <SvgWrapper
+                  <Icon
                     iconClass="home-tiles-section__tile-arrow-right-icon"
                     idIcon="icon-arrow"
                     height="14"
                     width="14"
                     color="rgba(45, 48, 57, 0.2)"
                   />
-                  <SvgWrapper
+                  <Icon
                     iconClass="home-tiles-section__tile-reload-icon"
                     idIcon="icon-reload"
                     height="14"
                     width="14"
                   />
                   <div className="home-tiles-section__tile-dashboard-field">
-                    <SvgWrapper
+                    <Icon
                       iconClass="home-tiles-section__tile-lock-icon"
                       idIcon="icon-lock"
                       height="10"

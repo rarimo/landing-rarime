@@ -4,7 +4,7 @@ import { resources } from '@static/template-data/resources';
 import cn from 'classnames';
 import { useTranslation } from 'react-i18next';
 
-import { SvgWrapper } from '@/components';
+import { Icon } from '@/components';
 
 const HomeIdentitySection = () => {
   const { t } = useTranslation();
@@ -95,7 +95,7 @@ const HomeIdentitySection = () => {
                   </div>
                 </div>
                 <div className="home-identity-section__resource-button">
-                  <SvgWrapper
+                  <Icon
                     iconClass="home-identity-section__resource-button-icon"
                     height="24"
                     width="25"
@@ -113,7 +113,7 @@ const HomeIdentitySection = () => {
                 </div>
               </div>
               <div className="home-identity-section__resource-button">
-                <SvgWrapper
+                <Icon
                   iconClass="home-identity-section__resource-button-icon"
                   height="24"
                   width="25"

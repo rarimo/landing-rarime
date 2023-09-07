@@ -2,7 +2,7 @@ import './HomeHeroSection.scss';
 
 import { useTranslation } from 'react-i18next';
 
-import { HomeHeroInstallSection, SvgWrapper } from '@/components';
+import { HomeHeroInstallSection, Icon } from '@/components';
 import { COMPONENT_NODE_IDS } from '@/const';
 
 const HomeHeroSection = () => {
@@ -33,7 +33,7 @@ const HomeHeroSection = () => {
             </h5>
 
             <button className="home-hero-section__install-button">
-              <SvgWrapper
+              <Icon
                 iconClass="home-hero-section__install-button-icon"
                 height="24"
                 width="24"
