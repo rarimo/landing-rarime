@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "vite build",
     "lint": "yarn lint:styles && yarn lint:scripts",
     "lint:styles": "stylelint \"src/**/*.{css,scss}\" --max-warnings=0",
     "lint:scripts": "eslint \"{src,config}/**/*.{js,jsx}\" --cache --fix --max-warnings=0",

@@ -68,9 +68,9 @@ Build and Publish Tag:
 Deploy to Staging:
   image: dtzar/helm-kubectl:latest
   stage: deploy
-  only:
-    refs:
-      - development
+  # only:
+  #   refs:
+  #     - development
   script:
     - mkdir ~/.kube/
     - echo ${kuberconfig} | base64 -d > config
