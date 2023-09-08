@@ -19,6 +19,10 @@
   --col-primary-black: #{$col-black-primary};
   --col-primary-black-rgb: #{$col-black-primary-rgb};
   --col-green-primary: #{$col-green-primary};
+  --col-green-hover: #{$col-green-hover};
+  --col-green-hover-rgb: #{$col-green-hover-rgb};
+  --col-green-press: #{$col-green-press};
+  --col-green-press-rgb: #{$col-green-press-rgb};
   --col-green-primary-rgb: #{$col-green-primary-rgb};
   --col-blue-primary: #{$col-blue-primary};
   --col-blue-primary-rgb: #{$col-blue-primary-rgb};
@@ -36,7 +40,7 @@
 
   // Text variables
   /* stylelint-disable max-line-length */
-  --primary-font-family: 'Euclid Circular B;', -apple-system, 'BlinkMacSystemFont',
+  --primary-font-family: 'Euclid Circular B', -apple-system, 'BlinkMacSystemFont',
     'Segoe UI', 'Roboto', 'Oxygen-Sans', 'Ubuntu', 'Cantarell', 'Helvetica Neue',
     sans-serif;
   --secondary-font-family: 'Oswald', -apple-system, 'BlinkMacSystemFont',
