@@ -6,6 +6,13 @@
   flex-direction: column;
   justify-content: space-between;
   position: relative;
+  min-height: to-rem(378);
+  max-width: to-rem(378);
+
+  @include respond-to(laptopL) {
+    margin-right: 5%;
+  }
+
   @include respond-to(medium) {
     position: absolute;
     top: to-rem(120);
@@ -13,7 +20,9 @@
     padding: to-rem(8) to-rem(8) to-rem(40);
     max-width: 30%;
     left: 35%;
+    min-height: unset;
   }
+
   @include respond-to(small) {
     max-width: 55%;
     left: 22.5%;
@@ -141,7 +150,7 @@
   justify-content: center;
   align-content: space-evenly;
   font-size: to-rem(13);
-  padding: to-rem(15) 0 0;
+  padding: to-rem(75) 0 0;
   border-top: 1px solid var(--col-secondary-border);
 }
 
@@ -160,7 +169,7 @@
   padding: to-rem(12) to-rem(58);
   border-radius: to-rem(20);
   font-weight: 600;
-  color: var(--col-blue-primary);
+  color: #545960;
   border: 1px solid #545960;
   margin-right: to-rem(16);
   @include respond-to(medium) {

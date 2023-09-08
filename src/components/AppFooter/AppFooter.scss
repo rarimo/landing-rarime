@@ -13,9 +13,16 @@
   border: 1px solid var(--col-green-primary);
   border-radius: to-rem(100);
   color: var(--col-green-primary);
-  pointer-events: none;
   @include respond-to(medium) {
     padding: to-rem(6) to-rem(12);
+  }
+  &:hover{
+    color: var(--col-green-hover) ;
+    border: 1px solid var(--col-green-hover);
+  }
+  &:active{
+    color: var(--col-green-press);
+    border: 1px solid var(--col-green-press);
   }
 }
 
