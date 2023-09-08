@@ -126,4 +126,14 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  &:hover{
+    color: var(--col-total-white);
+    background: var(--col-green-hover);
+    border: 1px solid var(--col-green-hover);
+  }
+  &:active{
+    background: var(--col-green-press);
+    border: 1px solid var(--col-green-press);
+  }
 }
