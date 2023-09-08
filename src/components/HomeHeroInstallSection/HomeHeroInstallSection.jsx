@@ -47,7 +47,7 @@ const HomeHeroInstallSection = () => {
           <div className="home-hero-install-section__content">
             <div className="home-hero-install-section__content-card">
               <img
-                src="static/img/removeRedEye.png"
+                src="/img/removeRedEye.png"
                 width="24"
                 height="23"
                 alt="icon eye"
@@ -59,7 +59,7 @@ const HomeHeroInstallSection = () => {
             </div>
             <div className="home-hero-install-section__content-card">
               <img
-                src="static/img/bolt.png"
+                src="/img/bolt.png"
                 width="24"
                 height="23"
                 alt="icon bolt"
