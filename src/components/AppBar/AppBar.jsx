@@ -16,8 +16,6 @@ const AppBar = () => {
           <Link className="app-bar__logo" to={ROUTES_PATHS.home}>
             <Icon
               iconClass="app-bar__logo-img"
-              height="48"
-              width="182"
               idIcon="icon-app-logo"
             />
           </Link>

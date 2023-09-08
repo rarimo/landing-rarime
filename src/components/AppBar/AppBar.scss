@@ -56,6 +56,15 @@
   align-items: center;
 }
 
+.app-bar__logo-img{
+  height: to-rem(48);
+  width: to-rem(182);
+  @include respond-to(medium) {
+    height: to-rem(32);
+    width: to-rem(118);
+  }
+}
+
 .app-bar__logo-title {
   color: var(--col-total-white);
   padding-left: to-rem(14);
