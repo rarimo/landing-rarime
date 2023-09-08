@@ -115,6 +115,8 @@
   font-weight: 400;
   color: rgba(var(--col-total-white-rgb), 0.6);
   margin-top: to-rem(16);
+  text-transform: capitalize;
+
   @include respond-to(medium) {
     font-size: to-rem(11);
     text-align: center;

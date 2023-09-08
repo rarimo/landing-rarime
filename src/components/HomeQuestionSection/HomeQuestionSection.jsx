@@ -3,6 +3,7 @@ import './HomeQuestionSection.scss';
 import { useTranslation } from 'react-i18next';
 
 import { Icon } from '@/components';
+import { CONFIG } from '@/config';
 
 const HomeQuestionSection = () => {
   const { t } = useTranslation();
@@ -16,7 +17,12 @@ const HomeQuestionSection = () => {
           </span>
         </h2>
         <div className="home-question-section__content">
-          <button className="home-question-section__content-item">
+          <a
+            href={CONFIG.discordLink}
+            target="_blank"
+            className="home-question-section__content-item"
+            rel="noreferrer"
+          >
             <Icon
               iconClass="home-question-section__arrow-right-icon"
               height="24"
@@ -26,8 +32,13 @@ const HomeQuestionSection = () => {
             <p className="home-question-section__content-item-text">
               {t('home-question-section.item-1-text')}
             </p>
-          </button>
-          <button className="home-question-section__content-item">
+          </a>
+          <a
+            href={CONFIG.discordLink}
+            target="_blank"
+            className="home-question-section__content-item"
+            rel="noreferrer"
+          >
             <Icon
               iconClass="home-question-section__arrow-right-icon"
               height="24"
@@ -37,7 +48,7 @@ const HomeQuestionSection = () => {
             <p className="home-question-section__content-item-text">
               {t('home-question-section.item-2-text')}
             </p>
-          </button>
+          </a>
         </div>
       </div>
     </div>
