@@ -84,6 +84,7 @@ const HomeHeroInstallSection = () => {
           href={CONFIG.linkToHalborn}
           target="_blank"
           className="home-hero-install-section__modal-one"
+          rel="noreferrer"
         >
           <div className="home-hero-install-section__modal-one-icon-wrapper">
             <div className="home-hero-install-section__modal-one-icon">

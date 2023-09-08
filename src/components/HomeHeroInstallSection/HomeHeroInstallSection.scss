@@ -20,6 +20,7 @@
     padding: to-rem(8) to-rem(8) to-rem(40);
     max-width: 30%;
     left: 35%;
+    min-height: unset;
   }
 
   @include respond-to(small) {
