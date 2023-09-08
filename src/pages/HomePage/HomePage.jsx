@@ -5,7 +5,7 @@ import {
   HomeIdentitySection,
   HomeQuestionSection,
   HomeTilesSection,
-} from '@/components';
+} from '@/components'
 
 const HomePage = () => {
   return (
@@ -17,7 +17,7 @@ const HomePage = () => {
       <HomeIdentityIssuersSection />
       <HomeQuestionSection />
     </>
-  );
-};
+  )
+}
 
-export default HomePage;
+export default HomePage
