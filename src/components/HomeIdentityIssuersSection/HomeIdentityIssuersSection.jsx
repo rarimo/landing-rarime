@@ -19,7 +19,7 @@ const HomeIdentityIssuersSection = () => {
           <div className="home-identity-issuers__list-item">
             <div className="home-identity-issuers__list-item-img-wrapper home-identity-issuers__civic-icon">
               <img
-                src="/static/img/civic.png"
+                src="/img/civic.png"
                 width="33"
                 height="33"
                 alt="icon civic"
@@ -33,7 +33,7 @@ const HomeIdentityIssuersSection = () => {
           <div className="home-identity-issuers__list-item">
             <div className="home-identity-issuers__list-item-img-wrapper">
               <img
-                src="/static/img/world-coin.png"
+                src="/img/world-coin.png"
                 width="28"
                 height="27"
                 alt="Worldcoin icon"
@@ -47,7 +47,7 @@ const HomeIdentityIssuersSection = () => {
           <div className="home-identity-issuers__list-item">
             <div className="home-identity-issuers__list-item-img-wrapper home-identity-issuers__unstoppable-domains-icon">
               <img
-                src="/static/img/unstoppable-domains.png"
+                src="/img/unstoppable-domains.png"
                 width="37"
                 height="36"
                 alt="Unstoppable domains icon"
@@ -61,7 +61,7 @@ const HomeIdentityIssuersSection = () => {
           <div className="home-identity-issuers__list-item">
             <div className="home-identity-issuers__list-item-img-wrapper home-identity-issuers__gitcoin-icon">
               <img
-                src="/static/img/gitcoin.png"
+                src="/img/gitcoin.png"
                 width="20"
                 height="21"
                 alt="Gitcoin icon"

@@ -29,7 +29,7 @@
   "home-banner": {
     "text-1": "to preserve full user control, the Private Key is",
     "text-bold": " never accessed by The Rarime snap.",
-    "text-2": "Even if the wallet is unlocked or compromised, the PK cannot be stolen."
+    "text-2": " Even if the wallet is unlocked or compromised, the PK cannot be stolen."
   },
   "home-identity-section": {
     "title-1": "Add any identity credential",

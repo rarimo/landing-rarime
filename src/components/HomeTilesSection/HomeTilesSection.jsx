@@ -65,7 +65,7 @@ const HomeTilesSection = () => {
                   </div>
                   <div className="home-tiles-section__tile-lock-card">
                     <img
-                      src="/static/img/lock-img.png"
+                      src="/img/lock-img.png"
                       alt="Lock img"
                       className="home-tiles-section__tile-lock-card-img"
                     />
@@ -88,7 +88,7 @@ const HomeTilesSection = () => {
                       {t('home-tiles-section.dapp-arrow-text-1')}
                       <img
                         className="home-tiles-section__tile-protect-vector"
-                        src="/static/img/vector-dapp-1.webp"
+                        src="/img/vector-dapp-1.webp"
                         alt="vector"
                       />
                     </div>
@@ -96,7 +96,7 @@ const HomeTilesSection = () => {
                       {t('home-tiles-section.dapp-arrow-text-2')}
                       <img
                         className="home-tiles-section__tile-protect-vector-2"
-                        src="/static/img/vector-dapp-2.webp"
+                        src="/img/vector-dapp-2.webp"
                         alt="vector"
                       />
                     </div>
@@ -166,7 +166,7 @@ const HomeTilesSection = () => {
             <div className="home-tiles-section__tile-content">
               <div className="home-tiles-section__tile-card">
                 <div className="home-tiles-section__tile-user-img-wrapper">
-                  <img src="/static/img/user-img.png" alt="User Icon" />
+                  <img src="/img/user-img.png" alt="User Icon" />
                 </div>
                 <p className="home-tiles-section__tile-card-name">
                   {t('home-tiles-section.tile-card-name')}
@@ -177,7 +177,7 @@ const HomeTilesSection = () => {
                 <div className="home-tiles-section__tile-card-img-key-wrapper">
                   <img
                     className="home-tiles-section__tile-card-img-key"
-                    src="/static/img/key.png"
+                    src="/img/key.png"
                     alt="key"
                   />
                 </div>
