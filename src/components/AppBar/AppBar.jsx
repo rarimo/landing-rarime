@@ -16,11 +16,10 @@ const AppBar = () => {
           <Link className="app-bar__logo" to={ROUTES_PATHS.home}>
             <Icon
               iconClass="app-bar__logo-img"
-              height="47"
-              width="47"
+              height="48"
+              width="182"
               idIcon="icon-app-logo"
             />
-            <span className="app-bar__logo-title">{t('app.title')}</span>
           </Link>
           <a
             className="app-bar__button"
