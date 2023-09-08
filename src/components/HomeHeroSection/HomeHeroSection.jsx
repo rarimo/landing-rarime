@@ -3,6 +3,7 @@ import './HomeHeroSection.scss';
 import { useTranslation } from 'react-i18next';
 
 import { HomeHeroInstallSection, Icon } from '@/components';
+import { CONFIG } from '@/config';
 import { COMPONENT_NODE_IDS } from '@/const';
 
 const HomeHeroSection = () => {
@@ -32,16 +33,21 @@ const HomeHeroSection = () => {
               {t('home-hero-section.subtitle')}
             </h5>
 
-            <button className="home-hero-section__install-button">
-              <Icon
-                iconClass="home-hero-section__install-button-icon"
-                height="24"
-                width="24"
-                idIcon="icon-hero-section-button"
-              />
-              <span className="home-hero-section__install-button-text">
-                {t('header.button')}
-              </span>
+            <button>
+              <a
+                className="home-hero-section__install-button"
+                href={CONFIG.linkToInstallSnap}
+              >
+                <Icon
+                  iconClass="home-hero-section__install-button-icon"
+                  height="24"
+                  width="24"
+                  idIcon="icon-hero-section-button"
+                />
+                <span className="home-hero-section__install-button-text">
+                  {t('header.button')}
+                </span>
+              </a>
             </button>
             <p className="home-hero-section__description" data-aos="fade-up">
               {t('home-hero-section.description')}
