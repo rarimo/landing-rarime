@@ -46,6 +46,7 @@ Build and Publish:
   only:
     refs:
       - development
+      - main
   <<: *before_script_templ
   script:
     - . $(werf ci-env gitlab --as-file)
@@ -58,7 +59,6 @@ Build and Publish Tag:
   only:
     refs:
       - tags
-      - main
   <<: *before_script_templ
   script:
     - . $(werf ci-env gitlab --as-file)
