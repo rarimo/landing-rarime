@@ -1,5 +1,6 @@
 import {
   HomeBanner,
+  HomeFAQSection,
   HomeHeroSection,
   HomeIdentityIssuersSection,
   HomeIdentitySection,
@@ -14,6 +15,7 @@ const HomePage = () => {
       <HomeBanner />
       <HomeIdentitySection />
       <HomeTilesSection />
+      <HomeFAQSection />
       <HomeIdentityIssuersSection />
       <HomeQuestionSection />
     </>

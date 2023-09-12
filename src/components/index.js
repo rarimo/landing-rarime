@@ -1,6 +1,8 @@
+export { default as AppAccordion } from './AppAccordion/AppAccordion';
 export { default as AppBar } from './AppBar/AppBar';
 export { default as AppFooter } from './AppFooter/AppFooter';
 export { default as HomeBanner } from './HomeBanner/HomeBanner';
+export { default as HomeFAQSection } from './HomeFAQSection/HomeFAQSection';
 export { default as HomeHeroInstallSection } from './HomeHeroInstallSection/HomeHeroInstallSection';
 export { default as HomeHeroSection } from './HomeHeroSection/HomeHeroSection';
 export { default as HomeIdentityIssuersSection } from './HomeIdentityIssuersSection/HomeIdentityIssuersSection';
