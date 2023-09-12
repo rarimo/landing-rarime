@@ -1,5 +1,7 @@
 import './AppBar.scss';
 
+import { motion, useMotionValueEvent, useScroll } from 'framer-motion';
+import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 
@@ -9,8 +11,25 @@ import { ROUTES_PATHS } from '@/const';
 
 const AppBar = () => {
   const { t } = useTranslation();
+
+  const [ isShown, setIsShown ] = useState(true)
+  const { scrollY } = useScroll()
+
+  useMotionValueEvent(scrollY, 'change', latest => {
+    const previous = scrollY.getPrevious()
+    setIsShown(latest < previous || latest < 150)
+  })
+
   return (
-    <header className="app-bar">
+    <motion.header
+      className="app-bar"
+      variants={{
+        visible: { y: 0, display: 'block' },
+        hidden: { y: '-100%', transitionEnd: { display: 'none' } },
+      }}
+      animate={isShown ? 'visible' : 'hidden'}
+      transition={{ duration: 0.5, ease: 'easeInOut' }}
+    >
       <div className="app-bar__container">
         <div className="app-bar__content container">
           <Link className="app-bar__logo" to={ROUTES_PATHS.home}>
@@ -35,7 +54,7 @@ const AppBar = () => {
           </a>
         </div>
       </div>
-    </header>
+    </motion.header>
   );
 };
 
