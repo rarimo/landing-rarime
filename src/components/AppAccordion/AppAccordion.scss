@@ -1,0 +1,59 @@
+$z-index-body: 1;
+
+.app-accordion {
+  padding: to-rem(24);
+}
+
+.app-accordion__header {
+  font-family: var(--primary-font-family);
+  font-size: to-rem(20);
+  font-weight: 500;
+  line-height: to-rem(26);
+  letter-spacing: 0;
+}
+
+.app-accordion__header-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  text-align: start;
+  width: 100%;
+
+  .app-accordion--expanded &,
+  &:not([disabled]):hover {
+    color: var(--col-green-primary);
+  }
+}
+
+.app-accordion__body {
+  position: relative;
+  z-index: $z-index-body;
+  font-family: var(--primary-font-family);
+  font-size: to-rem(16);
+  font-weight: 400;
+  line-height: to-rem(22);
+  letter-spacing: 0;
+  color: rgba(var(--col-primary-black-rgb), 60%);
+  padding-top: to-rem(16)
+}
+
+.app-accordion__icon {
+  display: flex;
+  height: to-rem(24);
+  width: to-rem(24);
+  transition: var(--app-transition-duration-interactive) ease;
+
+  .app-accordion--expanded & {
+    transform: rotate(180deg);
+  }
+
+  .app-accordion--expanded &,
+  .app-accordion__header-btn:not([disabled]):hover & {
+    color: inherit;
+  }
+}

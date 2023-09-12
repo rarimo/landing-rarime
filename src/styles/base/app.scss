@@ -41,6 +41,8 @@ button {
   background-color: transparent;
   color: var(--primary-btn-color);
   outline: transparent;
+  cursor: pointer;
+  transition: var(--app-transition-duration-interactive) ease;
 
   /* Corrects font smoothing for webkit */
   -webkit-font-smoothing: inherit;

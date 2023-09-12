@@ -18,6 +18,8 @@
   --col-white-min-alpha: rgba(#{$col-total-white-rgb}, 10%);
   --col-primary-black: #{$col-black-primary};
   --col-primary-black-rgb: #{$col-black-primary-rgb};
+  --col-gray-primary: #{$col-gray-primary};
+  --col-gray-primary-rgb: #{$col-gray-primary-rgb};
   --col-green-primary: #{$col-green-primary};
   --col-green-hover: #{$col-green-hover};
   --col-green-hover-rgb: #{$col-green-hover-rgb};
@@ -120,4 +122,7 @@
 
   // App footer
   --app-footer-logo-color: var(--primary-title-color);
+
+  // Transitions
+  --app-transition-duration-interactive: 0.2s;
 }
