@@ -1,20 +1,20 @@
 {
   "app": {
-    "title": "rariME"
+    "title": "rariMe"
   },
   "header": {
-    "button": "Install rarime snap"
+    "button": "Install RariMe snap"
   },
   "home-hero-section": {
-    "title-part-1": "Use",
+    "title-part-1": "The",
     "title-part-2": "One",
     "title-part-2-animation": "Same",
 
     "title-part-2-after": "|",
     "title-part-3": "Wallet",
     "title-part-4": "For your Social identity",
-    "subtitle": "Rarime lives right In your Metamask. It’s where you securely keep, manage your credentials, attestations, social identity, licenses, event tickets, and more — all in one place",
-    "description": "*The Rarime snap guarantees user control by never accessing the Private Key",
+    "subtitle": "RariMe lives right In your MetaMask. It’s where you securely keep, manage your credentials, attestations, social identity, licenses, event tickets, and more — all in one place",
+    "description": "*The RariMe snap guarantees user control by never accessing the Private Key",
     "step": "1 of 2",
     "back": "Back",
     "install-content-title": "Install Snap",
@@ -22,7 +22,7 @@
     "btn-cancel": "Cancel",
     "btn-install": "Install",
     "card-text-1": "Add social identity and manage directly from the wallet",
-    "card-text-2": "Connect with Rarime snap",
+    "card-text-2": "Connect with RariMe snap",
     "modal-one-text": "Audited by Halborn",
     "modal-two-footer-title": "Proof of humanity",
     "modal-two-footer-text": "SSI Credential",
@@ -30,7 +30,7 @@
   },
   "home-banner": {
     "text-1": "to preserve full user control, the Private Key is",
-    "text-bold": " never accessed by The Rarime snap.",
+    "text-bold": " never accessed by The RariMe snap.",
     "text-2": "Even if the wallet is unlocked or compromised, the PK cannot be stolen."
   },
   "home-faq-section": {
@@ -136,6 +136,6 @@
   },
   "footer": {
     "date": "© 2023",
-    "button": "Install rarime snap"
+    "button": "Install RariMe snap"
   }
 }
