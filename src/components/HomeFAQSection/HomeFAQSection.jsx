@@ -47,7 +47,7 @@ const HomeFAQSection = () => {
   ]
 
   return (
-    <div className="home-faq-section container">
+    <div className="home-faq-section container" data-aos="fade-up">
       <div className="home-faq-section__wrp">
         <h2 className="home-faq-section__title">
           <span className="home-faq-section__title">
