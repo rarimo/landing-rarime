@@ -10,10 +10,24 @@ import { COMPONENT_NODE_IDS } from '@/const';
 
 const HomeHeroSection = () => {
   const { t } = useTranslation();
-
+  const userAgent = navigator.userAgent.toLowerCase();
+  const isChrome = /chrome/.test(userAgent);
   const wordsToShow = useMemo(() => ['One', 'Same'], []);
 
   useEffect(() => {
+    if (!isChrome) {
+      timeline([
+        [
+          '.home-hero-section__title-part-2-word-first',
+          {
+            display: 'inline',
+          },
+        ],
+      ]);
+
+      return;
+    }
+
     timeline(
       [
         [
@@ -113,7 +127,11 @@ const HomeHeroSection = () => {
   }, []);
 
   return (
-    <section id={COMPONENT_NODE_IDS.heroSection} className="home-hero-section" data-aos="fade-up">
+    <section
+      id={COMPONENT_NODE_IDS.heroSection}
+      className="home-hero-section"
+      data-aos="fade-up"
+    >
       <div className="home-hero-section__content container">
         <div className="home-hero-section__hero-wrapper">
           <div className="home-hero-section__text-wrapper">
