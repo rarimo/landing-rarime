@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 const HomeIdentityIssuersSection = () => {
   const { t } = useTranslation();
   return (
-    <div className="home-identity-issuers container">
+    <div className="home-identity-issuers container" data-aos="fade-up">
       <div className="home-identity-issuers__wrapper">
         <h2 className="home-identity-issuers__title">
           <span className="home-identity-issuers__title-1">

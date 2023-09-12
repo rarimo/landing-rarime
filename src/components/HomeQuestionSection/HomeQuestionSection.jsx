@@ -8,7 +8,7 @@ import { CONFIG } from '@/config';
 const HomeQuestionSection = () => {
   const { t } = useTranslation();
   return (
-    <div className="home-question-section container">
+    <div className="home-question-section container" data-aos="fade-up">
       <div className="home-question-section_wrapper">
         <h2 className="home-question-section__title">
           <span>{t('home-question-section.title-1')}</span>

@@ -7,7 +7,7 @@ import { Icon } from '@/components';
 const HomeBanner = () => {
   const { t } = useTranslation();
   return (
-    <div className="home-banner container">
+    <div className="home-banner container" data-aos="fade-up">
       <div className="home-banner__wrapper">
         <div className="home-banner__icon">
           <Icon

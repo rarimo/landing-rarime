@@ -17,6 +17,9 @@
 
 .home-tiles-section__footer {
   margin-top: var(--margin-top-default);
+  @include respond-to(medium) {
+    margin-top: 0;
+  }
 }
 
 .home-tiles-section__tile {
