@@ -1,1 +1,1 @@
-# RariMe Landing
+# Rarime Landing
