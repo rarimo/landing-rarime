@@ -2,16 +2,14 @@ import './HomeFAQSection.scss';
 
 import { useTranslation } from 'react-i18next';
 
+import { CONFIG } from '@/config';
+
 import AppAccordion from '../AppAccordion/AppAccordion';
 
 const HomeFAQSection = () => {
   const { t } = useTranslation();
 
   const FAQ_LIST = [
-    {
-      question: t('home-faq-section.how-install.question'),
-      answer: t('home-faq-section.how-install.answer'),
-    },
     {
       question: t('home-faq-section.what-does-do.question'),
       answer: t('home-faq-section.what-does-do.answer'),
@@ -27,6 +25,8 @@ const HomeFAQSection = () => {
     {
       question: t('home-faq-section.reach-out-support.question'),
       answer: t('home-faq-section.reach-out-support.answer'),
+      linkText: t('home-faq-section.reach-out-support.linkText'),
+      link: CONFIG.discordLink,
     },
     {
       question: t('home-faq-section.what-can-store.question'),
@@ -37,14 +37,16 @@ const HomeFAQSection = () => {
       answer: t('home-faq-section.what-chains-used-on.answer'),
     },
     {
-      question: t('home-faq-section.how-identity-credentials-available.question'),
+      question: t(
+        'home-faq-section.how-identity-credentials-available.question',
+      ),
       answer: t('home-faq-section.how-identity-credentials-available.answer'),
     },
     {
       question: t('home-faq-section.what-apps-can-use.question'),
       answer: t('home-faq-section.what-apps-can-use.answer'),
     },
-  ]
+  ];
 
   return (
     <div className="home-faq-section container" data-aos="fade-up">
@@ -59,11 +61,16 @@ const HomeFAQSection = () => {
         </h2>
         <div className="home-faq-section__content">
           <ul>
-            {FAQ_LIST.map(FAQ =>
+            {FAQ_LIST.map(FAQ => (
               <li key={FAQ.question}>
-                <AppAccordion headerText={FAQ.question} contentText={FAQ.answer} />
+                <AppAccordion
+                  headerText={FAQ.question}
+                  contentText={FAQ.answer}
+                  link={FAQ.link}
+                  linkText={FAQ.linkText}
+                />
               </li>
-            )}
+            ))}
           </ul>
         </div>
       </div>

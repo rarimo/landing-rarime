@@ -38,10 +38,6 @@
       "part-1": "RariMe ",
       "part-2": "F.A.Q."
     },
-    "how-install": {
-      "question": "How to install RariMe Snap",
-      "answer": "Click “Instal RariМe” on rarime.com and follow the instructions"
-    },
     "what-does-do": {
       "question": "What does the RariMe Snap do?",
       "answer": "RariMe Snap allows users to store and manage identity credentials through their MetaMask wallet; they can generate credentials, protect their privacy by generating Zero-Knowledge Proofs (ZKPs) of these credentials, and submit these ZKPs to dApps"
@@ -56,7 +52,8 @@
     },
     "reach-out-support": {
       "question": "How do I reach out for snap support?",
-      "answer": "Visit the Rarimo Discord support channel or send an email to igor@rarifylabs.com"
+      "answer": "Visit the Rarimo Discord",
+      "linkText": "support channel"
     },
     "what-can-store": {
       "question": "What credentials can I store in my RariMe Snap Wallet?",
