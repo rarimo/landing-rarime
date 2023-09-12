@@ -113,7 +113,7 @@ const HomeHeroSection = () => {
   }, []);
 
   return (
-    <section id={COMPONENT_NODE_IDS.heroSection} className="home-hero-section">
+    <section id={COMPONENT_NODE_IDS.heroSection} className="home-hero-section" data-aos="fade-up">
       <div className="home-hero-section__content container">
         <div className="home-hero-section__hero-wrapper">
           <div className="home-hero-section__text-wrapper">

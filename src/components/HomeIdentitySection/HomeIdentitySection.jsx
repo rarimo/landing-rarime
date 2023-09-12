@@ -11,13 +11,16 @@ const HomeIdentitySection = () => {
   return (
     <div className="home-identity-section">
       <div className="home-identity-section__wrapper container">
-        <p className="home-identity-section__title-1">
+        <p className="home-identity-section__title-1" data-aos="fade-up">
           {t('home-identity-section.title-1')}
         </p>
-        <p className="home-identity-section__title-2">
+        <p className="home-identity-section__title-2" data-aos="fade-up">
           {t('home-identity-section.title-2')}
         </p>
-        <div className="home-identity-section__content-wrapper">
+        <div
+          className="home-identity-section__content-wrapper"
+          data-aos="fade-up"
+        >
           <div className="home-identity-section__providers">
             <span className="home-identity-section__providers-title">
               {t('home-identity-section.title-content-section')}

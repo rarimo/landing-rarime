@@ -9,7 +9,7 @@ const HomeHeroInstallSection = () => {
   const { t } = useTranslation();
   return (
     <>
-      <div className="home-hero-install-section">
+      <div className="home-hero-install-section" data-aos="fade-up">
         <div className="home-hero-install-section__wrapper">
           <div className="home-hero-install-section__header">
             <div className="home-hero-install-section__header-navigation">

@@ -10,7 +10,7 @@ const HomeTilesSection = () => {
     <div className="home-tiles-section">
       <div className="home-tiles-section__wrapper container">
         <div className="home-tiles-section__header">
-          <div className="home-tiles-section__tile">
+          <div className="home-tiles-section__tile" data-aos="fade-up">
             <h6 className="home-tiles-section__tile-title">
               {t('home-tiles-section.title-1-part-1')}
             </h6>
@@ -105,7 +105,7 @@ const HomeTilesSection = () => {
               </div>
             </div>
           </div>
-          <div className="home-tiles-section__tile">
+          <div className="home-tiles-section__tile" data-aos="fade-up">
             <h6 className="home-tiles-section__tile-title">
               {t('home-tiles-section.title-2-part-1')}
             </h6>
@@ -153,7 +153,7 @@ const HomeTilesSection = () => {
           </div>
         </div>
         <div className="home-tiles-section__footer">
-          <div className="home-tiles-section__tile">
+          <div className="home-tiles-section__tile" data-aos="fade-up">
             <h6 className="home-tiles-section__tile-title">
               {t('home-tiles-section.title-3-part-1')}
             </h6>
@@ -199,7 +199,7 @@ const HomeTilesSection = () => {
               </div>
             </div>
           </div>
-          <div className="home-tiles-section__tile">
+          <div className="home-tiles-section__tile" data-aos="fade-up">
             <h6 className="home-tiles-section__tile-title">
               {t('home-tiles-section.title-4-part-1')}
             </h6>
