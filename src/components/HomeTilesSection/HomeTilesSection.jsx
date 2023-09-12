@@ -10,7 +10,7 @@ const HomeTilesSection = () => {
     <div className="home-tiles-section">
       <div className="home-tiles-section__wrapper container">
         <div className="home-tiles-section__header">
-          <div className="home-tiles-section__tile">
+          <div className="home-tiles-section__tile" data-aos="fade-up">
             <h6 className="home-tiles-section__tile-title">
               {t('home-tiles-section.title-1-part-1')}
             </h6>
@@ -65,7 +65,7 @@ const HomeTilesSection = () => {
                   </div>
                   <div className="home-tiles-section__tile-lock-card">
                     <img
-                      src="/static/img/lock-img.png"
+                      src="/img/lock-img.png"
                       alt="Lock img"
                       className="home-tiles-section__tile-lock-card-img"
                     />
@@ -88,7 +88,7 @@ const HomeTilesSection = () => {
                       {t('home-tiles-section.dapp-arrow-text-1')}
                       <img
                         className="home-tiles-section__tile-protect-vector"
-                        src="/static/img/vector-dapp-1.webp"
+                        src="/img/vector-dapp-1.webp"
                         alt="vector"
                       />
                     </div>
@@ -96,7 +96,7 @@ const HomeTilesSection = () => {
                       {t('home-tiles-section.dapp-arrow-text-2')}
                       <img
                         className="home-tiles-section__tile-protect-vector-2"
-                        src="/static/img/vector-dapp-2.webp"
+                        src="/img/vector-dapp-2.webp"
                         alt="vector"
                       />
                     </div>
@@ -105,7 +105,7 @@ const HomeTilesSection = () => {
               </div>
             </div>
           </div>
-          <div className="home-tiles-section__tile">
+          <div className="home-tiles-section__tile" data-aos="fade-up">
             <h6 className="home-tiles-section__tile-title">
               {t('home-tiles-section.title-2-part-1')}
             </h6>
@@ -153,7 +153,7 @@ const HomeTilesSection = () => {
           </div>
         </div>
         <div className="home-tiles-section__footer">
-          <div className="home-tiles-section__tile">
+          <div className="home-tiles-section__tile" data-aos="fade-up">
             <h6 className="home-tiles-section__tile-title">
               {t('home-tiles-section.title-3-part-1')}
             </h6>
@@ -166,7 +166,7 @@ const HomeTilesSection = () => {
             <div className="home-tiles-section__tile-content">
               <div className="home-tiles-section__tile-card">
                 <div className="home-tiles-section__tile-user-img-wrapper">
-                  <img src="/static/img/user-img.png" alt="User Icon" />
+                  <img src="/img/user-img.png" alt="User Icon" />
                 </div>
                 <p className="home-tiles-section__tile-card-name">
                   {t('home-tiles-section.tile-card-name')}
@@ -177,7 +177,7 @@ const HomeTilesSection = () => {
                 <div className="home-tiles-section__tile-card-img-key-wrapper">
                   <img
                     className="home-tiles-section__tile-card-img-key"
-                    src="/static/img/key.png"
+                    src="/img/key.png"
                     alt="key"
                   />
                 </div>
@@ -199,7 +199,7 @@ const HomeTilesSection = () => {
               </div>
             </div>
           </div>
-          <div className="home-tiles-section__tile">
+          <div className="home-tiles-section__tile" data-aos="fade-up">
             <h6 className="home-tiles-section__tile-title">
               {t('home-tiles-section.title-4-part-1')}
             </h6>

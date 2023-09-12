@@ -3,6 +3,7 @@ import './HomeHeroInstallSection.scss';
 import { useTranslation } from 'react-i18next';
 
 import { Icon } from '@/components';
+import { CONFIG } from '@/config';
 
 const HomeHeroInstallSection = () => {
   const { t } = useTranslation();
@@ -47,7 +48,7 @@ const HomeHeroInstallSection = () => {
           <div className="home-hero-install-section__content">
             <div className="home-hero-install-section__content-card">
               <img
-                src="static/img/removeRedEye.png"
+                src="/img/removeRedEye.png"
                 width="24"
                 height="23"
                 alt="icon eye"
@@ -59,7 +60,7 @@ const HomeHeroInstallSection = () => {
             </div>
             <div className="home-hero-install-section__content-card">
               <img
-                src="static/img/bolt.png"
+                src="/img/bolt.png"
                 width="24"
                 height="23"
                 alt="icon bolt"
@@ -79,7 +80,12 @@ const HomeHeroInstallSection = () => {
             {t('home-hero-section.btn-install')}
           </button>
         </div>
-        <div className="home-hero-install-section__modal-one">
+        <a
+          href={CONFIG.linkToHalborn}
+          target="_blank"
+          className="home-hero-install-section__modal-one"
+          rel="noreferrer"
+        >
           <div className="home-hero-install-section__modal-one-icon-wrapper">
             <div className="home-hero-install-section__modal-one-icon">
               <Icon
@@ -97,7 +103,7 @@ const HomeHeroInstallSection = () => {
           <span className="home-hero-install-section__modal-one-text">
             {t('home-hero-section.modal-one-text')}
           </span>
-        </div>
+        </a>
         <div className="home-hero-install-section__modal-two">
           <div className="home-hero-install-section__modal-two-header">
             <Icon

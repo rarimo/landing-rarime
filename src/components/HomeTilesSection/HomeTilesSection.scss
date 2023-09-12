@@ -17,6 +17,9 @@
 
 .home-tiles-section__footer {
   margin-top: var(--margin-top-default);
+  @include respond-to(medium) {
+    margin-top: 0;
+  }
 }
 
 .home-tiles-section__tile {
@@ -125,6 +128,7 @@
   height: to-rem(14);
   @include respond-to(medium) {
     height: to-rem(7);
+    width: to-rem(77);
   }
 }
 
@@ -215,6 +219,9 @@
   align-items: center;
   padding-left: to-rem(5);
   margin-left: 11vw;
+  @include respond-to(medium) {
+    width: to-rem(84);
+  }
 }
 
 .home-tiles-section__tile-content {

@@ -8,6 +8,8 @@
   "home-hero-section": {
     "title-part-1": "Use",
     "title-part-2": "One",
+    "title-part-2-animation": "Same",
+
     "title-part-2-after": "|",
     "title-part-3": "Wallet",
     "title-part-4": "For your Social identity",
@@ -30,6 +32,48 @@
     "text-1": "to preserve full user control, the Private Key is",
     "text-bold": " never accessed by The Rarime snap.",
     "text-2": "Even if the wallet is unlocked or compromised, the PK cannot be stolen."
+  },
+  "home-faq-section": {
+    "title": {
+      "part-1": "RariMe ",
+      "part-2": "F.A.Q."
+    },
+    "how-install": {
+      "question": "How to install RariMe Snap",
+      "answer": "Click “Instal RariМe” on rarime.com and follow the instructions"
+    },
+    "what-does-do": {
+      "question": "What does the RariMe Snap do?",
+      "answer": "RariMe Snap allows users to store and manage identity credentials through their MetaMask wallet; they can generate credentials, protect their privacy by generating Zero-Knowledge Proofs (ZKPs) of these credentials, and submit these ZKPs to dApps"
+    },
+    "what-does-not-do": {
+      "question": "What does the snap NOT do?",
+      "answer": "RariMe Snap does not have access to users’ private keys or crypto assets"
+    },
+    "how-to-use-features": {
+      "question": "How to use RariMe Snaps’ features",
+      "answer": "RariMe has four key features. It allows users to 1) receive credentials 2) create Zero Knowledge Proofs of their credentials and 3) submit proof to DApps. For each of these steps, users will be automatically prompted by the identity providers and the dApps that have integrated with RariMe."
+    },
+    "reach-out-support": {
+      "question": "How do I reach out for snap support?",
+      "answer": "Visit the Rarimo Discord support channel or send an email to igor@rarifylabs.com"
+    },
+    "what-can-store": {
+      "question": "What credentials can I store in my RariMe Snap Wallet?",
+      "answer": "Any Verifiable Credentials issued by identity providers that use Rarimo Protocol"
+    },
+    "what-chains-used-on": {
+      "question": "What chains can I use RariMe Snap credentials on?",
+      "answer": "Ethereum, Avax, Polygon, and BNB Chain"
+    },
+    "how-identity-credentials-available": {
+      "question": "How can identity providers make their credentials available to RariMe Snap users?",
+      "answer": "Set up a Rarimo credentials issuer module"
+    },
+    "what-apps-can-use": {
+      "question": "What applications can I use RariMe Snap on?",
+      "answer": "Galxe, QuestN, and Zealy via the Rarimo PoH (Proof of human) plug-in"
+    }
   },
   "home-identity-section": {
     "title-1": "Add any identity credential",

@@ -3,11 +3,12 @@ import './HomeQuestionSection.scss';
 import { useTranslation } from 'react-i18next';
 
 import { Icon } from '@/components';
+import { CONFIG } from '@/config';
 
 const HomeQuestionSection = () => {
   const { t } = useTranslation();
   return (
-    <div className="home-question-section container">
+    <div className="home-question-section container" data-aos="fade-up">
       <div className="home-question-section_wrapper">
         <h2 className="home-question-section__title">
           <span>{t('home-question-section.title-1')}</span>
@@ -16,30 +17,38 @@ const HomeQuestionSection = () => {
           </span>
         </h2>
         <div className="home-question-section__content">
-          <div className="home-question-section__content-item">
+          <a
+            href={CONFIG.discordLink}
+            target="_blank"
+            className="home-question-section__content-item"
+            rel="noreferrer"
+          >
             <Icon
               iconClass="home-question-section__arrow-right-icon"
               height="24"
               width="24"
-              color="rgba(45, 48, 57, 0.4)"
               idIcon="icon-arrow"
             />
             <p className="home-question-section__content-item-text">
               {t('home-question-section.item-1-text')}
             </p>
-          </div>
-          <div className="home-question-section__content-item">
+          </a>
+          <a
+            href={CONFIG.discordLink}
+            target="_blank"
+            className="home-question-section__content-item"
+            rel="noreferrer"
+          >
             <Icon
               iconClass="home-question-section__arrow-right-icon"
               height="24"
               width="24"
-              color="rgba(45, 48, 57, 0.4)"
               idIcon="icon-arrow"
             />
             <p className="home-question-section__content-item-text">
               {t('home-question-section.item-2-text')}
             </p>
-          </div>
+          </a>
         </div>
       </div>
     </div>

@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 
 import { Icon } from '@/components';
+import { CONFIG } from '@/config';
 import { ROUTES_PATHS } from '@/const';
 
 const AppBar = () => {
@@ -15,13 +16,15 @@ const AppBar = () => {
           <Link className="app-bar__logo" to={ROUTES_PATHS.home}>
             <Icon
               iconClass="app-bar__logo-img"
-              height="47"
-              width="47"
               idIcon="icon-app-logo"
             />
-            <span className="app-bar__logo-title">{t('app.title')}</span>
           </Link>
-          <button className="app-bar__button">
+          <a
+            className="app-bar__button"
+            href={CONFIG.linkToInstallSnap}
+            target="_blank"
+            rel="noreferrer"
+          >
             <Icon
               iconClass="app-bar__button-icon"
               height="24"
@@ -29,7 +32,7 @@ const AppBar = () => {
               idIcon="icon-header-button"
             />
             <span className="app-bar__button-text">{t('header.button')}</span>
-          </button>
+          </a>
         </div>
       </div>
     </header>

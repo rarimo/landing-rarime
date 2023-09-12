@@ -1,11 +1,12 @@
 import {
   HomeBanner,
+  HomeFAQSection,
   HomeHeroSection,
   HomeIdentityIssuersSection,
   HomeIdentitySection,
   HomeQuestionSection,
   HomeTilesSection,
-} from '@/components';
+} from '@/components'
 
 const HomePage = () => {
   return (
@@ -14,10 +15,11 @@ const HomePage = () => {
       <HomeBanner />
       <HomeIdentitySection />
       <HomeTilesSection />
+      <HomeFAQSection />
       <HomeIdentityIssuersSection />
       <HomeQuestionSection />
     </>
-  );
-};
+  )
+}
 
-export default HomePage;
+export default HomePage
