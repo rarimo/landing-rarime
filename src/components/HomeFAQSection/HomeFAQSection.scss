@@ -7,6 +7,9 @@
   background: var(--col-white-primary);
   border-radius: to-rem(32);
   max-width: to-rem(1400);
+  @include respond-to(medium) {
+    padding: to-rem(60) to-rem(20);
+  }
 }
   
 .home-faq-section__title {
@@ -28,4 +31,7 @@
   padding: to-rem(24);
   background: var(--col-total-white);
   border-radius: to-rem(16);
+  @include respond-to(medium) {
+    padding: 0;
+  }
 }

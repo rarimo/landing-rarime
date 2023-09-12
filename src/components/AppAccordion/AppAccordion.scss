@@ -2,6 +2,9 @@ $z-index-body: 1;
 
 .app-accordion {
   padding: to-rem(24);
+  @include respond-to(medium) {
+    padding: to-rem(20);
+  }
 }
 
 .app-accordion__header {
@@ -10,6 +13,9 @@ $z-index-body: 1;
   font-weight: 500;
   line-height: to-rem(26);
   letter-spacing: 0;
+  @include respond-to(medium) {
+    font-size: to-rem(14);
+  }
 }
 
 .app-accordion__header-btn {
@@ -39,7 +45,10 @@ $z-index-body: 1;
   line-height: to-rem(22);
   letter-spacing: 0;
   color: rgba(var(--col-primary-black-rgb), 60%);
-  padding-top: to-rem(16)
+  padding-top: to-rem(16);
+  @include respond-to(medium) {
+    font-size: to-rem(14);
+  }
 }
 
 .app-accordion__icon {

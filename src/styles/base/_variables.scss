@@ -52,29 +52,22 @@
 
   --p-size: #{to-rem(14)};
   --h1-size: #{to-rem(56)};
-  --h2-size: #{to-rem(32)};
+  --h2-size: #{to-rem(48)};
   --h3-size: #{to-rem(24)};
   --h4-size: #{to-rem(32)};
   --h5-size: #{to-rem(16)};
   --h6-size: #{to-rem(16)};
   --overline-size: #{to-rem(14)};
 
-  @include respond-above(medium) {
-    --p-size: var(--p-size-medium);
-    --h1-size: var(--h1-size-medium);
-    --h2-size: var(--h2-size-medium);
-    --h3-size: var(--h3-size-medium);
-    --h4-size: var(--h4-size-medium);
-  }
 
-  @include respond-above(xlarge) {
+  @include respond-to(medium) {
     --p-size: #{to-rem(14)};
-    --h1-size: #{to-rem(148)};
-    --h2-size: #{to-rem(48)};
-    --h3-size: #{to-rem(40)};
-    --h4-size: #{to-rem(32)};
-    --h5-size: #{to-rem(20)};
-    --h6-size: #{to-rem(18)};
+    --h1-size: #{to-rem(48)};
+    --h2-size: #{to-rem(32)};
+    --h3-size: #{to-rem(20)};
+    --h4-size: #{to-rem(16)};
+    --h5-size: #{to-rem(16)};
+    --h6-size: #{to-rem(16)};
   }
 
   // Base
