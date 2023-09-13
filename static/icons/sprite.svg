@@ -57,32 +57,6 @@
             </g>
         </symbol>
 
-        <symbol id="icon-halborn" fill="none" viewBox="0 0 38 38">
-            <g id="logos" filter="url(#filter0_dd_8427_857)">
-                <rect x="6.46191" y="4.91919" width="24" height="24" rx="12" fill="#D1FD51" shape-rendering="crispEdges"/>
-                <path id="Vector" d="M23.607 12L22.7536 15.8575H14.7764L15.6298 12H13.2367L11 22.1097H13.3932L14.7764 15.8575L16.6396 18.2524H22.2238L21.3702 22.1097H23.7634L26 12H23.607Z" fill="black"/>
-                <rect x="6.96191" y="5.41919" width="23" height="23" rx="11.5" stroke="black" shape-rendering="crispEdges"/>
-            </g>
-            <defs>
-                <filter id="filter0_dd_8427_857" x="0.461914" y="0.919189" width="36" height="36" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                    <feOffset dy="1"/>
-                    <feGaussianBlur stdDeviation="0.5"/>
-                    <feComposite in2="hardAlpha" operator="out"/>
-                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.04 0"/>
-                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_8427_857"/>
-                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                    <feOffset dy="2"/>
-                    <feGaussianBlur stdDeviation="3"/>
-                    <feComposite in2="hardAlpha" operator="out"/>
-                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"/>
-                    <feBlend mode="normal" in2="effect1_dropShadow_8427_857" result="effect2_dropShadow_8427_857"/>
-                    <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_8427_857" result="shape"/>
-                </filter>
-            </defs>
-        </symbol>
-
         <symbol id="icon-polygon-badge" fill="none" viewBox="0 0 38 38">
         <rect x="0.414551" y="0.414551" width="36.8291" height="36.8291" rx="18.4145" fill="#52B69A"/>
         <mask id="mask0_8427_841" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="9" y="9" width="20" height="20">
@@ -193,10 +167,24 @@
         </symbol>
 
         <symbol id="icon-binance" fill="none" viewBox="0 0 62 62">
-
         <rect width="62" height="62" rx="31" fill="#2F2B32"/>
         <path fill-rule="evenodd" clip-rule="evenodd" d="M22.9748 27.7021L31.0023 19.6746L39.0366 27.709L43.7072 23.0383L31.0023 10.3333L18.3041 23.0315L22.9748 27.7021ZM10.3328 31.0022L15.0022 26.3328L19.6716 31.0022L15.0022 35.6717L10.3328 31.0022ZM31.0022 42.3332L22.9747 34.3057L18.2972 38.9695L18.3041 38.9763L31.0022 51.6744L43.7072 38.9695L39.0365 34.2988L31.0022 42.3332ZM42.3286 31.0055L46.9981 26.3361L51.6675 31.0055L46.9981 35.6749L42.3286 31.0055ZM31.0023 26.2645L35.7418 31.0039L31.0023 35.7502L26.2629 31.0108V30.997L27.0952 30.1647L27.5011 29.7657L31.0023 26.2645Z" fill="#F3BA2F"/>
 
+        </symbol>
+
+        <symbol id="icon-eye" fill="none" viewBox="0 0 23 24">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
+                <path d="M11.817 4.42993C7.10158 4.42993 3.07464 7.3629 1.44312 11.503C3.07464 15.6431 7.10158 18.5761 11.817 18.5761C16.5323 18.5761 20.5593 15.6431 22.1908 11.503C20.5593 7.3629 16.5323 4.42993 11.817 4.42993ZM11.817 16.2184C9.21407 16.2184 7.10158 14.1059 7.10158 11.503C7.10158 8.90012 9.21407 6.78762 11.817 6.78762C14.4199 6.78762 16.5323 8.90012 16.5323 11.503C16.5323 14.1059 14.4199 16.2184 11.817 16.2184ZM11.817 8.67378C10.2515 8.67378 8.98773 9.9375 8.98773 11.503C8.98773 13.0685 10.2515 14.3322 11.817 14.3322C13.3825 14.3322 14.6462 13.0685 14.6462 11.503C14.6462 9.9375 13.3825 8.67378 11.817 8.67378Z" fill="#242629"/>
+            </svg>
+        </symbol>
+
+        <symbol id="icon-bolt" fill="none" viewBox="0 0 24 23">
+        <mask id="mask0_8427_826" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="23">
+            <rect x="0.499756" y="0.226562" width="22.6339" height="22.6339" fill="#D9D9D9"/>
+        </mask>
+        <g mask="url(#mask0_8427_826)">
+            <path d="M8.04428 20.9743L8.98736 14.3728H4.27197L12.7597 2.11279H14.6458L13.7027 9.65741H19.3612L9.93044 20.9743H8.04428Z" fill="#242629"/>
+        </g>
         </symbol>
     </defs>
 </svg>

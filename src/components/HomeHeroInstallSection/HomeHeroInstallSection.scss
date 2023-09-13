@@ -184,7 +184,7 @@
   display: flex;
   align-items: center;
   margin-top: to-rem(30);
-  max-width: to-rem(260);
+  max-width: 90%;
   @include respond-to(medium) {
     margin-top: 0;
     padding: to-rem(10) 0;
@@ -245,11 +245,11 @@
 
 .home-hero-install-section__modal-one-icon-halborn-wrapper {
   position: absolute;
-  bottom: to-rem(-10);
-  right: to-rem(-7);
+  bottom: to-rem(-6);
+  right: to-rem(-6);
   @include respond-to(medium) {
-    bottom: to-rem(-4);
-    right: to-rem(-2);
+    bottom: to-rem(1);
+    right: to-rem(-1);
   }
 }
 
@@ -264,8 +264,8 @@
 
 .home-hero-install-section__modal-two {
   position: absolute;
-  top: to-rem(250);
-  right: to-rem(-70);
+  top: to-rem(230);
+  right: to-rem(-90);
   display: flex;
   flex-direction: column;
   padding: to-rem(18);
