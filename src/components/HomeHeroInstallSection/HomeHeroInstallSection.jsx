@@ -47,24 +47,22 @@ const HomeHeroInstallSection = () => {
           </div>
           <div className="home-hero-install-section__content">
             <div className="home-hero-install-section__content-card">
-              <img
-                src="/img/removeRedEye.png"
-                width="24"
-                height="23"
-                alt="icon eye"
-                className="home-hero-install-section__content-card-img"
+              <Icon
+                iconClass="home-hero-install-section__content-card-img"
+                width="32"
+                height="31"
+                idIcon="icon-eye"
               />
               <span className="home-hero-install-section__content-card-text">
                 {t('home-hero-section.card-text-1')}
               </span>
             </div>
             <div className="home-hero-install-section__content-card">
-              <img
-                src="/img/bolt.png"
+              <Icon
+                iconClass="home-hero-install-section__content-card-img"
                 width="24"
                 height="23"
-                alt="icon bolt"
-                className="home-hero-install-section__content-card-img"
+                idIcon="icon-bolt"
               />
               <span className="home-hero-install-section__content-card-text">
                 {t('home-hero-section.card-text-2')}
@@ -94,9 +92,10 @@ const HomeHeroInstallSection = () => {
               />
             </div>
             <div className="home-hero-install-section__modal-one-icon-halborn-wrapper">
-              <Icon
-                iconClass="home-hero-install-section__modal-one-icon-halborn"
-                idIcon="icon-halborn"
+              <img
+                className="home-hero-install-section__modal-one-icon-halborn"
+                src="/icons/halborn-logo.svg"
+                alt="halborn logo"
               />
             </div>
           </div>

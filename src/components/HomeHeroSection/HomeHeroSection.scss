@@ -49,11 +49,6 @@
   @include respond-to(medium) {
     font-size: to-rem(40);
   }
-
-}
-
-.home-hero-section__title-part-2-word {
-  display: none;
 }
 
 .home-hero-section__title-part {
@@ -90,9 +85,12 @@
   height: 65%;
   background: var(--col-primary-black);
   transform: translateY(-50%);
+  @include respond-to(medium) {
+    width: to-rem(2);
+  }
 }
 
-.home-hero-section__title-part-2 {
+.home-hero-section__title-part-2-letter {
   vertical-align: bottom;
   overflow: hidden;
   white-space: nowrap;

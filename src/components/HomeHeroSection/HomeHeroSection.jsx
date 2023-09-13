@@ -1,129 +1,60 @@
 import './HomeHeroSection.scss';
 
-import { stagger, timeline } from 'motion';
-import { useEffect, useMemo } from 'react';
+import { gsap } from 'gsap';
+import { TweenMax } from 'gsap/gsap-core';
+import { TextPlugin } from 'gsap/TextPlugin';
+import { useLayoutEffect, useMemo, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import { HomeHeroInstallSection, Icon } from '@/components';
 import { CONFIG } from '@/config';
 import { COMPONENT_NODE_IDS } from '@/const';
 
+gsap.registerPlugin(TextPlugin);
+
+const DELAY = 0.3;
+
 const HomeHeroSection = () => {
   const { t } = useTranslation();
-  const userAgent = navigator.userAgent.toLowerCase();
-  const isChrome = /chrome/.test(userAgent);
+
+  const titleContainerEl = useRef();
+  let firstPlay = false;
   const wordsToShow = useMemo(() => ['One', 'Same'], []);
 
-  useEffect(() => {
-    if (!isChrome) {
-      timeline([
-        [
-          '.home-hero-section__title-part-2-word-first',
-          {
-            display: 'inline',
-          },
-        ],
-      ]);
+  const masterTl = useMemo(
+    () =>
+      gsap.timeline({
+        repeat: -1,
+      }),
+    [],
+  );
 
-      return;
-    }
+  useLayoutEffect(() => {
+    gsap.to('.home-hero-section__title-part-2-container-cursor', {
+      opacity: 0,
+      ease: 'power1.inOut',
+      repeat: -1,
+    });
 
-    timeline(
-      [
-        [
-          '.home-hero-section__title-part-2-word-first',
-          {
-            display: 'inline',
-          },
-        ],
-        [
-          '.home-hero-section__title-part-2-word-first .home-hero-section__title-part-2',
-          {
-            opacity: [0, 1],
-            display: ['none', 'inline'],
-          },
-          {
-            delay: stagger(0.1, { start: 0.75 }),
-            duration: 0.1,
-            easing: 'linear',
-          },
-        ],
-        [
-          '.home-hero-section__title-part-2-container-cursor',
-          {
-            opacity: [1, 0, 1, 0, 1, 0, 1],
-          },
-          {
-            duration: 3,
-            delay: 0.25,
-            easing: 'linear',
-            maskRepeat: Infinity,
-          },
-        ],
-        [
-          '.home-hero-section__title-part-2-word-first .home-hero-section__title-part-2',
-          {
-            opacity: [1, 0],
-            display: ['inline', 'none'],
-          },
-          {
-            delay: stagger(0.1, { from: 'last', start: 0.35 }),
-            duration: 0.1,
-            easing: 'linear',
-          },
-        ],
-
-        [
-          '.home-hero-section__title-part-2-word-second',
-          {
-            display: 'inline',
-          },
-        ],
-        [
-          '.home-hero-section__title-part-2-word-second .home-hero-section__title-part-2',
-          {
-            opacity: [0, 1],
-            display: ['none', 'inline'],
-          },
-          {
-            delay: stagger(0.1, { start: 0.75 }),
-            duration: 0.1,
-            easing: 'linear',
-          },
-        ],
-        [
-          '.home-hero-section__title-part-2-container-cursor',
-          {
-            opacity: [1, 0, 1, 0, 1, 0, 1],
-          },
-          {
-            duration: 3,
-            delay: 0.25,
-            easing: 'linear',
-            maskRepeat: Infinity,
-          },
-        ],
-        [
-          '.home-hero-section__title-part-2-word-second .home-hero-section__title-part-2',
-          {
-            opacity: [1, 0],
-            display: ['inline', 'none'],
-          },
-          {
-            delay: stagger(0.1, { from: 'last', start: 0.35 }),
-            duration: 0.1,
-            easing: 'linear',
-          },
-        ],
-      ],
-      {
-        repeat: Infinity,
-        defaultOptions: {
-          delay: 0.5,
-        },
-        /* eslint-disable-next-line */
-        },
-    );
+    const doCoolStuff = tl => {
+      if (firstPlay) {
+        tl.pause();
+        TweenMax.delayedCall(DELAY, function () {
+          tl.play();
+        });
+      } else {
+        firstPlay = true;
+      }
+    };
+    wordsToShow.forEach(word => {
+      let tl = gsap.timeline({ repeat: 1, yoyo: true, repeatDelay: 1.5 });
+      tl.call(doCoolStuff, [masterTl]);
+      tl.to('.home-hero-section__title-part-2-word', {
+        duration: 0.5,
+        text: word,
+      });
+      masterTl.add(tl);
+    });
   }, []);
 
   return (
@@ -140,27 +71,11 @@ const HomeHeroSection = () => {
                 <span>{t('home-hero-section.title-part-1')}</span>
 
                 <div className="home-hero-section__title-part-2-wrapper">
-                  <div className="home-hero-section__title-part-2-container">
-                    <div className="home-hero-section__title-part-2-word home-hero-section__title-part-2-word-first">
-                      {wordsToShow[0].split('').map((letter, idx) => (
-                        <span
-                          className="home-hero-section__title-part-2"
-                          key={idx}
-                        >
-                          {letter}
-                        </span>
-                      ))}
-                    </div>
-                    <div className="home-hero-section__title-part-2-word home-hero-section__title-part-2-word-second">
-                      {wordsToShow[1].split('').map((letter, idx) => (
-                        <span
-                          className="home-hero-section__title-part-2"
-                          key={idx}
-                        >
-                          {letter}
-                        </span>
-                      ))}
-                    </div>
+                  <div
+                    ref={titleContainerEl}
+                    className="home-hero-section__title-part-2-container"
+                  >
+                    <div className="home-hero-section__title-part-2-word"></div>
 
                     <div className="home-hero-section__title-part-2-container-cursor" />
                   </div>
