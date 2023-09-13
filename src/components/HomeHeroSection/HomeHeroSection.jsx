@@ -53,7 +53,6 @@ const HomeHeroSection = () => {
         duration: 0.5,
         text: word,
       });
-      tl.call(doCoolStuff, [tl]);
       masterTl.add(tl);
     });
   }, []);
