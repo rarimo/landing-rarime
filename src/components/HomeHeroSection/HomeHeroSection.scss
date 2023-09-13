@@ -85,6 +85,9 @@
   height: 65%;
   background: var(--col-primary-black);
   transform: translateY(-50%);
+  @include respond-to(medium) {
+    width: to-rem(2);
+  }
 }
 
 .home-hero-section__title-part-2-letter {
