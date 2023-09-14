@@ -30,7 +30,10 @@ const HomeTilesSection = () => {
                           {t('home-tiles-section.proof-of-age-title')}
                         </h6>
                         <span className="home-tiles-section__proof-of-age-subtitle">
-                          {t('home-tiles-section.proof-of-age-subtitle')}
+                          {t('home-tiles-section.proof-of-age-subtitle-1')}
+                          <span className="home-tiles-section__proof-of-age-subtitle-white">
+                            {t('home-tiles-section.proof-of-age-subtitle-2')}
+                          </span>
                         </span>
                       </div>
                       <Icon

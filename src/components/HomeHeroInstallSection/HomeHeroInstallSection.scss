@@ -245,10 +245,10 @@
 
 .home-hero-install-section__modal-one-icon-halborn-wrapper {
   position: absolute;
-  bottom: to-rem(-6);
-  right: to-rem(-6);
+  bottom: to-rem(-7);
+  right: to-rem(-7);
   @include respond-to(medium) {
-    bottom: to-rem(1);
+    bottom: to-rem(-2);
     right: to-rem(-1);
   }
 }
@@ -335,6 +335,7 @@
   border-radius: to-rem(475);
   left: to-rem(-50);
   background: linear-gradient(180deg, rgba(255, 255, 255, 20%) -23.89%, rgba(255, 255, 255, 0%) 100%);
+  pointer-events: none;
   @include respond-to(medium) {
     width: to-rem(258);
     height: to-rem(258);
@@ -353,6 +354,7 @@
     height: to-rem(296);
     background: linear-gradient(180deg, rgba(0, 8, 20, 0%) 0%, #000814 100%);
     z-index: var(--z-default);
+    pointer-events: none;
   }
 }
 

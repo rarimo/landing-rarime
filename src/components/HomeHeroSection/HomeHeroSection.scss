@@ -53,7 +53,6 @@
 
 .home-hero-section__title-part {
   overflow: hidden;
-  white-space: break-spaces;
 }
 
 .home-hero-section__title-part-2-wrapper {
@@ -135,7 +134,7 @@
   color: rgba(var(--col-total-white-rgb), 0.6);
   margin-top: to-rem(16);
   text-transform: capitalize;
-
+  font-style: italic;
   @include respond-to(medium) {
     font-size: to-rem(11);
     text-align: center;
