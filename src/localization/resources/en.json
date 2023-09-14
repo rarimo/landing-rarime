@@ -3,13 +3,12 @@
     "title": "rariMe"
   },
   "header": {
-    "button": "Install RariMe snap"
+    "button": "Install RariMe Snap"
   },
   "home-hero-section": {
     "title-part-1": "The",
     "title-part-2": "One",
     "title-part-2-animation": "Same",
-
     "title-part-2-after": "|",
     "title-part-3": "Wallet",
     "title-part-4": "For your Social identity",
@@ -107,7 +106,8 @@
     "tile-card-name": "Alfredo Vetrovs",
     "tile-card-followers": "44 000 Followers",
     "proof-of-age-title": "Proof of age",
-    "proof-of-age-subtitle": "Provided by URtime",
+    "proof-of-age-subtitle-1": "Provided by",
+    "proof-of-age-subtitle-2": " URtime",
     "proof-of-age-text": "33 years old",
     "proof-of-age-footer-text": "ISSUED ON",
     "proof-of-age-footer-date": "20 August, 2023",

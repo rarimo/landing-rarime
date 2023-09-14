@@ -64,7 +64,7 @@ module.exports = {
     'max-len': [
       1,
       {
-        code: 80,
+        code: 100,
         comments: 80,
         ignoreUrls: true,
         ignoreStrings: true,

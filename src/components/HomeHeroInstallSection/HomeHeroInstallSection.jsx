@@ -86,9 +86,10 @@ const HomeHeroInstallSection = () => {
         >
           <div className="home-hero-install-section__modal-one-icon-wrapper">
             <div className="home-hero-install-section__modal-one-icon">
-              <Icon
-                iconClass="home-hero-install-section__modal-one-svg"
-                idIcon="icon-polygon"
+              <img
+                className="home-hero-install-section__modal-one-svg"
+                src="/icons/polygon-badge.svg"
+                alt="polygon badge logo"
               />
             </div>
             <div className="home-hero-install-section__modal-one-icon-halborn-wrapper">
@@ -105,9 +106,10 @@ const HomeHeroInstallSection = () => {
         </a>
         <div className="home-hero-install-section__modal-two">
           <div className="home-hero-install-section__modal-two-header">
-            <Icon
-              iconClass="home-hero-install-section__modal-two-header-icon"
-              idIcon="icon-polygon-badge"
+            <img
+              className="home-hero-install-section__modal-two-header-icon"
+              src="/icons/proof-of-humanity.svg"
+              alt="proof of humanity logo"
             />
           </div>
           <div className="home-hero-install-section__modal-two-footer">
