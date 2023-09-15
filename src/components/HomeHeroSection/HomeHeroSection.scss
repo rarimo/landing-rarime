@@ -42,8 +42,12 @@
   font-size: to-rem(80);
   font-weight: 700;
 
-  @include respond-to(laptopL) {
+  @include respond-to(large) {
     font-size: to-rem(70);
+  }
+
+  @include respond-to(xmedium) {
+    font-size: to-rem(55);
   }
 
   @include respond-to(medium) {
@@ -53,6 +57,17 @@
 
 .home-hero-section__title-part {
   overflow: hidden;
+  white-space: break-spaces;
+}
+
+.home-hero-section__title-part-1 {
+  overflow: visible;
+  white-space: nowrap;
+}
+.home-hero-section__title-part-3 {
+  @include respond-to(small) {
+    display: block;
+  }
 }
 
 .home-hero-section__title-part-2-wrapper {
