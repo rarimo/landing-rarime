@@ -39,7 +39,7 @@
     },
     "what-does-do": {
       "question": "What does the RariMe Snap do?",
-      "answer": "RariMe Snap allows users to store and manage identity credentials through their MetaMask wallet; they can store credentials, protect their privacy by generating Zero-Knowledge Proofs (ZKPs) of these credentials, and submit these ZKPs to dApps"
+      "answer": "RariMe Snap allows users to store and manage identity credentials through their MetaMask wallet; protect their privacy by generating Zero-Knowledge Proofs (ZKPs) of these credentials, and submit these ZKPs to dApps"
     },
     "what-does-not-do": {
       "question": "What does the snap NOT do?",
