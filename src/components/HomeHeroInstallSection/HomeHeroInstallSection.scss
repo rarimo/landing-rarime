@@ -13,6 +13,10 @@
     margin-right: 5%;
   }
 
+  @include respond-to(xmedium) {
+    max-width: to-rem(317);
+  }
+
   @include respond-to(medium) {
     position: absolute;
     top: to-rem(120);
@@ -26,6 +30,8 @@
   @include respond-to(small) {
     max-width: 55%;
     left: 22.5%;
+    padding: to-rem(8) to-rem(8) to-rem(25);
+
   }
 }
 
@@ -45,9 +51,15 @@
     color: #69737c;
     font-size: to-rem(15);
     font-weight: 600;
+
+    @include respond-to(xmedium) {
+      font-size: to-rem(12);
+    }
+
     @include respond-to(medium) {
       font-size: to-rem(8);
     }
+
   }
 }
 
@@ -81,6 +93,12 @@
 .home-hero-install-section__button-icon {
   width: to-rem(56);
   height: to-rem(56);
+
+  @include respond-to(xmedium) {
+    width: to-rem(46);
+    height: to-rem(46);
+  }
+
   @include respond-to(medium) {
     width: to-rem(30);
     height: to-rem(30);
@@ -99,6 +117,12 @@
   border-radius: 100%;
   background: var(--col-total-white);
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 4%), 0 2px 6px 0 rgba(0, 0, 0, 5%);
+
+  @include respond-to(xmedium) {
+    width: to-rem(20);
+    height: to-rem(20);
+  }
+
   @include respond-to(medium) {
     width: to-rem(13);
     height: to-rem(13);
@@ -110,6 +134,12 @@
 .home-hero-install-section__button-svg-metamask {
   height: to-rem(16);
   width: to-rem(14);
+
+  @include respond-to(xmedium) {
+    width: to-rem(12);
+    height: to-rem(11);
+  }
+
   @include respond-to(medium) {
     width: to-rem(8);
     height: to-rem(7);
@@ -130,6 +160,11 @@
 .home-hero-install-section__text-title {
   color: var(--col-secondary-black);
   font-weight: 700;
+
+  @include respond-to(xmedium) {
+    font-size: to-rem(20);
+  }
+
   @include respond-to(medium) {
     font-size: to-rem(13);
   }
@@ -140,6 +175,11 @@
   font-size: to-rem(16);
   font-weight: 400;
   margin-top: to-rem(8);
+
+  @include respond-to(xmedium) {
+    font-size: to-rem(12);
+  }
+
   @include respond-to(medium) {
     font-size: to-rem(8);
   }
@@ -153,6 +193,10 @@
   padding: to-rem(15) 0 0;
   margin-top: to-rem(75);
   border-top: 1px solid var(--col-secondary-border);
+
+  @include respond-to(xmedium) {
+  margin-top: to-rem(63);
+  }
 }
 
 .home-hero-install-section__footer-btn-install {
@@ -161,6 +205,11 @@
   font-weight: 600;
   background: var(--col-blue-primary);
   color: var(--col-total-white);
+
+  @include respond-to(xmedium) {
+    padding: to-rem(8) to-rem(45);
+  }
+
   @include respond-to(medium) {
     display: none;
   }
@@ -173,9 +222,21 @@
   color: #545960;
   border: 1px solid #545960;
   margin-right: to-rem(16);
+
+  @include respond-to(xmedium) {
+    padding: to-rem(8) to-rem(45);
+  }
+
   @include respond-to(medium) {
     display: none;
   }
+}
+.home-hero-install-section__content{
+  margin-top: to-rem(30);
+  @include respond-to(xmedium) {
+    margin-top: to-rem(25);
+  }
+
 }
 
 .home-hero-install-section__content-card {
@@ -183,7 +244,6 @@
   border-bottom: 1px solid var(--col-secondary-border);
   display: flex;
   align-items: center;
-  margin-top: to-rem(30);
   max-width: 90%;
   @include respond-to(medium) {
     margin-top: 0;
@@ -196,6 +256,11 @@
   color: var(--col-secondary-black);
   font-size: to-rem(15);
   font-weight: 500;
+
+  @include respond-to(xmedium) {
+    font-size: to-rem(12);
+  }
+
   @include respond-to(medium) {
     font-size: to-rem(8);
     text-align: left;
@@ -211,6 +276,12 @@
   padding: to-rem(18);
   border-radius: to-rem(13);
   background: #d1fd51;
+
+  @include respond-to(xmedium) {
+    padding: to-rem(15.5);
+    font-size: to-rem(13.5);
+  }
+
   @include respond-to(medium) {
     padding: to-rem(10);
     left: to-rem(-60);
@@ -222,6 +293,11 @@
   color: var(--col-primary-black);
   font-size: to-rem(16);
   font-weight: 500;
+
+  @include respond-to(xmedium) {
+    font-size: to-rem(13.5);
+  }
+
   @include respond-to(medium) {
     font-size: to-rem(8);
   }
@@ -230,6 +306,12 @@
 .home-hero-install-section__modal-one-svg {
   width: to-rem(49);
   height: to-rem(49);
+
+  @include respond-to(xmedium) {
+    width: to-rem(40);
+    height: to-rem(40);
+  }
+
   @include respond-to(medium) {
     width: to-rem(26);
     height: to-rem(26);
@@ -245,10 +327,17 @@
 
 .home-hero-install-section__modal-one-icon-halborn-wrapper {
   position: absolute;
-  bottom: to-rem(-6);
-  right: to-rem(-6);
+  bottom: to-rem(-7);
+  right: to-rem(-7);
+
+  @include respond-to(xmedium) {
+    bottom: to-rem(-5);
+    right: to-rem(-5);
+  }
+
+
   @include respond-to(medium) {
-    bottom: to-rem(1);
+    bottom: to-rem(-2);
     right: to-rem(-1);
   }
 }
@@ -256,6 +345,12 @@
 .home-hero-install-section__modal-one-icon-halborn {
   width: to-rem(37);
   height: to-rem(37);
+
+  @include respond-to(xmedium) {
+    width: to-rem(28);
+    height: to-rem(28);
+  }
+
   @include respond-to(medium) {
     width: to-rem(16);
     height: to-rem(16);
@@ -271,9 +366,17 @@
   padding: to-rem(18);
   border-radius: to-rem(13);
   background: var(--col-total-white);
+
+  @include respond-to(xmedium) {
+    top: to-rem(180);
+    padding: to-rem(15.5);
+  }
+
   @include respond-to(medium) {
     border-radius: to-rem(7);
     top: to-rem(90);
+    right: to-rem(-70);
+
     padding: to-rem(8);
   }
 }
@@ -281,6 +384,9 @@
 .home-hero-install-section__modal-two-footer-title {
   text-align: left;
   margin-top: to-rem(12);
+  @include respond-to(xmedium) {
+    margin-top: to-rem(10);
+  }
   @include respond-to(medium) {
     margin-top: to-rem(6);
   }
@@ -295,6 +401,11 @@
   color: var(--col-primary-black);
   font-size: to-rem(12);
   font-weight: 500;
+
+  @include respond-to(xmedium) {
+    font-size: to-rem(10);
+  }
+
   @include respond-to(medium) {
     font-size: to-rem(7);
   }
@@ -306,6 +417,11 @@
   font-size: to-rem(11);
   font-weight: 400;
   margin-top: to-rem(7);
+
+  @include respond-to(xmedium) {
+    font-size: to-rem(9);
+  }
+
   @include respond-to(medium) {
     font-size: to-rem(6);
   }
@@ -322,6 +438,10 @@
   font-weight: 600;
   margin-left: to-rem(12);
   margin-top: to-rem(7);
+
+  @include respond-to(xmedium) {
+    font-size: to-rem(7);
+  }
   @include respond-to(medium) {
     font-size: to-rem(6);
     margin-left: to-rem(6);
@@ -335,6 +455,13 @@
   border-radius: to-rem(475);
   left: to-rem(-50);
   background: linear-gradient(180deg, rgba(255, 255, 255, 20%) -23.89%, rgba(255, 255, 255, 0%) 100%);
+  pointer-events: none;
+
+  @include respond-to(xmedium) {
+    width: to-rem(398);
+    height: to-rem(398);
+  }
+
   @include respond-to(medium) {
     width: to-rem(258);
     height: to-rem(258);
@@ -353,6 +480,7 @@
     height: to-rem(296);
     background: linear-gradient(180deg, rgba(0, 8, 20, 0%) 0%, #000814 100%);
     z-index: var(--z-default);
+    pointer-events: none;
   }
 }
 

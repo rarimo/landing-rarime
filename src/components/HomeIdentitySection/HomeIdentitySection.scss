@@ -185,8 +185,15 @@
 }
 
 .home-identity-section__resource-img-skeleton {
+  width: to-rem(48);
+  height: to-rem(48);
   border-radius: to-rem(100);
   background: rgba(var(--col-primary-black-rgb), 0.05);
+  margin-right: to-rem(16);
+  @include respond-to(medium) {
+    width: to-rem(30);
+    height: to-rem(30);
+  }
 }
 
 .home-identity-section__resource-title-skeleton {

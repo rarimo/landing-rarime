@@ -12,7 +12,12 @@ const AppFooter = () => {
       <div className="app-footer__date">
         <span>{t('footer.date')}</span>
       </div>
-      <a className="app-footer__button" href={CONFIG.linkToInstallSnap}>
+      <a
+        className="app-footer__button"
+        target="_blank"
+        href={CONFIG.linkToInstallSnap}
+        rel="noreferrer"
+      >
         <Icon
           iconClass="app-footer__button-icon"
           height="24"
