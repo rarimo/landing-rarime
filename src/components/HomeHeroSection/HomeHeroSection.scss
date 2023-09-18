@@ -76,7 +76,7 @@
   color: var(--col-primary-black);
   border-radius: to-rem(10);
   display: inline-block;
-  margin: 0 to-rem(20);
+  margin-right: to-rem(20);
   font-weight: 700;
 
   @include respond-to(medium) {
@@ -131,7 +131,6 @@
   font-size: to-rem(20);
   font-weight: 400;
   color: rgba(var(--col-total-white-rgb), 0.6);
-  text-transform: capitalize;
 
   @include respond-to(laptopL) {
     font-size: to-rem(18);
@@ -148,7 +147,6 @@
   font-weight: 400;
   color: rgba(var(--col-total-white-rgb), 0.6);
   margin-top: to-rem(16);
-  text-transform: capitalize;
   font-style: italic;
   @include respond-to(medium) {
     font-size: to-rem(11);
