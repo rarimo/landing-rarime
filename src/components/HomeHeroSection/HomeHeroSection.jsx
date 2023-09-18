@@ -68,8 +68,6 @@ const HomeHeroSection = () => {
           <div className="home-hero-section__text-wrapper">
             <h2 className="home-hero-section__title">
               <div className="home-hero-section__title-part-1">
-                <span>{t('home-hero-section.title-part-1')}</span>
-
                 <div className="home-hero-section__title-part-2-wrapper">
                   <div
                     ref={titleContainerEl}
@@ -82,11 +80,11 @@ const HomeHeroSection = () => {
                 </div>
 
                 <span className="home-hero-section__title-part-3">
-                  {t('home-hero-section.title-part-3')}
+                  {t('home-hero-section.title-part-2')}
                 </span>
               </div>
               <div className="home-hero-section__title-part">
-                <span>{t('home-hero-section.title-part-4')}</span>
+                <span>{t('home-hero-section.title-part-3')}</span>
               </div>
             </h2>
 
