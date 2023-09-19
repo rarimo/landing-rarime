@@ -20,7 +20,6 @@
   font-size: to-rem(20);
   font-weight: 400;
   line-height: to-rem(30);
-  text-transform: capitalize;
   text-align: center;
   @include respond-to(medium) {
     font-size: to-rem(16);
