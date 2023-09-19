@@ -34,7 +34,7 @@ const HomeQuestionSection = () => {
             </p>
           </a>
           <a
-            href={CONFIG.discordLink}
+            href={CONFIG.linkSupportOfCredentials}
             target="_blank"
             className="home-question-section__content-item"
             rel="noreferrer"

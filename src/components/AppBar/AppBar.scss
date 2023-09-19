@@ -4,7 +4,6 @@
   top: 0;
   right: 0;
   left: 0;
-  background-color: var(--col-primary-black);
   overflow: hidden;
   height: var(--app-bar-height);
   transition-property: background-color, transform;
@@ -69,4 +68,13 @@
   color: var(--col-total-white);
   padding-left: to-rem(14);
   font-size: to-rem(24);
+}
+
+.app-bar__light {
+  background-color: var(--col-total-white);
+  border-bottom: 1px solid rgba(var(--col-primary-black-rgb), 0.1);
+}
+
+.app-bar__dark{
+  background-color: var(--col-primary-black);
 }
