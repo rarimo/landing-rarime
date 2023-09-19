@@ -27,7 +27,7 @@
     "modal-two-footer-tag": "BIOMETRICS"
   },
   "home-banner": {
-    "text-1": "To preserve full user control, the Private Key is",
+    "text-1": "To preserve full user control, the private key is",
     "text-bold": " never accessed by The RariMe snap.",
     "text-2": " Even if the wallet is unlocked or compromised, the PK cannot be stolen."
   },
