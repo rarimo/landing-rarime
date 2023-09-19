@@ -10,7 +10,7 @@
     "title-part-1-animation": "Same",
     "title-part-1-after": "|",
     "title-part-2": "Wallet",
-    "title-part-3": "For your Social identity",
+    "title-part-3": "for your Identity and Digital Assets",
     "subtitle": "RariMe lives right In your MetaMask. It’s where you securely keep, manage your credentials, attestations, social identity, licenses, event tickets, and more — all in one place",
     "description": "*The RariMe snap guarantees user control by never accessing the Private Key",
     "step": "1 of 2",
@@ -27,7 +27,7 @@
     "modal-two-footer-tag": "BIOMETRICS"
   },
   "home-banner": {
-    "text-1": "to preserve full user control, the Private Key is",
+    "text-1": "To preserve full user control, the Private Key is",
     "text-bold": " never accessed by The RariMe snap.",
     "text-2": " Even if the wallet is unlocked or compromised, the PK cannot be stolen."
   },

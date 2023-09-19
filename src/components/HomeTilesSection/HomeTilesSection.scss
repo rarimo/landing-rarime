@@ -51,9 +51,10 @@
   color: rgba(var(--col-primary-black-rgb), 0.5);
   font-size: to-rem(20);
   font-weight: 400;
-  text-transform: capitalize;
+  max-width: 80%;
   @include respond-to(medium) {
     font-size: to-rem(16);
+    max-width: unset;
   }
 }
 

@@ -41,6 +41,7 @@
   color: var(--col-total-white);
   font-size: to-rem(80);
   font-weight: 700;
+  text-transform: capitalize;
 
   @include respond-to(large) {
     font-size: to-rem(70);
