@@ -327,33 +327,33 @@
 
 .home-hero-install-section__modal-one-icon-halborn-wrapper {
   position: absolute;
-  bottom: to-rem(-7);
-  right: to-rem(-7);
+  bottom: to-rem(-4);
+  right: to-rem(-4);
 
   @include respond-to(xmedium) {
-    bottom: to-rem(-5);
-    right: to-rem(-5);
+    bottom: to-rem(-4);
+    right: to-rem(-4);
   }
 
 
   @include respond-to(medium) {
-    bottom: to-rem(-2);
-    right: to-rem(-1);
+    bottom: to-rem(-3);
+    right: to-rem(-2);
   }
 }
 
 .home-hero-install-section__modal-one-icon-halborn {
-  width: to-rem(37);
-  height: to-rem(37);
+  width: to-rem(28);
+  height: to-rem(28);
 
   @include respond-to(xmedium) {
-    width: to-rem(28);
-    height: to-rem(28);
+    width: to-rem(23);
+    height: to-rem(23);
   }
 
   @include respond-to(medium) {
-    width: to-rem(16);
-    height: to-rem(16);
+    width: to-rem(15);
+    height: to-rem(15);
   }
 }
 
