@@ -44,12 +44,9 @@
   text-transform: capitalize;
 
   @include respond-to(large) {
-    font-size: to-rem(70);
-  }
-
-  @include respond-to(xmedium) {
     font-size: to-rem(55);
   }
+
 
   @include respond-to(medium) {
     font-size: to-rem(40);
@@ -66,7 +63,7 @@
   white-space: nowrap;
 }
 .home-hero-section__title-part-3 {
-  @include respond-to(small) {
+  @include respond-to(mobile) {
     display: block;
   }
 }
@@ -116,7 +113,7 @@
   max-width: 60%;
 
   @include respond-to(laptopL) {
-    max-width: 50%;
+    max-width: 55%;
   }
 
   @include respond-to(medium) {
@@ -133,8 +130,8 @@
   font-weight: 400;
   color: rgba(var(--col-total-white-rgb), 0.6);
 
-  @include respond-to(laptopL) {
-    font-size: to-rem(18);
+  @include respond-to(lerge) {
+    font-size: to-rem(16);
   }
 
   @include respond-to(medium) {
