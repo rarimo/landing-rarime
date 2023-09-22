@@ -1,2 +1,2 @@
-export * from './FAQ-list';
+export * from './FaqList';
 export * from './resources';

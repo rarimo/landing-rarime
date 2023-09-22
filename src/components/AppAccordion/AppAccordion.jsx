@@ -37,15 +37,14 @@ const AppAccordion = ({ headerText, contentText, link, linkText }) => {
         </h2>
         {isExpanded && (
           <p className="app-accordion__body">
-            {t(contentText)}
+            {contentText}
             <a
               className="app-accordion__body-link"
               href={link}
               target="_blank"
               rel="noreferrer"
             >
-              {' '}
-              {t(linkText)}
+              {linkText}
             </a>
           </p>
         )}

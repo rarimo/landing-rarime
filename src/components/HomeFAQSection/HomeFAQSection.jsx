@@ -2,7 +2,7 @@ import './HomeFAQSection.scss';
 
 import { useTranslation } from 'react-i18next';
 
-import { FAQList } from '@/template-data';
+import { FaqList } from '@/template-data';
 
 import AppAccordion from '../AppAccordion/AppAccordion';
 
@@ -22,7 +22,7 @@ const HomeFAQSection = () => {
         </h2>
         <div className="home-faq-section__content">
           <ul>
-            {FAQList.map(FAQ => (
+            {FaqList.map(FAQ => (
               <li key={FAQ.question}>
                 <AppAccordion
                   headerText={FAQ.question}
