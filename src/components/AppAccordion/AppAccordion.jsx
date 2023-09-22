@@ -1,10 +1,13 @@
 import './AppAccordion.scss';
 
 import { useMemo, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 import Icon from '@/components/Icon';
 
 const AppAccordion = ({ headerText, contentText, link, linkText }) => {
+  const { t } = useTranslation();
+
   const [isExpanded, setIsExpanded] = useState(false);
 
   const accordionClasses = useMemo(
@@ -34,7 +37,7 @@ const AppAccordion = ({ headerText, contentText, link, linkText }) => {
         </h2>
         {isExpanded && (
           <p className="app-accordion__body">
-            {contentText}
+            {t(contentText)}
             <a
               className="app-accordion__body-link"
               href={link}
@@ -42,7 +45,7 @@ const AppAccordion = ({ headerText, contentText, link, linkText }) => {
               rel="noreferrer"
             >
               {' '}
-              {linkText}
+              {t(linkText)}
             </a>
           </p>
         )}
