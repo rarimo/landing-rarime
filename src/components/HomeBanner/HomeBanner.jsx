@@ -1,8 +1,11 @@
 import './HomeBanner.scss';
 
+import cn from 'classnames';
 import { useTranslation } from 'react-i18next';
 
 import { Icon } from '@/components';
+
+const DECORS = [1, 2, 3];
 
 const HomeBanner = () => {
   const { t } = useTranslation();
@@ -26,9 +29,12 @@ const HomeBanner = () => {
           <span className="home-banner__text-2">{t('home-banner.text-2')}</span>
         </div>
       </div>
-      <div className="home-banner__decor-1 mobile-hidden" />
-      <div className="home-banner__decor-2 mobile-hidden" />
-      <div className="home-banner__decor-3 mobile-hidden" />
+      {DECORS.map(decor => (
+        <div
+          key={decor}
+          className={cn([`home-banner__decor-${decor} mobile-hidden`])}
+        />
+      ))}
     </div>
   );
 };

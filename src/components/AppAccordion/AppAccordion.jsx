@@ -19,7 +19,7 @@ const AppAccordion = ({ headerText, contentText, link, linkText }) => {
     [isExpanded],
   );
 
-  const toogleIsExpanded = () => {
+  const toggleIsExpanded = () => {
     setIsExpanded(!isExpanded);
   };
 
@@ -29,7 +29,7 @@ const AppAccordion = ({ headerText, contentText, link, linkText }) => {
         <h2 className="app-accordion__header">
           <button
             className="app-accordion__header-btn"
-            onClick={toogleIsExpanded}
+            onClick={toggleIsExpanded}
           >
             {headerText}
             <Icon idIcon="icon-arrow-down" iconClass="app-accordion__icon" />
