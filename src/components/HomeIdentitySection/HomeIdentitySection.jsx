@@ -1,6 +1,6 @@
 import './HomeIdentitySection.scss';
 
-import { resources } from '@static/template-data/resources';
+import { resources } from '@/template-data';
 import cn from 'classnames';
 import { useTranslation } from 'react-i18next';
 
