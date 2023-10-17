@@ -46,7 +46,7 @@
     },
     "how-to-use-features": {
       "question": "How to use RariMe Snaps’ features",
-      "answer": "RariMe has four key features. It allows users to 1) receive credentials 2) create Zero Knowledge Proofs of their credentials and 3) submit proof to DApps. For each of these steps, users will be automatically prompted by the identity providers and the dApps that have integrated with RariMe."
+      "answer": "RariMe has three key features. It allows users to 1) receive credentials 2) create Zero Knowledge Proofs of their credentials and 3) submit proof to DApps. For each of these steps, users will be automatically prompted by the identity providers and the dApps that have integrated with RariMe."
     },
     "reach-out-support": {
       "question": "How do I reach out for snap support?",
