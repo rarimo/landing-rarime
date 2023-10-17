@@ -10,8 +10,8 @@ import { Icon } from '@/components';
 import { CONFIG } from '@/config';
 import { ROUTES_PATHS } from '@/const';
 
-const HEIGHT_APP_BAR = 150
-const HEIGHT_HERO_SECTION = 800
+const HEIGHT_APP_BAR = 150;
+const HEIGHT_HERO_SECTION = 800;
 
 const AppBar = () => {
   const { t } = useTranslation();

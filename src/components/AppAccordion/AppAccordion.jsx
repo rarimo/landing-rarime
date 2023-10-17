@@ -1,10 +1,13 @@
 import './AppAccordion.scss';
 
 import { useMemo, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 import Icon from '@/components/Icon';
 
 const AppAccordion = ({ headerText, contentText, link, linkText }) => {
+  const { t } = useTranslation();
+
   const [isExpanded, setIsExpanded] = useState(false);
 
   const accordionClasses = useMemo(
@@ -16,7 +19,7 @@ const AppAccordion = ({ headerText, contentText, link, linkText }) => {
     [isExpanded],
   );
 
-  const toogleIsExpanded = () => {
+  const toggleIsExpanded = () => {
     setIsExpanded(!isExpanded);
   };
 
@@ -26,7 +29,7 @@ const AppAccordion = ({ headerText, contentText, link, linkText }) => {
         <h2 className="app-accordion__header">
           <button
             className="app-accordion__header-btn"
-            onClick={toogleIsExpanded}
+            onClick={toggleIsExpanded}
           >
             {headerText}
             <Icon idIcon="icon-arrow-down" iconClass="app-accordion__icon" />
@@ -41,7 +44,6 @@ const AppAccordion = ({ headerText, contentText, link, linkText }) => {
               target="_blank"
               rel="noreferrer"
             >
-              {' '}
               {linkText}
             </a>
           </p>
