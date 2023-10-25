@@ -32,18 +32,14 @@ jobs:
           . $(werf ci-env github --as-file) 
           werf export web --tag ghcr.io/$GITHUB_REPOSITORY:$GITHUB_REF_NAME
 
- deploy:
-    name: Deploy
-    needs: converge
-    runs-on: ubuntu-latest
-    steps:
-      - name: Helm
-        uses: azure/setup-helm@v1
-        with:
-          version: v3
-      - name: ConfigCreate
-        run: |
-          mkdir ~/.kube/
-          echo "${{ secrets.KUBERCONFIG }}" | base64 -d > config
-          mv config ~/.kube/
-          helm upgrade -i --kubeconfig ~/.kube/config "webclient" ".helm" --set global.IngressDomain=rarime.com --set "image.repository=ghcr.io/${GITHUB_REPOSITORY}" --set "image.tag=${GITHUB_REF_NAME}" --create-namespace --namespace rarime-landing-prod-rarime
+  deploy:
+      name: Deploy
+      needs: converge
+      runs-on: ubuntu-latest
+      steps:
+        - name: ConfigCreate
+          run: |
+            mkdir ~/.kube/
+            echo "${{ secrets.KUBERCONFIG }}" | base64 -d > config
+            mv config ~/.kube/
+            helm upgrade -i --kubeconfig ~/.kube/config "webclient" ".helm" --set global.IngressDomain=rarime.com --set "image.repository=ghcr.io/${GITHUB_REPOSITORY}" --set "image.tag=${GITHUB_REF_NAME}" --create-namespace --namespace rarime-landing-prod-rarime

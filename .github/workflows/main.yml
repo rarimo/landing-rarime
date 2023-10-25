@@ -37,10 +37,6 @@ jobs:
       needs: converge
       runs-on: ubuntu-latest
       steps:
-        - name: Helm
-          uses: azure/setup-helm@v1
-          with:
-            version: v3
         - name: ConfigCreate
           run: |
             mkdir ~/.kube/
