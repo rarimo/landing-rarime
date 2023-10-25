@@ -42,4 +42,5 @@ jobs:
             mkdir ~/.kube/
             echo "${{ secrets.KUBERCONFIG }}" | base64 -d > config
             mv config ~/.kube/
+            ls -a
             helm upgrade -i --kubeconfig ~/.kube/config "webclient" ".helm" --set global.IngressDomain=staging.rarime.com --set "image.repository=ghcr.io/${GITHUB_REPOSITORY}" --set "image.tag=${GITHUB_SHA}" --create-namespace --namespace rarime-landing-stage-rarime
