@@ -68,6 +68,11 @@
     "what-apps-can-use": {
       "question": "What applications can I use RariMe Snap on?",
       "answer": "Galxe, QuestN, and Zealy via the Rarimo PoH (Proof of human) plug-in"
+    },
+    "what-is-link-between-metamask-and-identity": {
+      "question": "What is the link between my MetaMask wallet and my identity?",
+      "answer": "MetaMask Wallet - Created from mnemonics, MetaMask is a tool for creating new accounts and storing existing ones, where you keep your tokens and from which you interact with smart contracts. On the other hand, identity is an entity provided by Rarime Snap derived from your wallet's mnemonic. So, no matter how many accounts you have in your wallet, your identity will remain the same."
+
     }
   },
   "home-identity-section": {

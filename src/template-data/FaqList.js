@@ -37,4 +37,8 @@ export const FaqList = [
     question: t('home-faq-section.what-apps-can-use.question'),
     answer: t('home-faq-section.what-apps-can-use.answer'),
   },
+  {
+    question: t('home-faq-section.what-is-link-between-metamask-and-identity.question'),
+    answer: t('home-faq-section.what-is-link-between-metamask-and-identity.answer'),
+  },
 ];
