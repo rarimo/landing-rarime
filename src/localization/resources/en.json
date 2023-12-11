@@ -3,7 +3,8 @@
     "title": "rariMe"
   },
   "header": {
-    "button": "Install RariMe Snap"
+    "button": "Install RariMe Snap",
+    "button-dashboard": "RariMe Dashboard"
   },
   "home-hero-section": {
     "title-part-1": "One",
