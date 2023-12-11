@@ -2,17 +2,11 @@ import { useTranslation } from 'react-i18next'
 
 import { Icon } from '@/components'
 
-import { CONFIG } from '../../../config'
-
 const HomeTileDashboard = () => {
   const { t } = useTranslation()
 
-  const redirectToDashboard = () => {
-    window.open(CONFIG.dashboardLink)
-  }
-
   return (
-    <div className='home-tiles-section__tile' data-aos='fade-up' onClick={redirectToDashboard}>
+    <div className='home-tiles-section__tile' data-aos='fade-up'>
       <h6 className='home-tiles-section__tile-title'>{t('home-tiles-section.title-4-part-1')}</h6>
       <strong className='home-tiles-section__tile-title'>
         {t('home-tiles-section.title-4-part-2')}
