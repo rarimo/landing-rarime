@@ -40,6 +40,14 @@
   }
 }
 
+.app-bar__button-wrapper {
+  display: flex;
+}
+
+.app-bar__button-dashboard {
+  margin-right: to-rem(8);
+}
+
 .app-bar__button-text {
   padding-left: to-rem(8);
   font-weight: 600;

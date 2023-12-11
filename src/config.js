@@ -6,4 +6,5 @@ export const CONFIG = {
   discordLink: 'https://discord.gg/Bzjm5MDXrU',
   linkSupportOfCredentials:
     'https://ebvc1h7ezp0.typeform.com/rarime-identity#hubspot_utk=xxxxx&hubspot_page_name=xxxxx&hubspot_page_url=xxxxx',
+  dashboardLink: 'https://dashboard.rarime.com/',
 };
