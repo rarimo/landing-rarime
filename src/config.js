@@ -7,4 +7,5 @@ export const CONFIG = {
   linkSupportOfCredentials:
     'https://ebvc1h7ezp0.typeform.com/rarime-identity#hubspot_utk=xxxxx&hubspot_page_name=xxxxx&hubspot_page_url=xxxxx',
   dashboardLink: 'https://dashboard.rarime.com/',
+  supportEmail: 'mailto:info@rarilabs.com',
 };
