@@ -112,7 +112,7 @@
   margin-bottom: max(#{vh(3)}, #{to-rem(24)});
   max-width: 60%;
 
-  @include respond-to(laptopL) {
+  @include respond-to(large) {
     max-width: 55%;
   }
 
