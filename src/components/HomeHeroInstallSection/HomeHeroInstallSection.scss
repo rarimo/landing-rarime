@@ -9,7 +9,7 @@
   min-height: to-rem(378);
   max-width: to-rem(378);
 
-  @include respond-to(laptopL) {
+  @include respond-to(large) {
     margin-right: 5%;
   }
 

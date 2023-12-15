@@ -88,18 +88,18 @@
   }
 
   @include respond-above(xmedium) {
-    --container-max-width: #{to-rem(1260)};
-    --container-side-padding: #{to-rem(40)};
+    --container-max-width: #{to-rem(1240)};
+    --container-side-padding: #{to-rem(60)};
   }
 
   @include respond-above(large) {
-    --container-max-width: #{to-rem(1400)};
-    --container-side-padding: #{to-rem(60)};
+    --container-max-width: #{to-rem(1380)};
+    --container-side-padding: #{to-rem(80)};
   }
 
   @include respond-above(xlarge) {
     --container-max-width: #{to-rem(1560)};
-    --container-side-padding: #{to-rem(80)};
+    --container-side-padding: #{to-rem(100)};
   }
 
   // Common

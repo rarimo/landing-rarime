@@ -11,6 +11,10 @@
   flex-direction: column;
   justify-content: center;
 
+  @include respond-to(large) {
+    padding: to-rem(56);
+  }
+
   @include respond-to(medium) {
     padding: to-rem(32);
   }

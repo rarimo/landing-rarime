@@ -34,7 +34,7 @@ const HomeQuestionSection = () => {
             </p>
           </a>
           <a
-            href={CONFIG.linkSupportOfCredentials}
+            href={CONFIG.supportEmail}
             target="_blank"
             className="home-question-section__content-item"
             rel="noreferrer"
