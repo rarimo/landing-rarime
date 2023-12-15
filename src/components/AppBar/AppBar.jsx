@@ -29,13 +29,15 @@ const AppBar = () => {
     setIsDark(scrollY.current < HEIGHT_HERO_SECTION)
   })
 
-  const mobileLogo = useMemo(() => {
-    return isDark ? 'icon-logo-mobile-light' : 'icon-logo-mobile-dark'
-  }, [isDark])
-
-  const desktopLogo = useMemo(() => {
-    return isDark ? 'icon-app-logo-dark' : 'icon-app-logo-light'
-  }, [isDark])
+  const logo = useMemo(() => {
+    return isDesktop
+      ? isDark
+        ? 'icon-app-logo-dark'
+        : 'icon-app-logo-light'
+      : isDark
+      ? 'icon-logo-mobile-light'
+      : 'icon-logo-mobile-dark'
+  }, [isDark, isDesktop])
 
   return (
     <motion.header
@@ -50,11 +52,7 @@ const AppBar = () => {
       <div className='app-bar__container'>
         <div className='app-bar__content container'>
           <Link className='app-bar__logo' to={ROUTES_PATHS.home}>
-            {isDesktop ? (
-              <Icon iconClass='app-bar__logo-img' idIcon={desktopLogo} />
-            ) : (
-              <Icon iconClass='app-bar__logo-img' idIcon={mobileLogo} />
-            )}
+            <Icon iconClass='app-bar__logo-img' idIcon={logo} />
           </Link>
           <div className='app-bar__button-wrapper'>
             <a
