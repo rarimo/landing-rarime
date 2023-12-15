@@ -33,7 +33,7 @@
 }
 
 .home-identity-issuers__list-item {
-  padding: to-rem(48);
+  height: to-rem(220);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,6 +43,7 @@
   box-shadow: var(--default-box-shadow);
   width: calc((100% - var(--sum-of-padding-between-blocks)) / 4);
   @include respond-to(medium) {
+    height: unset;
     padding: to-rem(24);
     width: calc((100% - var(--sum-of-padding-between-blocks-mobile)) / 2);
     margin-top: to-rem(16);
@@ -54,7 +55,8 @@
   color: var(--col-primary-black);
   font-size: to-rem(20);
   font-weight: 500;
-  white-space: nowrap;
+  text-align: center;
+
   @include respond-to(medium) {
     white-space: normal;
     font-size: to-rem(16);
