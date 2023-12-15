@@ -43,7 +43,7 @@
   box-shadow: var(--default-box-shadow);
   width: calc((100% - var(--sum-of-padding-between-blocks)) / 4);
   @include respond-to(medium) {
-    height: unset;
+    height: auto;
     padding: to-rem(24);
     width: calc((100% - var(--sum-of-padding-between-blocks-mobile)) / 2);
     margin-top: to-rem(16);
