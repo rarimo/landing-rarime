@@ -30,13 +30,10 @@ const AppBar = () => {
   })
 
   const logo = useMemo(() => {
-    return isDesktop
-      ? isDark
-        ? 'icon-app-logo-dark'
-        : 'icon-app-logo-light'
-      : isDark
-      ? 'icon-logo-mobile-light'
-      : 'icon-logo-mobile-dark'
+    if (isDesktop) {
+      return isDark ? 'icon-app-logo-dark' : 'icon-app-logo-light'
+    }
+    return isDark ? 'icon-logo-mobile-light' : 'icon-logo-mobile-dark'
   }, [isDark, isDesktop])
 
   return (
