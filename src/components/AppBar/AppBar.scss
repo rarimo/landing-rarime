@@ -25,8 +25,30 @@
   align-items: center;
   padding: to-rem(10) to-rem(16);
   border: 1px solid var(--col-green-primary);
+  background: var(--col-total-black);
   border-radius: to-rem(100);
-  color: var(--col-green-primary);
+  color: var(--col-total-white);
+  @include respond-to(medium) {
+    padding: to-rem(6) to-rem(12);
+  }
+  &:hover{
+    color: var(--col-green-hover) ;
+    border: 1px solid var(--col-green-hover);
+  }
+  &:active{
+    color: var(--col-green-press);
+    border: 1px solid var(--col-green-hover);
+  }
+}
+
+.app-bar__button-install {
+  display: flex;
+  align-items: center;
+  padding: to-rem(10) to-rem(16);
+  border: 1px solid var(--col-green-primary);
+  background: var(--col-green-primary);
+  border-radius: to-rem(100);
+  color: var(--col-total-white);
   @include respond-to(medium) {
     padding: to-rem(6) to-rem(12);
   }
@@ -67,8 +89,8 @@
   height: to-rem(48);
   width: to-rem(182);
   @include respond-to(medium) {
-    height: to-rem(32);
-    width: to-rem(118);
+    height: to-rem(36);
+    width: to-rem(36);
   }
 }
 
