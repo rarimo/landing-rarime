@@ -2,14 +2,14 @@ import './AppBar.scss'
 
 import cn from 'classnames'
 import { motion, useMotionValueEvent, useScroll } from 'framer-motion'
-import { useState } from 'react'
+import { useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 
 import { Icon } from '@/components'
 import { CONFIG } from '@/config'
 import { ROUTES_PATHS } from '@/const'
-import { useAppContext } from '../../hooks'
+import { useAppContext } from '@/hooks'
 
 const HEIGHT_APP_BAR = 150
 const HEIGHT_HERO_SECTION = 800
@@ -29,6 +29,14 @@ const AppBar = () => {
     setIsDark(scrollY.current < HEIGHT_HERO_SECTION)
   })
 
+  const mobileLogo = useMemo(() => {
+    return isDark ? 'icon-logo-mobile-light' : 'icon-logo-mobile-dark'
+  }, [isDark])
+
+  const desktopLogo = useMemo(() => {
+    return isDark ? 'icon-app-logo-dark' : 'icon-app-logo-light'
+  }, [isDark])
+
   return (
     <motion.header
       className={cn(['app-bar', isDark ? 'app-bar__dark' : 'app-bar__light'])}
@@ -43,15 +51,9 @@ const AppBar = () => {
         <div className='app-bar__content container'>
           <Link className='app-bar__logo' to={ROUTES_PATHS.home}>
             {isDesktop ? (
-              <Icon
-                iconClass='app-bar__logo-img'
-                idIcon={isDark ? 'icon-app-logo-dark' : 'icon-app-logo-light'}
-              />
+              <Icon iconClass='app-bar__logo-img' idIcon={desktopLogo} />
             ) : (
-              <Icon
-                iconClass='app-bar__logo-img'
-                idIcon={isDark ? 'icon-logo-mobile-light' : 'icon-logo-mobile-dark'}
-              />
+              <Icon iconClass='app-bar__logo-img' idIcon={mobileLogo} />
             )}
           </Link>
           <div className='app-bar__button-wrapper'>
@@ -75,7 +77,9 @@ const AppBar = () => {
                 width='24'
                 idIcon='icon-hero-section-button'
               />
-              <span className='app-bar__button-text'>{isDesktop ? t('header.button-install') : t('header.button-install-mobile')}</span>
+              <span className='app-bar__button-text'>
+                {isDesktop ? t('header.button-install') : t('header.button-install-mobile')}
+              </span>
             </a>
           </div>
         </div>
