@@ -222,6 +222,7 @@
   color: #545960;
   border: 1px solid #545960;
   margin-right: to-rem(16);
+  pointer-events: none;
 
   @include respond-to(large) {
     padding: to-rem(8) to-rem(45);

@@ -203,12 +203,11 @@
   }
 
   &:hover{
-    color: var(--col-total-white);
-    background: var(--col-green-hover);
+    color: var(--col-green-hover);
     border: 1px solid var(--col-green-hover);
   }
   &:active{
-    background: var(--col-green-press);
+    color: var(--col-green-press);
     border: 1px solid var(--col-green-press);
   }
 }

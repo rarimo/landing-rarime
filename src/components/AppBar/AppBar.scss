@@ -13,6 +13,10 @@
 
 .app-bar__container {
   padding: to-rem(26) 0;
+
+  @include respond-to(large) {
+    padding: to-rem(20) 0;
+  }
 }
 
 .app-bar__content {
@@ -53,11 +57,13 @@
     padding: to-rem(6) to-rem(12);
   }
   &:hover{
-    color: var(--col-green-hover) ;
+    color: var(--col-total-white);
+    background: var(--col-green-hover) ;
     border: 1px solid var(--col-green-hover);
   }
   &:active{
-    color: var(--col-green-press);
+    color: var(--col-total-white);
+    background: var(--col-green-press);
     border: 1px solid var(--col-green-hover);
   }
 }
@@ -88,6 +94,12 @@
 .app-bar__logo-img{
   height: to-rem(48);
   width: to-rem(182);
+
+  @include respond-to(large) {
+    height: to-rem(40);
+    width: to-rem(150);
+  }
+
   @include respond-to(medium) {
     height: to-rem(36);
     width: to-rem(36);
@@ -103,6 +115,18 @@
 .app-bar__light {
   background-color: var(--col-total-white);
   border-bottom: 1px solid rgba(var(--col-primary-black-rgb), 0.1);
+
+  .app-bar__button {
+    border: none;
+
+    &:hover{
+      color: var(--col-green-hover) ;
+    }
+    &:active{
+      color: var(--col-green-press);
+    }
+  }
+
 }
 
 .app-bar__dark{

@@ -152,6 +152,8 @@
   align-items: center;
   justify-content: center;
   margin-right: to-rem(16);
+  overflow: hidden;
+
   @include respond-to(medium) {
     width: to-rem(31);
     height: to-rem(31);

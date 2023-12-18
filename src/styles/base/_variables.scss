@@ -90,6 +90,8 @@
   @include respond-above(xmedium) {
     --container-max-width: #{to-rem(1240)};
     --container-side-padding: #{to-rem(60)};
+    --tile-bg-width: #{to-rem(695)};
+    --tile-bg-height: #{to-rem(430)};
   }
 
   @include respond-above(large) {
@@ -112,6 +114,11 @@
 
   // App bar
   --app-bar-height: #{to-rem(100)};
+
+  @include respond-to(large) {
+    --app-bar-height: #{to-rem(80)};
+
+  }
 
   // App footer
   --app-footer-logo-color: var(--primary-title-color);

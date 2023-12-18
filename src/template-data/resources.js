@@ -9,7 +9,7 @@ export const resources = [
   },
   {
     img: '/img/twitter.png',
-    imgBg: '#1DA1F2',
+    imgBg: '#000',
     titleKey: 'home-identity-section.resources.title-2',
     subtitleKey: 'home-identity-section.resources.subTitle-2',
     tag: 'home-identity-section.resources.tag-2',

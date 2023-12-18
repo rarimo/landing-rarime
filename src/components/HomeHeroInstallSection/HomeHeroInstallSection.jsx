@@ -75,7 +75,9 @@ const HomeHeroInstallSection = () => {
             {t('home-hero-section.btn-cancel')}
           </button>
           <button className="home-hero-install-section__footer-btn-install">
-            {t('home-hero-section.btn-install')}
+            <a href={CONFIG.linkToInstallSnap} target='_blank' rel='noreferrer'>
+              {t('home-hero-section.btn-install')}
+            </a>
           </button>
         </div>
         <a
