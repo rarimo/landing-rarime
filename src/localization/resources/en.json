@@ -5,7 +5,7 @@
   "header": {
     "button-install": "Install RariMe Snap",
     "button-install-mobile": "RariMe Snap",
-    "button-app": "RariMe app"
+    "button-app": "RariMe App"
   },
   "home-hero-section": {
     "title-part-1": "One",
@@ -52,7 +52,7 @@
     },
     "reach-out-support": {
       "question": "How do I reach out for snap support?",
-      "answer": "Visit the Rarimo Discord",
+      "answer": "Visit the Rarimo Discord ",
       "linkText": "support channel"
     },
     "what-can-store": {
@@ -83,7 +83,7 @@
     "title-content-section": "Identity Providers",
     "resources": {
       "title-1": "Age credentials",
-      "title-2": "Twitter handle",
+      "title-2": "X handle",
       "title-3": "Proof of Humanity",
       "title-4": "Gitcoin Passport",
       "subTitle-1": "ID Partners",
