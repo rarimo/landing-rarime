@@ -42,6 +42,12 @@
   background: var(--col-total-white);
   box-shadow: var(--default-box-shadow);
   width: calc((100% - var(--sum-of-padding-between-blocks)) / 4);
+
+  @include respond-to(large) {
+    justify-content: flex-start;
+    padding-top: to-rem(40);
+  }
+  
   @include respond-to(medium) {
     height: auto;
     padding: to-rem(24);
