@@ -161,9 +161,7 @@
 }
 
 .home-identity-section__resource-img {
-  @include respond-to(medium) {
-    max-width: 50%;
-  }
+  max-width: 50%;
 }
 
 .tag-purple {

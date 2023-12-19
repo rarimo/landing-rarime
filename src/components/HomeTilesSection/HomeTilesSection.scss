@@ -153,6 +153,7 @@
 
 .home-tiles-section__tile-card-img-key-wrapper {
   margin-top: to-rem(12);
+  width: to-rem(28);
   filter: drop-shadow(0 6px 24px rgba(82, 182, 154, 32%));
   @include respond-to(medium) {
     width: to-rem(16);
@@ -161,6 +162,7 @@
 }
 
 .home-tiles-section__tile-user-img-wrapper {
+  width: to-rem(64);
   fill: linear-gradient(247deg, #52b69a -4.88%, #3b9f83 100%);
   filter: drop-shadow(0 6px 24px rgba(82, 182, 154, 32%));
   @include respond-to(medium) {

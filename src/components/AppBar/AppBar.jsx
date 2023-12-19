@@ -40,8 +40,8 @@ const AppBar = () => {
     <motion.header
       className={cn(['app-bar', isDark ? 'app-bar__dark' : 'app-bar__light'])}
       variants={{
-        visible: { y: 0, display: 'block' },
-        hidden: { y: '-100%', transitionEnd: { display: 'none' } },
+        visible: { y: 0 },
+        hidden: { y: '-100%' },
       }}
       animate={isShown ? 'visible' : 'hidden'}
       transition={{ duration: 0.5, ease: 'easeInOut' }}

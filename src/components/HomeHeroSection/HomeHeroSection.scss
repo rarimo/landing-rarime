@@ -166,6 +166,10 @@
   color: var(--col-total-white);
   background: var(--col-green-primary);
 
+  @include respond-to(large) {
+    font-size: to-rem(18);
+  }
+
   &-text {
     margin-left: to-rem(8);
   }
@@ -192,6 +196,10 @@
   border-radius: to-rem(100);
   color: var(--col-total-white);
   margin-left: to-rem(16);
+
+  @include respond-to(large) {
+    font-size: to-rem(18);
+  }
 
   @include respond-to(medium) {
     margin-top: to-rem(16);

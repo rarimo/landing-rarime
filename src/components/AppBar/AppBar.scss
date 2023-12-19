@@ -29,7 +29,7 @@
   align-items: center;
   padding: to-rem(10) to-rem(16);
   border: 1px solid var(--col-green-primary);
-  background: var(--col-total-black);
+  background: var(--col-transparent);
   border-radius: to-rem(100);
   color: var(--col-total-white);
   @include respond-to(medium) {
@@ -117,11 +117,12 @@
   border-bottom: 1px solid rgba(var(--col-primary-black-rgb), 0.1);
 
   .app-bar__button {
-    border: none;
+    color: var(--col-green-primary);
 
     &:hover{
-      color: var(--col-green-hover) ;
+      color: var(--col-green-hover);
     }
+
     &:active{
       color: var(--col-green-press);
     }

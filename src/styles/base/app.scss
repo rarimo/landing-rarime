@@ -36,6 +36,7 @@ p {
 }
 
 button {
+  font-family: var(--primary-font-family);
   padding: 0;
   border: none;
   background-color: transparent;
@@ -65,6 +66,10 @@ button {
     cursor: default;
     opacity: 0.5;
   }
+}
+
+a {
+  transition: var(--app-transition-duration-interactive) ease;
 }
 
 input,

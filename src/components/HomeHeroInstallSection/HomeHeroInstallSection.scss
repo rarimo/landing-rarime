@@ -207,7 +207,7 @@
   color: var(--col-total-white);
 
   @include respond-to(large) {
-    padding: to-rem(8) to-rem(45);
+    padding: to-rem(10) to-rem(45);
   }
 
   @include respond-to(medium) {
@@ -225,7 +225,7 @@
   pointer-events: none;
 
   @include respond-to(large) {
-    padding: to-rem(8) to-rem(45);
+    padding: to-rem(10) to-rem(45);
   }
 
   @include respond-to(medium) {
