@@ -41,7 +41,7 @@
   border-radius: 16px;
   background: var(--col-total-white);
   box-shadow: var(--default-box-shadow);
-  width: calc((100% - var(--sum-of-padding-between-blocks)) / 4);
+  width: calc((100% - var(--sum-of-padding-between-blocks)) / 5);
 
   @include respond-to(large) {
     justify-content: flex-start;
@@ -59,7 +59,7 @@
 .home-identity-issuers__list-item-text {
   margin-top: to-rem(32);
   color: var(--col-primary-black);
-  font-size: to-rem(20);
+  font-size: to-rem(18);
   font-weight: 500;
   text-align: center;
 
@@ -98,6 +98,10 @@
 
 .home-identity-issuers__unstoppable-domains-icon {
   background: #2e65f5;
+}
+
+.home-identity-issuers__kleros-icon {
+  background: #f3f3f3;
 }
 
 .home-identity-issuers__gitcoin-icon {
