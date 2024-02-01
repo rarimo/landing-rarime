@@ -72,6 +72,20 @@ const HomeIdentityIssuersSection = () => {
               {t('home-identity-issuers.gitcoin')}
             </p>
           </div>
+          <div className="home-identity-issuers__list-item">
+            <div className="home-identity-issuers__list-item-img-wrapper home-identity-issuers__kleros-icon">
+              <img
+                src="/icons/kleros-icon.svg"
+                width="30"
+                height="29"
+                alt="Kleros icon"
+                className="home-identity-issuers__list-item-img"
+              />
+            </div>
+            <p className="home-identity-issuers__list-item-text">
+              {t('home-identity-issuers.kleros')}
+            </p>
+          </div>
         </div>
       </div>
     </div>
