@@ -76,8 +76,8 @@ const HomeIdentityIssuersSection = () => {
             <div className="home-identity-issuers__list-item-img-wrapper home-identity-issuers__kleros-icon">
               <img
                 src="/icons/kleros-icon.svg"
-                width="30"
-                height="29"
+                width="40"
+                height="40"
                 alt="Kleros icon"
                 className="home-identity-issuers__list-item-img"
               />
