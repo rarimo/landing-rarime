@@ -15,8 +15,14 @@ export default function HomePage() {
       <main className='mb-50 flex flex-col gap-50'>
         <HeroSection />
         <AboutSection />
-        <AirdropSection />
-        <PassportsSection />
+        <div className='container flex flex-col gap-50'>
+          <div className='sticky bottom-10 z-10'>
+            <AirdropSection />
+          </div>
+          <div className='sticky bottom-10'>
+            <PassportsSection />
+          </div>
+        </div>
         <RewardsSection />
         <MetamaskSection />
         <IntegrationsSection />
