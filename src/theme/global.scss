@@ -4,7 +4,7 @@
 
 @layer components {
   .container {
-    @apply mx-auto px-4 max-w-[1200px] w-full;
+    @apply mx-auto px-4 max-w-[1256px] w-full;
   }
 
   // Typography
@@ -30,6 +30,10 @@
 
   .typo-lg-medium {
     @apply text-lg font-medium;
+  }
+
+  .typo-lg-bold {
+    @apply text-lg font-bold;
   }
 
   .typo-overline-1 {
@@ -83,6 +87,10 @@
 
   .button-large {
     @apply button typo-button-large h-12 px-8;
+  }
+
+  .button-primary {
+    @apply bg-primary-base text-base-black;
   }
 
   .button-outlined {
