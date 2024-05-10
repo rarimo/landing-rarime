@@ -12,6 +12,10 @@
     @apply text-sm font-medium;
   }
 
+  .typo-xs {
+    @apply text-xs font-normal;
+  }
+
   .typo-sm {
     @apply text-sm font-normal;
   }
@@ -20,9 +24,21 @@
     @apply text-sm font-medium;
   }
 
+  .typo-overline-1 {
+    @apply text-sm font-bold;
+  }
+
+  .typo-h1 {
+    @apply text-5xl font-bold;
+  }
+
+  .typo-h2 {
+    @apply text-4xl font-normal;
+  }
+
   // Buttons
   .button-medium {
-    @apply typo-button-medium h-8 px-5;
+    @apply flex items-center typo-button-medium h-8 px-5;
   }
 
   .button-outlined {

@@ -3,7 +3,10 @@ import '@/theme/global.scss'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+})
 
 export const metadata: Metadata = {
   title: 'Use one wallet for your social identity | rariMe',

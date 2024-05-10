@@ -1,4 +1,21 @@
+import AppStoreLinks from './AppStoreLinks'
+
 export default function Footer() {
+  const socialLinks = [
+    {
+      label: 'X',
+      // TODO: Update X link
+      href: 'https://x.com',
+      img: '/images/x-logo.svg',
+    },
+    {
+      label: 'Discord',
+      // TODO: Update Discord link
+      href: 'https://discord.com',
+      img: '/images/discord-logo.svg',
+    },
+  ]
+
   const navLinks = [
     { label: 'Eligibility', href: '#' },
     { label: 'Whitepaper', href: '#' },
@@ -16,14 +33,23 @@ export default function Footer() {
       <div className='divider-h' />
       <div className='my-20 flex justify-between gap-20'>
         <div className='flex flex-col gap-8'>
-          <div className='h-8 w-8 rounded-md bg-base-black' />
+          <img className='h-8 w-8' src='/images/logo.svg' alt='Logo' />
           <div className='flex flex-col gap-4'>
             <p className='typo-sm text-text-primary'>
               2024 © All rights reserved.
             </p>
             <div className='flex gap-4'>
-              <div className='h-6 w-6 rounded-md bg-base-black' />
-              <div className='h-6 w-6 rounded-md bg-base-black' />
+              {socialLinks.map(({ label, href, img }, index) => (
+                <a
+                  key={index}
+                  href={href}
+                  target='_blank'
+                  rel='noreferrer'
+                  className=''
+                >
+                  <img className='h-6 w-6' src={img} alt={label} />
+                </a>
+              ))}
             </div>
           </div>
         </div>
@@ -56,10 +82,7 @@ export default function Footer() {
               ))}
             </div>
           </div>
-          <div className='flex gap-4'>
-            <div className='h-10 min-w-30 rounded-sm bg-base-black' />
-            <div className='h-10 min-w-30 rounded-sm bg-base-black' />
-          </div>
+          <AppStoreLinks />
         </div>
       </div>
     </footer>

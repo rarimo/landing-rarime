@@ -9,7 +9,7 @@ export default function Header() {
   return (
     <header className='container mt-4 flex justify-between py-2'>
       <div className='flex items-center gap-8'>
-        <div className='h-8 w-8 rounded-md bg-base-black' />
+        <img className='h-8 w-8' src='/images/logo.svg' alt='Logo' />
         <div className='divider-v' />
         <div className='flex items-center gap-8'>
           {headerLinks.map(({ label, href }) => (
