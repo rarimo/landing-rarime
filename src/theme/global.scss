@@ -12,6 +12,10 @@
     @apply text-sm font-medium;
   }
 
+  .typo-button-large {
+    @apply text-md font-medium;
+  }
+
   .typo-xs {
     @apply text-xs font-normal;
   }
@@ -61,8 +65,16 @@
   }
 
   // Buttons
+  .button {
+    @apply flex gap-2 items-center justify-center rounded-full;
+  }
+
   .button-medium {
-    @apply flex items-center typo-button-medium h-8 px-5;
+    @apply button typo-button-medium h-8 px-5;
+  }
+
+  .button-large {
+    @apply button typo-button-large h-12 px-8;
   }
 
   .button-outlined {

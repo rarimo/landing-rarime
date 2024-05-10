@@ -13,6 +13,9 @@ const config: Config = {
           base: '#CDFD4A',
           dark: '#ACD53E',
         },
+        secondary: {
+          base: '#202020',
+        },
         background: {
           container: '#FFFFFF',
           component: 'rgba(32, 32, 32, 0.05)',
