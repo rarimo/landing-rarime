@@ -28,6 +28,10 @@
     @apply text-sm font-medium;
   }
 
+  .typo-lg-medium {
+    @apply text-lg font-medium;
+  }
+
   .typo-overline-1 {
     @apply text-sm font-bold;
   }
@@ -62,6 +66,10 @@
 
   .typo-body2 {
     @apply text-md font-normal;
+  }
+
+  .typo-body3 {
+    @apply text-sm font-normal;
   }
 
   // Buttons
