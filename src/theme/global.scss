@@ -3,4 +3,38 @@
 @tailwind utilities;
 
 @layer components {
+  .container {
+    @apply mx-auto px-4 max-w-[1200px] w-full;
+  }
+
+  // Typography
+  .typo-button-medium {
+    @apply text-sm font-medium;
+  }
+
+  .typo-sm {
+    @apply text-sm font-normal;
+  }
+
+  .typo-sm-medium {
+    @apply text-sm font-medium;
+  }
+
+  // Buttons
+  .button-medium {
+    @apply typo-button-medium h-8 px-5;
+  }
+
+  .button-outlined {
+    @apply border border-text-primary rounded-full;
+  }
+
+  // Dividers
+  .divider-v {
+    @apply bg-background-component w-[1px] h-full;
+  }
+
+  .divider-h {
+    @apply bg-background-component h-[1px] w-full;
+  }
 }

@@ -7,7 +7,8 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Use one wallet for your social identity | rariMe',
-  description: 'rariMe is a Snap that allows you to securely store and manage your identity credentials using Rarimo Protocol and Zero-Knowledge Proof technology',
+  description:
+    'rariMe is a Snap that allows you to securely store and manage your identity credentials using Rarimo Protocol and Zero-Knowledge Proof technology',
 
   openGraph: {
     title: 'Use one wallet for your social identity | rariMe',
@@ -36,7 +37,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-{/* 
+      {/* 
 <link href="/favicon/favicon-white.ico" rel="icon" media="(prefers-color-scheme: dark)"/>
     <link href="/favicon/favicon-white.ico" rel="icon" type="image/x-icon" media="(prefers-color-scheme: dark)"/>
      */}
