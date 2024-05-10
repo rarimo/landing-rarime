@@ -56,6 +56,10 @@
     @apply text-md font-semibold;
   }
 
+  .typo-body2 {
+    @apply text-md font-normal;
+  }
+
   // Buttons
   .button-medium {
     @apply flex items-center typo-button-medium h-8 px-5;
