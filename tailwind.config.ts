@@ -36,6 +36,13 @@ const config: Config = {
         '4xl': ['64px', '70px'],
         '5xl': ['96px', '96px'],
       },
+      letterSpacing: {
+        tighter: '-0.04em',
+        tight: '-0.02em',
+        normal: '0em',
+        wide: '0.02em',
+        wider: '0.04em',
+      },
       borderRadius: {
         sm: '12px',
         md: '16px',
