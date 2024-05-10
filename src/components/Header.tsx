@@ -7,7 +7,10 @@ export default function Header() {
   ]
 
   return (
-    <header className='container mt-4 flex justify-between py-2'>
+    <header
+      className='container mt-4 flex justify-between py-2'
+      data-aos='fade-up'
+    >
       <div className='flex items-center gap-8'>
         <img className='h-8 w-8' src='/images/logo.svg' alt='Logo' />
         <div className='divider-v' />

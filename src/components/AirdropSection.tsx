@@ -1,6 +1,6 @@
 export default function AirdropSection() {
   return (
-    <div className='container'>
+    <div className='container' data-aos='fade-up'>
       <div className='text-base-white relative flex h-[582px] flex-col justify-between rounded-3xl bg-[#0158B5] p-16'>
         <img
           className='absolute bottom-0 right-19 top-18 z-0 w-[580px]'

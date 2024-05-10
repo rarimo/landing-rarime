@@ -1,6 +1,6 @@
 export default function AboutSection() {
   return (
-    <div className='container flex flex-col items-center'>
+    <div className='container flex flex-col items-center' data-aos='fade-up'>
       <img src='/images/about-phone.png' alt='About Section' className='w-74' />
       <div className='-mt-40 flex max-w-[840px] flex-col items-center gap-20'>
         <div className='flex flex-col items-center gap-6'>

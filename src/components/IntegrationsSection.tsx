@@ -47,7 +47,7 @@ export default function IntegrationsSection() {
   ]
 
   return (
-    <div className='flex flex-col gap-20'>
+    <div className='flex flex-col gap-20' data-aos='fade-up'>
       <div className='container flex items-end justify-between'>
         <div className='flex flex-col gap-6'>
           <h2 className='typo-subtitle1 text-text-secondary'>Integrations</h2>

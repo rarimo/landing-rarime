@@ -3,6 +3,8 @@ import '@/theme/global.scss'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 
+import AosInit from '@/components/AosInit'
+
 const inter = Inter({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
@@ -40,6 +42,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
+      <AosInit />
       {/* 
 <link href="/favicon/favicon-white.ico" rel="icon" media="(prefers-color-scheme: dark)"/>
     <link href="/favicon/favicon-white.ico" rel="icon" type="image/x-icon" media="(prefers-color-scheme: dark)"/>

@@ -29,7 +29,7 @@ export default function Footer() {
   ]
 
   return (
-    <footer className='container'>
+    <footer className='container' data-aos='fade-up'>
       <div className='divider-h' />
       <div className='my-20 flex justify-between gap-20'>
         <div className='flex flex-col gap-8'>

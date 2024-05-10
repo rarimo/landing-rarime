@@ -1,6 +1,6 @@
 export default function MetamaskSection() {
   return (
-    <div className='container'>
+    <div className='container' data-aos='fade-up'>
       <div className='text-base-white bg-secondary-base relative flex h-[582px] flex-col justify-between rounded-3xl p-16'>
         <img
           className='absolute bottom-0 right-9 top-19 z-0 w-[880px]'

@@ -3,7 +3,10 @@ import HeroCard from './HeroCard'
 
 export default function HeroSection() {
   return (
-    <div className='container relative mt-36 flex flex-col gap-30'>
+    <div
+      className='container relative mt-36 flex flex-col gap-30'
+      data-aos='fade-up'
+    >
       <div className='mx-auto flex flex-col items-center gap-4 text-center'>
         <span className='typo-overline1 mx-auto w-max rounded-full bg-primary-base px-4 py-2 text-base-black'>
           RARIME APP
