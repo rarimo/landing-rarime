@@ -5,7 +5,7 @@ export default function HeroSection() {
   return (
     <div className='container relative mt-36 flex flex-col gap-30'>
       <div className='mx-auto flex flex-col items-center gap-4 text-center'>
-        <span className='typo-overline-1 mx-auto w-max rounded-full bg-primary-base px-4 py-2 text-base-black'>
+        <span className='typo-overline1 mx-auto w-max rounded-full bg-primary-base px-4 py-2 text-base-black'>
           RARIME APP
         </span>
         <p className='typo-h2 text-text-primary'>No traceability</p>

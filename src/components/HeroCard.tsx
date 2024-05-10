@@ -47,7 +47,7 @@ export default function HeroCard({
       )}
     >
       <img className='h-8 w-8' src={icon} alt={title} />
-      <p className='typo-overline-2'>{title}</p>
+      <p className='typo-overline2'>{title}</p>
     </div>
   )
 }

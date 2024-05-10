@@ -36,12 +36,16 @@
     @apply text-lg font-bold;
   }
 
-  .typo-overline-1 {
+  .typo-overline1 {
     @apply text-sm font-bold;
   }
 
-  .typo-overline-2 {
+  .typo-overline2 {
     @apply text-xs font-bold;
+  }
+
+  .typo-caption1 {
+    @apply text-sm font-normal;
   }
 
   .typo-h1 {
@@ -90,7 +94,7 @@
   }
 
   .button-primary {
-    @apply bg-primary-base text-base-black;
+    @apply bg-primary-base text-base-black hover:bg-primary-dark transition-colors;
   }
 
   .button-outlined {
