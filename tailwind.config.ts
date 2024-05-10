@@ -19,6 +19,7 @@ const config: Config = {
         },
         base: {
           black: '#202020',
+          white: '#FFFFFF',
         },
       },
       fontSize: {

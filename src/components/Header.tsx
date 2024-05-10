@@ -24,7 +24,7 @@ export default function Header() {
         </div>
       </div>
       <div className='flex items-center gap-8'>
-        <span>🌐</span>
+        <img className='h-5 w-5' src='/icons/globe-icon.svg' alt='Language' />
         <button className='button-medium button-outlined'>Dashboard</button>
       </div>
     </header>
