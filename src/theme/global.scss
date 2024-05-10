@@ -40,6 +40,22 @@
     @apply text-4xl font-normal;
   }
 
+  .typo-h3 {
+    @apply text-3xl font-bold;
+  }
+
+  .typo-h4 {
+    @apply text-2xl font-bold;
+  }
+
+  .typo-subtitle1 {
+    @apply text-xl font-semibold;
+  }
+
+  .typo-subtitle3 {
+    @apply text-md font-semibold;
+  }
+
   // Buttons
   .button-medium {
     @apply flex items-center typo-button-medium h-8 px-5;
