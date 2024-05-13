@@ -1,8 +1,8 @@
-import { useMemo } from 'react'
+import { HTMLAttributes, useMemo } from 'react'
 
 import { cn } from '@/theme'
 
-interface HeroCardProps {
+interface HeroCardProps extends HTMLAttributes<HTMLDivElement> {
   className?: string
   title: string
   icon: string
@@ -16,6 +16,7 @@ export default function HeroCard({
   icon,
   variant,
   size,
+  ...rest
 }: HeroCardProps) {
   const variantClassName = useMemo(() => {
     switch (variant) {
@@ -45,6 +46,7 @@ export default function HeroCard({
         sizeClassName,
         className,
       )}
+      {...rest}
     >
       <img className='h-8 w-8' src={icon} alt={title} />
       <p className='typo-overline2'>{title}</p>

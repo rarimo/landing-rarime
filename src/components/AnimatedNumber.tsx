@@ -16,7 +16,7 @@ export default function AnimatedNumber({
   const rootRef = useRef<HTMLSpanElement>(null)
   const intersection = useIntersection(rootRef, { threshold: 1 })
 
-  const [displayValue, setDisplayValue] = useState(value)
+  const [displayValue, setDisplayValue] = useState(0)
   const [isAnimated, setIsAnimated] = useState(false)
 
   const formattedDisplayValue = useMemo(() => {

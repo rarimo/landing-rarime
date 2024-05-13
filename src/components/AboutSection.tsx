@@ -2,9 +2,16 @@ import AnimatedNumber from './AnimatedNumber'
 
 export default function AboutSection() {
   return (
-    <div className='container flex flex-col items-center' data-aos='fade-up'>
-      <img src='/images/about-phone.png' alt='About Section' className='w-74' />
-      <div className='-mt-40 flex max-w-[840px] flex-col items-center gap-20'>
+    <div className='container flex flex-col items-center'>
+      <img
+        src='/images/about-phone.png'
+        alt='About Section'
+        className='z-10 w-74'
+      />
+      <div
+        className='z-20 -mt-40 flex max-w-[840px] flex-col items-center gap-20'
+        data-aos='fade-up'
+      >
         <div className='flex flex-col items-center gap-6'>
           <h2 className='typo-subtitle1 text-text-secondary'>About</h2>
           <p className='typo-h3 text-center text-text-primary'>

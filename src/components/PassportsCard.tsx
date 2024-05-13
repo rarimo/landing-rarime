@@ -1,6 +1,6 @@
 export default function PassportsCard() {
   return (
-    <div className='text-base-white bg-secondary-base relative flex h-[582px] flex-col justify-end rounded-3xl p-16'>
+    <div className='relative flex h-[582px] flex-col justify-end rounded-3xl bg-secondary-base p-16 text-base-white'>
       <img
         className='absolute bottom-0 right-9 top-20 z-0 w-[880px]'
         src='/images/passport-bg.png'
@@ -14,7 +14,7 @@ export default function PassportsCard() {
             independently and without anyone able to trace your activities
           </p>
         </div>
-        <button className='button-large button-outlined border-base-white w-max'>
+        <button className='button-large button-outlined w-max border-base-white'>
           <span>Play Demo</span>
           <img src='/icons/play-icon.svg' alt='Play icon' />
         </button>
