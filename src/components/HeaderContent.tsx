@@ -15,13 +15,12 @@ export default function HeaderContent({ isDark = false }) {
         isDark ? 'text-base-white' : 'text-text-primary',
       )}
     >
-      <div className='flex items-center gap-8'>
+      <div className='flex items-center gap-10'>
         <img
-          className='h-8 w-8'
+          className='h-8'
           src={isDark ? '/images/logo-light.svg' : '/images/logo.svg'}
           alt='Logo'
         />
-        <div className={cn('divider-v', isDark && 'bg-base-white opacity-5')} />
         <div className='flex items-center gap-8'>
           {headerLinks.map(({ label, href }) => (
             <a key={label} href={href} className='typo-button-medium'>

@@ -1,3 +1,5 @@
+import AnimatedNumber from './AnimatedNumber'
+
 export default function AboutSection() {
   return (
     <div className='container flex flex-col items-center' data-aos='fade-up'>
@@ -13,11 +15,17 @@ export default function AboutSection() {
         <div className='flex w-[400px] justify-between'>
           <div className='flex flex-col items-center gap-6'>
             <p className='typo-subtitle3 text-text-secondary'>Incognitos</p>
-            <p className='typo-h4 text-primary-dark'>5,924,252</p>
+            <AnimatedNumber
+              className='typo-h4 w-40 text-primary-dark'
+              value={5924252}
+            />
           </div>
           <div className='flex flex-col items-center gap-6'>
             <p className='typo-subtitle3 text-text-secondary'>Identifiers</p>
-            <p className='typo-h4 text-primary-dark'>5,924,252</p>
+            <AnimatedNumber
+              className='typo-h4 w-40 text-primary-dark'
+              value={5924252}
+            />
           </div>
         </div>
       </div>

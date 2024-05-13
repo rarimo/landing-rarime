@@ -1,3 +1,10 @@
+'use client'
+import '@splidejs/splide/css'
+
+import { Splide } from '@splidejs/splide'
+import { AutoScroll } from '@splidejs/splide-extension-auto-scroll'
+import { useEffect } from 'react'
+
 export default function IntegrationsSection() {
   const integrations = [
     {
@@ -46,6 +53,22 @@ export default function IntegrationsSection() {
     },
   ]
 
+  useEffect(() => {
+    new Splide('.splide', {
+      gap: '24px',
+      arrows: false,
+      pagination: false,
+      autoWidth: true,
+      type: 'loop',
+      drag: 'free',
+      focus: 'center',
+      autoScroll: {
+        speed: 0.5,
+        pauseOnHover: false,
+      },
+    }).mount({ AutoScroll })
+  }, [])
+
   return (
     <div className='flex flex-col gap-20' data-aos='fade-up'>
       <div className='container flex items-end justify-between'>
@@ -63,18 +86,22 @@ export default function IntegrationsSection() {
         </button>
       </div>
 
-      <div className='flex gap-6 overflow-x-auto px-4'>
-        {integrations.map(({ title, img }, index) => (
-          <div
-            key={index}
-            className='flex h-25 min-w-40 flex-1 flex-col items-center justify-between rounded-sm bg-background-component p-3'
-          >
-            <img className='h-8 w-8' src={img} alt={title} />
-            <p className='typo-caption1 text-center text-text-secondary'>
-              {title}
-            </p>
+      <div className='splide'>
+        <div className='splide__track'>
+          <div className='splide__list'>
+            {integrations.map(({ title, img }, index) => (
+              <div
+                className='splide__slide flex h-30 min-w-42 flex-1 flex-col items-center justify-between rounded-sm bg-background-component px-8 py-4'
+                key={index}
+              >
+                <img className='h-8 w-8' src={img} alt={title} />
+                <p className='typo-caption1 text-center text-text-secondary'>
+                  {title}
+                </p>
+              </div>
+            ))}
           </div>
-        ))}
+        </div>
       </div>
     </div>
   )

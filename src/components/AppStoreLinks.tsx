@@ -1,4 +1,6 @@
-export default function AppStoreLinks() {
+import { cn } from '@/theme'
+
+export default function AppStoreLinks({ className }: { className?: string }) {
   const links = [
     {
       label: 'App Store',
@@ -15,7 +17,7 @@ export default function AppStoreLinks() {
   ]
 
   return (
-    <div className='flex gap-4'>
+    <div className={cn('flex gap-4', className)}>
       {links.map(({ label, href, img }, index) => (
         <a
           key={index}

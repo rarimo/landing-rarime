@@ -1,4 +1,4 @@
-export default function PassportsSection() {
+export default function PassportsCard() {
   return (
     <div className='text-base-white bg-secondary-base relative flex h-[582px] flex-col justify-end rounded-3xl p-16'>
       <img

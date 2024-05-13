@@ -42,13 +42,22 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <AosInit />
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `history.scrollRestoration = "manual"`,
+          }}
+        />
+      </head>
       {/* 
 <link href="/favicon/favicon-white.ico" rel="icon" media="(prefers-color-scheme: dark)"/>
     <link href="/favicon/favicon-white.ico" rel="icon" type="image/x-icon" media="(prefers-color-scheme: dark)"/>
      */}
 
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <AosInit />
+        {children}
+      </body>
     </html>
   )
 }

@@ -1,11 +1,10 @@
 import AboutSection from './AboutSection'
-import AirdropSection from './AirdropSection'
+import CardsSection from './CardsSection'
 import Footer from './Footer'
 import Header from './Header'
 import HeroSection from './HeroSection'
 import IntegrationsSection from './IntegrationsSection'
 import MetamaskSection from './MetamaskSection'
-import PassportsSection from './PassportsSection'
 import RewardsSection from './RewardsSection'
 
 export default function HomePage() {
@@ -15,14 +14,7 @@ export default function HomePage() {
       <main className='mb-50 flex flex-col gap-50'>
         <HeroSection />
         <AboutSection />
-        <div className='container flex flex-col gap-50'>
-          <div className='sticky bottom-10 z-10'>
-            <AirdropSection />
-          </div>
-          <div className='sticky bottom-10'>
-            <PassportsSection />
-          </div>
-        </div>
+        <CardsSection />
         <RewardsSection />
         <MetamaskSection />
         <IntegrationsSection />

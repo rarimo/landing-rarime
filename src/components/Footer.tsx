@@ -33,7 +33,7 @@ export default function Footer() {
       <div className='divider-h' />
       <div className='my-20 flex justify-between gap-20'>
         <div className='flex flex-col gap-8'>
-          <img className='h-8 w-8' src='/images/logo.svg' alt='Logo' />
+          <img className='h-8 w-8' src='/images/logo-small.svg' alt='Logo' />
           <div className='flex flex-col gap-4'>
             <p className='typo-sm text-text-primary'>
               2024 © All rights reserved.

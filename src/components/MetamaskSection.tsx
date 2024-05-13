@@ -25,7 +25,11 @@ export default function MetamaskSection() {
             </p>
           </div>
           <button className='button-medium button-primary h-12 w-max'>
-            <img className='h-5 w-5' src='/images/logo.svg' alt='RariMe logo' />
+            <img
+              className='h-5 w-5'
+              src='/images/logo-small.svg'
+              alt='RariMe logo'
+            />
             <span>Install RariMe Snap</span>
           </button>
         </div>
