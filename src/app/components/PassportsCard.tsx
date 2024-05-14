@@ -8,10 +8,10 @@ export default function PassportsCard() {
       />
       <div className='z-10 flex max-w-[840px] flex-col gap-10'>
         <div className='flex flex-col gap-6'>
-          <p className='typo-subtitle1 opacity-50'>Passports Scan</p>
+          <p className='typo-subtitle1 opacity-50'>Passport Scan</p>
           <p className='typo-h4'>
-            Convert existing identity documents into anonymous credentials
-            independently and without anyone able to trace your activities
+            Convert identity documents into anonymous credentials, keeping your
+            activities private and untraceable
           </p>
         </div>
         <button className='button-large button-outlined w-max border-base-white'>

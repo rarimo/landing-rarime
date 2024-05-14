@@ -27,8 +27,12 @@ export default function HeroSection() {
             <span className='typo-overline1 mx-auto w-max rounded-full bg-primary-base px-4 py-2 text-base-black'>
               RARIME APP
             </span>
-            <p className='typo-h2 text-text-primary'>No traceability</p>
             <h1 className='typo-h1 text-text-primary'>GO INCOGNITO</h1>
+            <p className='typo-body1 max-w-[720px] text-text-secondary'>
+              RariMe is a self-custody identity wallet that allows users to
+              verify their eligibility for Web3 services without exposing their
+              personal data
+            </p>
             <AppStoreLinks className='mt-4' />
           </div>
           <div className='flex flex-col items-center gap-1'>

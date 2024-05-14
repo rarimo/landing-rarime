@@ -15,13 +15,13 @@ export default function MetamaskSection() {
           />
           <span className='typo-lg-bold'>MetaMask extension</span>
         </div>
-        <div className='z-10 flex max-w-[840px] flex-col gap-10'>
+        <div className='z-10 flex max-w-[700px] flex-col gap-10'>
           <div className='flex flex-col gap-6'>
             <p className='typo-h4'>
               Use your RariMe seamlessly across web3 via MetaMask
             </p>
             <p className='typo-subtitle1 opacity-50'>
-              Your identity and crypto lives in a single place.
+              Your identity and crypto lives in a single place
             </p>
           </div>
           <button className='button-medium button-primary h-12 w-max'>

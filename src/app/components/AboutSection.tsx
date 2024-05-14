@@ -10,7 +10,7 @@ export default function AboutSection() {
 
   const identifiersValue = calculateProgressiveNumber({
     startNumber: 81055,
-    startDate: new Date('2024-05-14'),
+    startDate: new Date('2024-05-13'),
     range: { min: 260, max: 530 },
   })
 
@@ -22,13 +22,12 @@ export default function AboutSection() {
         className='z-10 w-74'
       />
       <div
-        className='z-20 -mt-40 flex max-w-[840px] flex-col items-center gap-20'
+        className='z-20 -mt-24 flex max-w-[840px] flex-col items-center gap-20'
         data-aos='fade-up'
       >
         <div className='flex flex-col items-center gap-6'>
-          <h2 className='typo-subtitle1 text-text-secondary'>About</h2>
           <p className='typo-h3 text-center text-text-primary'>
-            Reclaim your online privacy as incognito, making your web activity
+            Reclaim your online privacy as incognito, making your activity
             invisible and unlinkable to you
           </p>
         </div>

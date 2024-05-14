@@ -74,10 +74,10 @@ export default function IntegrationsSection() {
       <div className='container flex items-end justify-between'>
         <div className='flex flex-col gap-6'>
           <h2 className='typo-subtitle1 text-text-secondary'>Integrations</h2>
-          <p className='typo-h3 text-text-primary'>Rarime app integrations</p>
+          <p className='typo-h3 text-text-primary'>Supported solutions</p>
         </div>
         <button className='button-large button-primary w-max'>
-          <span>Integrate</span>
+          <span>Add your service</span>
           <img
             className='h-5 w-5'
             src='/icons/arrow-right-icon.svg'
