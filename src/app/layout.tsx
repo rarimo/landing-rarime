@@ -1,4 +1,4 @@
-import '@/theme/global.scss'
+import '@/theme/styles/index.scss'
 
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
@@ -12,14 +12,14 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Use one wallet for your social identity | rariMe',
+  title: 'Go Incognito | RariMe',
   description:
-    'rariMe is a Snap that allows you to securely store and manage your identity credentials using Rarimo Protocol and Zero-Knowledge Proof technology',
+    'RariMe is a self-custody identity wallet that allows users to verify their eligibility for Web3 services without exposing their personal data',
 
   openGraph: {
-    title: 'Use one wallet for your social identity | rariMe',
+    title: 'Go Incognito | RariMe',
     description:
-      'rariMe is a Snap that allows you to securely store and manage your identity credentials using Rarimo Protocol and Zero-Knowledge Proof technology',
+      'RariMe is a self-custody identity wallet that allows users to verify their eligibility for Web3 services without exposing their personal data',
     type: 'website',
     url: 'https://rarime.com/',
     siteName: 'RariMe',
@@ -27,9 +27,9 @@ export const metadata: Metadata = {
   },
 
   twitter: {
-    title: 'Use one wallet for your social identity | rariMe',
+    title: 'Go Incognito | RariMe',
     description:
-      'rariMe is a Snap that allows you to securely store and manage your identity credentials using Rarimo Protocol and Zero-Knowledge Proof technology',
+      'RariMe is a self-custody identity wallet that allows users to verify their eligibility for Web3 services without exposing their personal data',
     card: 'summary_large_image',
     images: '/images/og-image.webp',
     site: 'rarime.com',

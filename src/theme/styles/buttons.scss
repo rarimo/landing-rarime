@@ -1,0 +1,24 @@
+@layer components {
+  // Base
+  .button {
+    @apply flex gap-2 items-center justify-center rounded-full;
+  }
+
+  // Sizes
+  .button-medium {
+    @apply button typo-button-medium h-8 px-5;
+  }
+
+  .button-large {
+    @apply button typo-button-large h-12 px-8;
+  }
+
+  // Variants
+  .button-primary {
+    @apply bg-primary-base text-base-black hover:bg-primary-dark transition-colors;
+  }
+
+  .button-outlined {
+    @apply border border-text-primary rounded-full;
+  }
+}

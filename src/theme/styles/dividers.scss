@@ -1,0 +1,9 @@
+@layer components {
+  .divider-v {
+    @apply bg-background-component w-[1px] h-full;
+  }
+
+  .divider-h {
+    @apply bg-background-component h-[1px] w-full;
+  }
+}

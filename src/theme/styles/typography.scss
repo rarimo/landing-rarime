@@ -1,0 +1,84 @@
+@layer components {
+  // Heading
+  .typo-h1 {
+    @apply text-5xl font-bold;
+  }
+
+  .typo-h2 {
+    @apply text-4xl font-normal;
+  }
+
+  .typo-h3 {
+    @apply text-3xl font-bold;
+  }
+
+  .typo-h4 {
+    @apply text-2xl font-bold;
+  }
+
+  // Subtitle
+  .typo-subtitle1 {
+    @apply text-xl font-semibold;
+  }
+
+  .typo-subtitle3 {
+    @apply text-md font-semibold;
+  }
+
+  // Body
+  .typo-body1 {
+    @apply text-lg font-normal tracking-wide;
+  }
+
+  .typo-body2 {
+    @apply text-md font-normal tracking-wide;
+  }
+
+  .typo-body3 {
+    @apply text-sm font-normal tracking-wide;
+  }
+
+  // Overline
+  .typo-overline1 {
+    @apply text-sm font-bold tracking-wider;
+  }
+
+  .typo-overline2 {
+    @apply text-xs font-bold tracking-wider;
+  }
+
+  // Caption
+  .typo-caption1 {
+    @apply text-sm font-normal;
+  }
+
+  // Button
+  .typo-button-medium {
+    @apply text-sm font-medium;
+  }
+
+  .typo-button-large {
+    @apply text-md font-medium;
+  }
+
+  // Other
+  .typo-xs {
+    @apply text-xs font-normal;
+  }
+
+  .typo-sm {
+    @apply text-sm font-normal;
+  }
+
+  .typo-sm-medium {
+    @apply text-sm font-medium;
+  }
+
+  .typo-lg-medium {
+    @apply text-lg font-medium;
+  }
+
+  .typo-lg-bold {
+    @apply text-lg font-bold;
+  }  
+}
