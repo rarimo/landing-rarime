@@ -11,7 +11,7 @@ interface Props {
 export default function AnimatedNumber({
   className,
   value,
-  duration = 2000,
+  duration = 1000,
 }: Props) {
   const rootRef = useRef<HTMLSpanElement>(null)
   const intersection = useIntersection(rootRef, { threshold: 1 })
