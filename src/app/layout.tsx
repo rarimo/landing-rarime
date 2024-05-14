@@ -2,8 +2,9 @@ import '@/theme/global.scss'
 
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import { ReactNode } from 'react'
 
-import AosInit from '@/components/AosInit'
+import AosInit from '@/common/AosInit'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -20,9 +21,9 @@ export const metadata: Metadata = {
     description:
       'rariMe is a Snap that allows you to securely store and manage your identity credentials using Rarimo Protocol and Zero-Knowledge Proof technology',
     type: 'website',
-    url: 'https://distributedlab.com/',
-    siteName: 'Distributed Lab',
-    images: '/images/og-image.png',
+    url: 'https://rarime.com/',
+    siteName: 'RariMe',
+    images: '/images/og-image.webp',
   },
 
   twitter: {
@@ -30,30 +31,26 @@ export const metadata: Metadata = {
     description:
       'rariMe is a Snap that allows you to securely store and manage your identity credentials using Rarimo Protocol and Zero-Knowledge Proof technology',
     card: 'summary_large_image',
-    images: '/images/og-image.png',
+    images: '/images/og-image.webp',
     site: 'rarime.com',
   },
 }
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode
-}>) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang='en'>
       <head>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `history.scrollRestoration = "manual"`,
-          }}
+        <link
+          href='/favicon/favicon-dark.ico'
+          rel='icon'
+          media='(prefers-color-scheme: light)'
+        />
+        <link
+          href='/favicon/favicon-light.ico'
+          rel='icon'
+          media='(prefers-color-scheme: dark)'
         />
       </head>
-      {/* 
-<link href="/favicon/favicon-white.ico" rel="icon" media="(prefers-color-scheme: dark)"/>
-    <link href="/favicon/favicon-white.ico" rel="icon" type="image/x-icon" media="(prefers-color-scheme: dark)"/>
-     */}
-
       <body className={inter.className}>
         <AosInit />
         {children}

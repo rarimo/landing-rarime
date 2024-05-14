@@ -9,47 +9,47 @@ export default function IntegrationsSection() {
   const integrations = [
     {
       title: 'Metamask',
-      img: '/images/metamask-logo.svg',
+      img: '/images/integrations/metamask-logo.svg',
     },
     {
       title: 'Civic',
-      img: '/images/civic-logo.svg',
+      img: '/images/integrations/civic-logo.svg',
     },
     {
       title: 'Worldcoin',
-      img: '/images/worldcoin-logo.svg',
+      img: '/images/integrations/worldcoin-logo.svg',
     },
     {
       title: 'Gitcoin Passport',
-      img: '/images/gp-logo.svg',
+      img: '/images/integrations/gp-logo.svg',
     },
     {
       title: 'Kleros',
-      img: '/images/kleros-logo.svg',
+      img: '/images/integrations/kleros-logo.svg',
     },
     {
       title: 'Colab',
-      img: '/images/colab-logo.svg',
+      img: '/images/integrations/colab-logo.svg',
     },
     {
       title: 'QuestN',
-      img: '/images/questn-logo.svg',
+      img: '/images/integrations/questn-logo.svg',
     },
     {
       title: 'Unstoppable Domains',
-      img: '/images/ud-logo.svg',
+      img: '/images/integrations/ud-logo.svg',
     },
     {
       title: 'Galxe',
-      img: '/images/galxe-logo.svg',
+      img: '/images/integrations/galxe-logo.svg',
     },
     {
       title: 'Zealy',
-      img: '/images/zealy-logo.svg',
+      img: '/images/integrations/zealy-logo.svg',
     },
     {
       title: 'Integral',
-      img: '/images/integral-logo.svg',
+      img: '/images/integrations/integral-logo.svg',
     },
   ]
 

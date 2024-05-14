@@ -3,7 +3,7 @@ export default function AirdropCard() {
     <div className='relative flex h-[582px] flex-col justify-between rounded-3xl bg-[#0158B5] p-16 text-base-white'>
       <img
         className='absolute bottom-0 right-19 top-18 z-0 w-[580px]'
-        src='/images/airdrop-bg.png'
+        src='/images/home/airdrop-bg.png'
         alt='Airdrop Section'
       />
       <div className='flex h-18 w-18 items-center justify-center rounded-full bg-background-component px-5 py-6'>

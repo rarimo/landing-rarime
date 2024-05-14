@@ -16,7 +16,7 @@ export default function RewardsSection() {
           <div className='absolute bottom-10 left-10 right-6'>
             <img
               className=''
-              src='/images/rewards-tasks.png'
+              src='/images/home/rewards-tasks.png'
               alt='Rewards Tasks'
             />
           </div>
@@ -31,7 +31,7 @@ export default function RewardsSection() {
           <div className='absolute bottom-10 left-10 right-6'>
             <img
               className=''
-              src='/images/rewards-levels.png'
+              src='/images/home/rewards-levels.png'
               alt='Rewards Levels'
             />
           </div>

@@ -1,10 +1,10 @@
-import AnimatedNumber from './AnimatedNumber'
+import AnimatedNumber from '@/common/AnimatedNumber'
 
 export default function AboutSection() {
   return (
     <div className='container flex flex-col items-center'>
       <img
-        src='/images/about-phone.png'
+        src='/images/home/about-phone.png'
         alt='About Section'
         className='z-10 w-74'
       />
@@ -23,14 +23,14 @@ export default function AboutSection() {
           <div className='flex flex-col items-center gap-6'>
             <p className='typo-subtitle3 text-text-secondary'>Incognitos</p>
             <AnimatedNumber
-              className='typo-h4 w-40 text-primary-dark'
+              className='typo-h4 w-40 text-primary-dark text-center'
               value={5924252}
             />
           </div>
           <div className='flex flex-col items-center gap-6'>
             <p className='typo-subtitle3 text-text-secondary'>Identifiers</p>
             <AnimatedNumber
-              className='typo-h4 w-40 text-primary-dark'
+              className='typo-h4 w-40 text-primary-dark text-center'
               value={5924252}
             />
           </div>

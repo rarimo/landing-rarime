@@ -3,7 +3,7 @@ export default function PassportsCard() {
     <div className='relative flex h-[582px] flex-col justify-end rounded-3xl bg-secondary-base p-16 text-base-white'>
       <img
         className='absolute bottom-0 right-9 top-20 z-0 w-[880px]'
-        src='/images/passport-bg.png'
+        src='/images/home/passport-bg.png'
         alt='Passports Section'
       />
       <div className='z-10 flex max-w-[840px] flex-col gap-10'>

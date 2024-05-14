@@ -2,9 +2,9 @@
 
 import { useMemo } from 'react'
 
+import AppStoreLinks from '@/common/AppStoreLinks'
 import { useWindowScroll } from '@/hooks/window-scroll'
 
-import AppStoreLinks from './AppStoreLinks'
 import HeroCardsGrid from './HeroCardsGrid'
 
 export default function HeroSection() {

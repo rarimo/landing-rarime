@@ -1,8 +1,7 @@
 import { setStaticParamsLocale } from 'next-international/server'
 
-import HomePage from '@/components/HomePage'
-
 import { getStaticParams } from '../locales/server'
+import HomePage from './HomePage'
 
 export function generateStaticParams() {
   return getStaticParams()

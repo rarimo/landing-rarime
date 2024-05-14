@@ -4,13 +4,13 @@ export default function MetamaskSection() {
       <div className='relative flex h-[582px] flex-col justify-between rounded-3xl bg-secondary-base p-16 text-base-white'>
         <img
           className='absolute bottom-0 right-9 top-19 z-0 w-[880px]'
-          src='/images/metamask-bg.png'
+          src='/images/home/metamask-bg.png'
           alt='MetaMask Snap'
         />
         <div className='flex items-center gap-4'>
           <img
             className='h-10 w-10'
-            src='/images/metamask-logo.svg'
+            src='/images/integrations/metamask-logo.svg'
             alt='MetaMask logo'
           />
           <span className='typo-lg-bold'>MetaMask extension</span>
