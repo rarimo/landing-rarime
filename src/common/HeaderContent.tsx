@@ -3,9 +3,8 @@ import { cn } from '@/theme'
 export default function HeaderContent({ isDark = false }) {
   const headerLinks = [
     { label: 'Identity', href: '#' },
-    { label: 'Points', href: '#' },
-    { label: 'Proofs', href: '#' },
-    { label: 'Whitepaper', href: '#' },
+    { label: 'Rewards', href: '#' },
+    { label: 'Integrate', href: '#' },
   ]
 
   return (
@@ -29,21 +28,14 @@ export default function HeaderContent({ isDark = false }) {
           ))}
         </div>
       </div>
-      <div className='flex items-center gap-8'>
-        <img
-          className='h-5 w-5'
-          src={isDark ? '/icons/globe-icon-light.svg' : '/icons/globe-icon.svg'}
-          alt='Language'
-        />
-        <button
-          className={cn(
-            'button-medium button-outlined',
-            isDark && 'border-base-white',
-          )}
-        >
-          Dashboard
-        </button>
-      </div>
+      <button
+        className={cn(
+          'button-medium button-outlined',
+          isDark && 'border-base-white',
+        )}
+      >
+        Dashboard
+      </button>
     </div>
   )
 }

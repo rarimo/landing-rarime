@@ -40,6 +40,11 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang='en'>
       <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `history.scrollRestoration = "manual"`,
+          }}
+        />
         <link
           href='/favicon/favicon-dark.ico'
           rel='icon'

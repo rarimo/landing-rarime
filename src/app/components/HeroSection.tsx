@@ -11,8 +11,8 @@ export default function HeroSection() {
   const { scrollY } = useWindowScroll()
 
   const blockOpacity = useMemo(() => {
-    const OPACITY_THRESHOLD = 600
-    return Math.max(0, 1 - scrollY / OPACITY_THRESHOLD)
+    const OPACITY_SCROLL_HEIGHT = 600
+    return Math.max(0, 1 - scrollY / OPACITY_SCROLL_HEIGHT)
   }, [scrollY])
 
   return (
