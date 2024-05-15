@@ -1,6 +1,12 @@
+import { Sections } from '@/constants/sections'
+
 export default function RewardsSection() {
   return (
-    <div className='container flex flex-col gap-20' data-aos='fade-up'>
+    <div
+      id={Sections.Rewards}
+      className='container flex flex-col gap-20'
+      data-aos='fade-up'
+    >
       <div className='flex flex-col gap-6'>
         <h2 className='typo-subtitle1 text-text-secondary'>Rewards</h2>
         <p className='typo-h3 max-w-[860px] text-text-primary'>

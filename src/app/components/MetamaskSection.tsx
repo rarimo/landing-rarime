@@ -24,14 +24,19 @@ export default function MetamaskSection() {
               Your identity and crypto lives in a single place
             </p>
           </div>
-          <button className='button-medium button-primary h-12 w-max'>
+          <a
+            className='button-medium button-primary h-12 w-max'
+            href='https://snaps.metamask.io/snap/npm/rarimo/rarime/'
+            target='_blank'
+            rel='noreferrer'
+          >
             <img
               className='h-5 w-5'
               src='/images/logo-small.svg'
               alt='RariMe logo'
             />
             <span>Install RariMe Snap</span>
-          </button>
+          </a>
         </div>
       </div>
     </div>

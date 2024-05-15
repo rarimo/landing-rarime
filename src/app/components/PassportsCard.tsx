@@ -14,6 +14,7 @@ export default function PassportsCard() {
             activities private and untraceable
           </p>
         </div>
+        {/* TODO: Play demo */}
         <button className='button-large button-outlined w-max border-base-white'>
           <span>Play Demo</span>
           <img src='/icons/play-icon.svg' alt='Play icon' />

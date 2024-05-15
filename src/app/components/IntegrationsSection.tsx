@@ -5,6 +5,8 @@ import { Splide } from '@splidejs/splide'
 import { AutoScroll } from '@splidejs/splide-extension-auto-scroll'
 import { useEffect } from 'react'
 
+import { Sections } from '@/constants/sections'
+
 export default function IntegrationsSection() {
   const integrations = [
     {
@@ -70,12 +72,17 @@ export default function IntegrationsSection() {
   }, [])
 
   return (
-    <div className='flex flex-col gap-20' data-aos='fade-up'>
+    <div
+      id={Sections.Integrations}
+      className='flex flex-col gap-20'
+      data-aos='fade-up'
+    >
       <div className='container flex items-end justify-between'>
         <div className='flex flex-col gap-6'>
           <h2 className='typo-subtitle1 text-text-secondary'>Integrations</h2>
           <p className='typo-h3 text-text-primary'>Supported solutions</p>
         </div>
+        {/* TODO: Add a link */}
         <button className='button-large button-primary w-max'>
           <span>Add your service</span>
           <img

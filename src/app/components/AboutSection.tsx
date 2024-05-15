@@ -1,4 +1,7 @@
+'use client'
+
 import AnimatedNumber from '@/common/AnimatedNumber'
+import { Sections } from '@/constants/sections'
 import { calculateProgressiveNumber } from '@/utils/number'
 
 export default function AboutSection() {
@@ -15,7 +18,10 @@ export default function AboutSection() {
   })
 
   return (
-    <div className='container flex flex-col items-center'>
+    <div
+      id={Sections.Identity}
+      className='container flex flex-col items-center'
+    >
       <img
         src='/images/home/about-phone.png'
         alt='About Section'

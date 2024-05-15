@@ -1,13 +1,16 @@
+import { Sections } from '@/constants/sections'
+
 import AppStoreLinks from './AppStoreLinks'
 
 export default function Footer() {
   const navLinks = [
-    { label: 'Eligibility', href: '#' },
-    { label: 'Terms and services ', href: '#' },
-    { label: 'Privacy', href: '#' },
+    { label: 'Identity', href: `#${Sections.Identity}` },
+    { label: 'Rewards', href: `#${Sections.Rewards}` },
+    { label: 'Integrate', href: `#${Sections.Integrations}` },
   ]
 
-  const dashboardLinbks = [
+  // TODO: Update links
+  const dashboardLinks = [
     { label: 'Create new identity', href: '#' },
     { label: 'Import Identity', href: '#' },
   ]
@@ -41,7 +44,7 @@ export default function Footer() {
           <div className='flex flex-col gap-6'>
             <p className='typo-sm-medium text-text-primary'>Dashboard</p>
             <div className='flex flex-col gap-4'>
-              {dashboardLinbks.map(({ label, href }) => (
+              {dashboardLinks.map(({ label, href }) => (
                 <a
                   key={label}
                   href={href}

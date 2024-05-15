@@ -1,10 +1,11 @@
+import { Sections } from '@/constants/sections'
 import { cn } from '@/theme'
 
 export default function HeaderContent({ isDark = false }) {
   const headerLinks = [
-    { label: 'Identity', href: '#' },
-    { label: 'Rewards', href: '#' },
-    { label: 'Integrate', href: '#' },
+    { label: 'Identity', href: `#${Sections.Identity}` },
+    { label: 'Rewards', href: `#${Sections.Rewards}` },
+    { label: 'Integrate', href: `#${Sections.Integrations}` },
   ]
 
   return (
@@ -28,14 +29,17 @@ export default function HeaderContent({ isDark = false }) {
           ))}
         </div>
       </div>
-      <button
+      <a
         className={cn(
           'button-medium button-outlined',
           isDark && 'border-base-white',
         )}
+        href='https://app.rarime.com'
+        target='_blank'
+        rel='noreferrer'
       >
         Dashboard
-      </button>
+      </a>
     </div>
   )
 }
