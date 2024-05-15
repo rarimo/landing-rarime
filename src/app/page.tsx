@@ -1,5 +1,6 @@
 import Footer from '@/common/Footer'
 import Header from '@/common/Header'
+import { WindowScrollProvider } from '@/contexts/window-scroll'
 
 import AboutSection from './components/AboutSection'
 import CardsSection from './components/CardsSection'
@@ -13,12 +14,14 @@ export default function Home() {
     <>
       <Header />
       <main className='mb-50 flex flex-col gap-50'>
-        <HeroSection />
-        <AboutSection />
-        <CardsSection />
-        <RewardsSection />
-        <MetamaskSection />
-        <IntegrationsSection />
+        <WindowScrollProvider>
+          <HeroSection />
+          <AboutSection />
+          <CardsSection />
+          <RewardsSection />
+          <MetamaskSection />
+          <IntegrationsSection />
+        </WindowScrollProvider>
       </main>
       <Footer />
     </>

@@ -3,7 +3,7 @@
 import { useMemo, useRef } from 'react'
 
 import { Sections } from '@/constants/sections'
-import { useWindowScroll } from '@/hooks/window-scroll'
+import { useWindowScroll } from '@/contexts/window-scroll'
 
 import AirdropCard from './AirdropCard'
 import PassportsCard from './PassportsCard'

@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from 'react'
 
-import { useWindowScroll } from '@/hooks/window-scroll'
+import { useWindowScroll } from '@/contexts/window-scroll'
 
 import HeroCard from './HeroCard'
 

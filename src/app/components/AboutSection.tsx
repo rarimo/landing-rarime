@@ -20,7 +20,7 @@ export default function AboutSection() {
   return (
     <div
       id={Sections.Identity}
-      className='container flex flex-col items-center'
+      className='container mt-60 flex flex-col items-center'
     >
       <img
         src='/images/home/about-phone.png'
