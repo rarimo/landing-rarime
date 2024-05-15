@@ -1,5 +1,5 @@
 import { Sections } from '@/constants/sections'
-import { cn } from '@/theme'
+import { cn } from '@/theme/utils'
 
 export default function HeaderContent({ isDark = false }) {
   const headerLinks = [
@@ -16,11 +16,13 @@ export default function HeaderContent({ isDark = false }) {
       )}
     >
       <div className='flex items-center gap-10'>
-        <img
-          className='h-8'
-          src={isDark ? '/images/logo-light.svg' : '/images/logo.svg'}
-          alt='Logo'
-        />
+        <a href='/#'>
+          <img
+            className='h-8'
+            src={isDark ? '/images/logo-light.svg' : '/images/logo.svg'}
+            alt='Logo'
+          />
+        </a>
         <div className='flex items-center gap-8'>
           {headerLinks.map(({ label, href }) => (
             <a key={label} href={href} className='typo-button-medium'>

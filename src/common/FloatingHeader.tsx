@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react'
 
-import { cn } from '@/theme'
+import { cn } from '@/theme/utils'
 
 import HeaderContent from './HeaderContent'
 

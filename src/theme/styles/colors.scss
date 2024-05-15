@@ -1,0 +1,41 @@
+:root {
+  // Text
+  --color-text-primary: #202020;
+  --color-text-secondary: rgba(32, 32, 32, 0.56);
+
+  // Primary
+  --color-primary-base: #CDFD4A;
+  --color-primary-dark: #ACD53E;
+
+  // Secondary
+  --color-secondary-base: #202020;
+
+  // Background
+  --color-background-container: #FFFFFF;
+  --color-background-component: rgba(32, 32, 32, 0.05);
+
+  // Base
+  --color-base-black: #202020;
+  --color-base-white: #FFFFFF;
+
+  @media(prefers-color-scheme: dark) {
+    // Text
+    --color-text-primary: #FFFFFF;
+    --color-text-secondary: rgba(255, 255, 255, 0.56);
+
+    // Primary
+    --color-primary-base: #CDFD4A;
+    --color-primary-dark: #ACD53E;
+
+    // Secondary
+    --color-secondary-base: #202020;
+
+    // Background
+    --color-background-container: #202020;
+    --color-background-component: rgba(255, 255, 255, 0.05);
+
+    // Base
+    --color-base-black: #202020;
+    --color-base-white: #FFFFFF;
+  }
+}

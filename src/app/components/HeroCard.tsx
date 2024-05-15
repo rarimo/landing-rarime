@@ -1,6 +1,6 @@
 import { HTMLAttributes, useMemo } from 'react'
 
-import { cn } from '@/theme'
+import { cn } from '@/theme/utils'
 
 interface HeroCardProps extends HTMLAttributes<HTMLDivElement> {
   className?: string
@@ -23,7 +23,7 @@ export default function HeroCard({
       case 'green':
         return 'bg-primary-base text-base-black'
       case 'white':
-        return 'bg-background-container border border-text-primary text-text-primary'
+        return 'bg-base-white border border-text-primary text-base-black'
       case 'black':
         return 'bg-base-black text-base-white'
     }

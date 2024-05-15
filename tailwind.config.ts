@@ -6,23 +6,23 @@ const config: Config = {
     extend: {
       colors: {
         text: {
-          primary: '#202020',
-          secondary: 'rgba(32, 32, 32, 0.56)',
+          primary: 'var(--color-text-primary)',
+          secondary: 'var(--color-text-secondary)',
         },
         primary: {
-          base: '#CDFD4A',
-          dark: '#ACD53E',
+          base: 'var(--color-primary-base)',
+          dark: 'var(--color-primary-dark)',
         },
         secondary: {
-          base: '#202020',
+          base: 'var(--color-secondary-base)',
         },
         background: {
-          container: '#FFFFFF',
-          component: 'rgba(32, 32, 32, 0.05)',
+          container: 'var(--color-background-container)',
+          component: 'var(--color-background-component)',
         },
         base: {
-          black: '#202020',
-          white: '#FFFFFF',
+          black: 'var(--color-base-black)',
+          white: 'var(--color-base-white)',
         },
       },
       fontSize: {

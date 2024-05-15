@@ -20,7 +20,9 @@ export default function Footer() {
       <div className='divider-h' />
       <div className='my-20 flex justify-between gap-20'>
         <div className='flex flex-col gap-8'>
-          <img className='h-8 w-8' src='/images/logo-small.svg' alt='Logo' />
+          <a href='/#'>
+            <img className='h-8 w-8' src='/images/logo-small.svg' alt='Logo' />
+          </a>
           <p className='typo-sm text-text-primary'>Powered by Rarimo</p>
           <p className='typo-sm text-text-primary'>
             {new Date().getFullYear()} © All rights reserved

@@ -1,4 +1,4 @@
-import { cn } from '@/theme'
+import { cn } from '@/theme/utils'
 
 export default function AppStoreLinks({ className }: { className?: string }) {
   const links = [

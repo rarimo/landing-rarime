@@ -38,7 +38,10 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang='en' className='scroll-pt-20 scroll-smooth'>
+    <html
+      lang='en'
+      className='scroll-pt-20 scroll-smooth bg-background-container'
+    >
       <head>
         <script
           dangerouslySetInnerHTML={{
