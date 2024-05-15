@@ -1,14 +1,20 @@
 'use client'
 
-import { useEffect, useMemo, useState } from 'react'
+import { FC, useEffect, useMemo, useState } from 'react'
 
+import AirdropIcon from '@/assets/icons/airdrop-icon.svg'
+import ArrowRightIcon from '@/assets/icons/arrow-right-icon.svg'
+import CheckIcon from '@/assets/icons/check-icon.svg'
+import IdCardIcon from '@/assets/icons/id-card-icon.svg'
+import MessageIcon from '@/assets/icons/message-icon.svg'
+import StarIcon from '@/assets/icons/star-icon.svg'
 import { useWindowScroll } from '@/contexts/window-scroll'
 
 import HeroCard from './HeroCard'
 
 interface Card {
   title: string
-  icon: string
+  IconComponent: FC
   variant: 'black' | 'white' | 'green'
   size: 'small' | 'medium'
   className?: string
@@ -19,7 +25,7 @@ interface Card {
 const cards: Card[] = [
   {
     title: 'SIGN IN',
-    icon: '/icons/arrow-right-icon.svg',
+    IconComponent: ArrowRightIcon,
     variant: 'green',
     size: 'small',
     position: { top: 0.1, left: 0.08 },
@@ -27,7 +33,7 @@ const cards: Card[] = [
   },
   {
     title: 'IDENTITY PROOFS',
-    icon: '/icons/id-card-icon.svg',
+    IconComponent: IdCardIcon,
     variant: 'white',
     size: 'medium',
     position: { top: 0.4, left: 0 },
@@ -35,7 +41,7 @@ const cards: Card[] = [
   },
   {
     title: 'VOTING',
-    icon: '/icons/check-icon.svg',
+    IconComponent: CheckIcon,
     variant: 'black',
     size: 'small',
     position: { top: 0.7, left: 0.07 },
@@ -43,7 +49,7 @@ const cards: Card[] = [
   },
   {
     title: 'REVIEWS',
-    icon: '/icons/star-icon.svg',
+    IconComponent: StarIcon,
     variant: 'black' as const,
     size: 'small' as const,
     position: { top: 0.1, left: 0.92 },
@@ -51,7 +57,7 @@ const cards: Card[] = [
   },
   {
     title: 'MESSAGING',
-    icon: '/icons/message-icon.svg',
+    IconComponent: MessageIcon,
     variant: 'green' as const,
     size: 'medium' as const,
     position: { top: 0.4, left: 0.95 },
@@ -59,7 +65,7 @@ const cards: Card[] = [
   },
   {
     title: 'AIRDROPS',
-    icon: '/icons/airdrop-icon.svg',
+    IconComponent: AirdropIcon,
     variant: 'white' as const,
     size: 'small' as const,
     position: { top: 0.7, left: 0.9 },
@@ -160,7 +166,7 @@ function HeroCardWrapper({
         <HeroCard
           className={card.className}
           title={card.title}
-          icon={card.icon}
+          IconComponent={card.IconComponent}
           variant={card.variant}
           size={card.size}
           data-aos='fade-up'

@@ -1,3 +1,4 @@
+import MessageIcon from '@/assets/icons/message-icon.svg'
 import { Sections } from '@/constants/sections'
 import { cn } from '@/theme/utils'
 
@@ -23,6 +24,7 @@ export default function HeaderContent({ isDark = false }) {
             alt='Logo'
           />
         </a>
+        <MessageIcon className='w-4 text-red-600' />
         <div className='flex items-center gap-8'>
           {headerLinks.map(({ label, href }) => (
             <a key={label} href={href} className='typo-button-medium'>

@@ -2,6 +2,7 @@
 
 import { useMemo } from 'react'
 
+import ArrowsIcon from '@/assets/icons/arrows-icon.svg'
 import AppStoreLinks from '@/common/AppStoreLinks'
 import { useWindowScroll } from '@/contexts/window-scroll'
 
@@ -40,11 +41,7 @@ export default function HeroSection() {
       <div className='absolute bottom-10 left-1/2 -translate-x-1/2'>
         <div className='flex flex-col items-center gap-1' data-aos='fade-up'>
           <p className='typo-xs text-center text-text-secondary'>Scroll</p>
-          <img
-            className='h-5 w-5 animate-bounce'
-            src='/icons/arrows-icon.svg'
-            alt='Scroll icon'
-          />
+          <ArrowsIcon className='h-5 w-5 animate-bounce text-text-secondary' />
         </div>
       </div>
     </>

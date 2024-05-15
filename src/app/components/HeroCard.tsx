@@ -1,11 +1,11 @@
-import { HTMLAttributes, useMemo } from 'react'
+import { FC, HTMLAttributes, useMemo } from 'react'
 
 import { cn } from '@/theme/utils'
 
 interface HeroCardProps extends HTMLAttributes<HTMLDivElement> {
   className?: string
   title: string
-  icon: string
+  IconComponent: FC<{ className: string }>
   variant: 'green' | 'white' | 'black'
   size: 'small' | 'medium'
 }
@@ -13,7 +13,7 @@ interface HeroCardProps extends HTMLAttributes<HTMLDivElement> {
 export default function HeroCard({
   className,
   title,
-  icon,
+  IconComponent,
   variant,
   size,
   ...rest
@@ -48,7 +48,7 @@ export default function HeroCard({
       )}
       {...rest}
     >
-      <img className='h-8 w-8' src={icon} alt={title} />
+      <IconComponent className='h-8 w-8' />
       <p className='typo-overline2'>{title}</p>
     </div>
   )

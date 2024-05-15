@@ -5,6 +5,7 @@ import { Splide } from '@splidejs/splide'
 import { AutoScroll } from '@splidejs/splide-extension-auto-scroll'
 import { useEffect } from 'react'
 
+import ArrowRightIcon from '@/assets/icons/arrow-right-icon.svg'
 import { Sections } from '@/constants/sections'
 
 export default function IntegrationsSection() {
@@ -85,11 +86,7 @@ export default function IntegrationsSection() {
         {/* TODO: Add a link */}
         <button className='button-large button-primary w-max'>
           <span>Add your service</span>
-          <img
-            className='h-5 w-5'
-            src='/icons/arrow-right-icon.svg'
-            alt='Arrow right icon'
-          />
+          <ArrowRightIcon className='h-5 w-5' />
         </button>
       </div>
 

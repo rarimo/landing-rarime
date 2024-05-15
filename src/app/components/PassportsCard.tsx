@@ -1,3 +1,5 @@
+import PlayIcon from '@/assets/icons/play-icon.svg'
+
 export default function PassportsCard() {
   return (
     <div className='relative flex h-[582px] flex-col justify-end rounded-3xl bg-secondary-base p-16 text-base-white'>
@@ -17,7 +19,7 @@ export default function PassportsCard() {
         {/* TODO: Play demo */}
         <button className='button-large button-outlined w-max border-base-white'>
           <span>Play Demo</span>
-          <img src='/icons/play-icon.svg' alt='Play icon' />
+          <PlayIcon className='h-5 w-5' />
         </button>
       </div>
     </div>
