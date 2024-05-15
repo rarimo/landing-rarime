@@ -1,3 +1,4 @@
+import RarimeIcon from '@/assets/icons/rarime-icon.svg'
 import { Sections } from '@/constants/sections'
 
 import AppStoreLinks from './AppStoreLinks'
@@ -21,7 +22,7 @@ export default function Footer() {
       <div className='my-20 flex justify-between gap-20'>
         <div className='flex flex-col gap-8'>
           <a href='/#'>
-            <img className='h-8 w-8' src='/images/logo-small.svg' alt='Logo' />
+            <RarimeIcon className='h-8 w-8' />
           </a>
           <p className='typo-sm text-text-primary'>Powered by Rarimo</p>
           <p className='typo-sm text-text-primary'>
@@ -36,7 +37,7 @@ export default function Footer() {
                 <a
                   key={label}
                   href={href}
-                  className='typo-sm text-text-secondary'
+                  className='typo-sm text-text-secondary hover:text-text-primary'
                 >
                   {label}
                 </a>

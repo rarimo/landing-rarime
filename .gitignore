@@ -71,3 +71,6 @@ test/unit/coverage
 
 # Sentry Auth Token
 .env.sentry-build-plugin
+
+# Local Netlify folder
+.netlify

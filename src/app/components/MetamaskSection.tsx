@@ -1,3 +1,5 @@
+import RarimeIcon from '@/assets/icons/rarime-icon.svg'
+
 export default function MetamaskSection() {
   return (
     <div className='container' data-aos='fade-up'>
@@ -30,11 +32,7 @@ export default function MetamaskSection() {
             target='_blank'
             rel='noreferrer'
           >
-            <img
-              className='h-5 w-5'
-              src='/images/logo-small.svg'
-              alt='RariMe logo'
-            />
+            <RarimeIcon className='h-5 w-5' />
             <span>Install RariMe Snap</span>
           </a>
         </div>
