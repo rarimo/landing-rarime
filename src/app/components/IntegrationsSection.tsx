@@ -80,8 +80,8 @@ export default function IntegrationsSection() {
     >
       <div className='container flex items-end justify-between'>
         <div className='flex flex-col gap-6'>
-          <h2 className='typo-subtitle1 text-text-secondary'>Integrations</h2>
-          <p className='typo-h3 text-text-primary'>Supported solutions</p>
+          <h2 className='text-subtitle1 text-text-secondary'>Integrations</h2>
+          <p className='text-h3 text-text-primary'>Supported solutions</p>
         </div>
         {/* TODO: Add a link */}
         <button className='button-large button-primary w-max'>
@@ -99,7 +99,7 @@ export default function IntegrationsSection() {
                 key={index}
               >
                 <img className='h-8 w-8' src={img} alt={title} />
-                <p className='typo-caption1 text-center text-text-secondary'>
+                <p className='text-caption1 text-center text-text-secondary'>
                   {title}
                 </p>
               </div>

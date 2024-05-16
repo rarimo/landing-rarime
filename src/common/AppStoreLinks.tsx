@@ -17,14 +17,14 @@ export default function AppStoreLinks({ className }: { className?: string }) {
   ]
 
   return (
-    <div className={cn('flex gap-4', className)}>
+    <div className={cn('flex h-max gap-4', className)}>
       {links.map(({ label, href, img }, index) => (
         <a
           key={index}
           href={href}
           target='_blank'
           rel='noreferrer'
-          className=''
+          className='transition-transform duration-300 ease-in-out hover:scale-110'
         >
           <img className='h-10' src={img} alt={label} />
         </a>

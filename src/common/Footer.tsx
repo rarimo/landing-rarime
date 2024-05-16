@@ -10,12 +10,6 @@ export default function Footer() {
     { label: 'Integrate', href: `#${Sections.Integrations}` },
   ]
 
-  // TODO: Update links
-  const dashboardLinks = [
-    { label: 'Create new identity', href: '#' },
-    { label: 'Import Identity', href: '#' },
-  ]
-
   return (
     <footer className='container' data-aos='fade-up'>
       <div className='divider-h' />
@@ -24,34 +18,20 @@ export default function Footer() {
           <a href='/#'>
             <RarimeIcon className='h-8 w-8' />
           </a>
-          <p className='typo-sm text-text-primary'>Powered by Rarimo</p>
-          <p className='typo-sm text-text-primary'>
+          <p className='text-sm-normal text-text-primary'>Powered by Rarimo</p>
+          <p className='text-sm-normal text-text-secondary'>
             {new Date().getFullYear()} © All rights reserved
           </p>
         </div>
-        <div className='grid grid-cols-[1fr_1fr_auto] gap-25'>
+        <div className='grid grid-cols-[1fr_auto] gap-30'>
           <div className='flex flex-col gap-6'>
-            <p className='typo-sm-medium text-text-primary'>Navigation links</p>
+            <p className='text-subtitle4 text-text-primary'>Navigation links</p>
             <div className='flex flex-col gap-4'>
               {navLinks.map(({ label, href }) => (
                 <a
                   key={label}
                   href={href}
-                  className='typo-sm text-text-secondary hover:text-text-primary'
-                >
-                  {label}
-                </a>
-              ))}
-            </div>
-          </div>
-          <div className='flex flex-col gap-6'>
-            <p className='typo-sm-medium text-text-primary'>Dashboard</p>
-            <div className='flex flex-col gap-4'>
-              {dashboardLinks.map(({ label, href }) => (
-                <a
-                  key={label}
-                  href={href}
-                  className='typo-sm text-text-secondary'
+                  className='text-body3 text-text-secondary hover:text-text-primary'
                 >
                   {label}
                 </a>

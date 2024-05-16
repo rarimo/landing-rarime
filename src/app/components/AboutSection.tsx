@@ -32,23 +32,23 @@ export default function AboutSection() {
         data-aos='fade-up'
       >
         <div className='flex flex-col items-center gap-6'>
-          <p className='typo-h3 text-center text-text-primary'>
+          <p className='text-h3 text-center text-text-primary'>
             Reclaim your online privacy as incognito, making your activity
             invisible and unlinkable to you
           </p>
         </div>
         <div className='flex w-[400px] justify-between'>
           <div className='flex flex-col items-center gap-6'>
-            <p className='typo-subtitle3 text-text-secondary'>Incognitos</p>
+            <p className='text-subtitle3 text-text-secondary'>Incognitos</p>
             <AnimatedNumber
-              className='typo-h4 w-40 text-center text-primary-dark'
+              className='text-h4 w-40 text-center text-primary-dark'
               value={incognitosValue}
             />
           </div>
           <div className='flex flex-col items-center gap-6'>
-            <p className='typo-subtitle3 text-text-secondary'>Identifiers</p>
+            <p className='text-subtitle3 text-text-secondary'>Identifiers</p>
             <AnimatedNumber
-              className='typo-h4 w-40 text-center text-primary-dark'
+              className='text-h4 w-40 text-center text-primary-dark'
               value={identifiersValue}
             />
           </div>

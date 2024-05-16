@@ -49,7 +49,7 @@ export default function HeroCard({
       {...rest}
     >
       <IconComponent className='h-8 w-8' />
-      <p className='typo-overline2'>{title}</p>
+      <p className='text-overline2'>{title}</p>
     </div>
   )
 }

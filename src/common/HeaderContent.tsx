@@ -20,9 +20,9 @@ export default function HeaderContent({ isDark = false }) {
         <a href='/#'>
           <LogoIcon className='h-8' />
         </a>
-        <div className='flex items-center gap-8'>
+        <div className='hidden items-center gap-8 lg:flex'>
           {headerLinks.map(({ label, href }) => (
-            <a key={label} href={href} className='typo-button-medium'>
+            <a key={label} href={href} className='text-button-medium'>
               {label}
             </a>
           ))}
