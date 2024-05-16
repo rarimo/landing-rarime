@@ -75,13 +75,15 @@ export default function IntegrationsSection() {
   return (
     <div
       id={Sections.Integrations}
-      className='flex flex-col gap-20'
+      className='flex flex-col gap-14 lg:gap-20'
       data-aos='fade-up'
     >
-      <div className='container flex items-end justify-between'>
-        <div className='flex flex-col gap-6'>
+      <div className='container flex flex-col justify-between gap-6 lg:flex-row lg:items-end'>
+        <div className='flex flex-col gap-4 lg:gap-6'>
           <h2 className='text-subtitle1 text-text-secondary'>Integrations</h2>
-          <p className='text-h3 text-text-primary'>Supported solutions</p>
+          <p className='text-h4 lg:text-h3 text-text-primary'>
+            Supported solutions
+          </p>
         </div>
         {/* TODO: Add a link */}
         <button className='button-large button-primary w-max'>

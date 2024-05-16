@@ -20,7 +20,7 @@ export default function AboutSection() {
   return (
     <div
       id={Sections.Identity}
-      className='container mt-60 flex flex-col items-center'
+      className='3xl:mt-0 container flex flex-col items-center lg:mt-60'
     >
       <img
         src='/images/home/about-phone.png'
@@ -28,16 +28,16 @@ export default function AboutSection() {
         className='z-10 w-74'
       />
       <div
-        className='z-20 -mt-24 flex max-w-[840px] flex-col items-center gap-20'
+        className='z-20 -mt-42 flex w-full max-w-[840px] flex-col items-center gap-20 lg:-mt-24'
         data-aos='fade-up'
       >
         <div className='flex flex-col items-center gap-6'>
-          <p className='text-h3 text-center text-text-primary'>
+          <p className='text-h4 lg:text-h3 text-center text-text-primary'>
             Reclaim your online privacy as incognito, making your activity
             invisible and unlinkable to you
           </p>
         </div>
-        <div className='flex w-[400px] justify-between'>
+        <div className='flex w-full max-w-[400px] justify-between'>
           <div className='flex flex-col items-center gap-6'>
             <p className='text-subtitle3 text-text-secondary'>Incognitos</p>
             <AnimatedNumber

@@ -6,7 +6,7 @@
 
   // Sizes
   .button-medium {
-    @apply button text-button-medium h-8 px-5;
+    @apply button text-button-medium h-10 lg:h-8 px-5;
   }
 
   .button-large {

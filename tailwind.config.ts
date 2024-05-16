@@ -26,8 +26,6 @@ const config: Config = {
         },
       },
       fontSize: {
-        lg: ['20px', '26px'],
-
         h1: ['96px', { lineHeight: '96px', fontWeight: '700' }],
         h2: ['60px', { lineHeight: '66px', fontWeight: '700' }],
         h3: ['40px', { lineHeight: '48px', fontWeight: '700' }],
@@ -72,6 +70,10 @@ const config: Config = {
           '20px',
           { lineHeight: '26px', fontWeight: '500', letterSpacing: '0.02em' },
         ],
+        'md-medium': [
+          '18px',
+          { lineHeight: '26px', fontWeight: '500', letterSpacing: '0.02em' },
+        ],
       },
       letterSpacing: {
         tighter: '-0.04em',
@@ -87,6 +89,9 @@ const config: Config = {
         xl: '32px',
         '2xl': '48px',
         '3xl': '56px',
+      },
+      screens: {
+        '3xl': '2048px',
       },
       spacing: new Array(100).fill(0).reduce((acc, _, i) => {
         acc[i] = `${i * 4}px`

@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className='mb-50 flex flex-col gap-50'>
+      <main className='mb-25 flex flex-col gap-25 lg:mb-50 lg:gap-50'>
         <WindowScrollProvider>
           <HeroSection />
           <AboutSection />

@@ -25,7 +25,7 @@ export default function FloatingHeader() {
   return (
     <div
       className={cn(
-        'duration-600 fixed top-4 z-50 w-full transition-transform duration-500',
+        'duration-600 fixed top-4 z-50 w-full px-4 transition-transform duration-500 lg:px-0',
         isShown ? 'translate-y-0' : '-translate-y-40',
       )}
     >

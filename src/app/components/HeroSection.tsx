@@ -17,11 +17,11 @@ export default function HeroSection() {
   }, [scrollY])
 
   return (
-    <>
+    <div>
       <HeroCardsGrid />
       <div className='container mt-21 lg:mt-36 2xl:mt-56' data-aos='fade-up'>
         <div
-          className={'flex flex-col gap-30'}
+          className='mx-auto flex max-w-[480px] flex-col gap-30 lg:max-w-none'
           style={{ opacity: blockOpacity }}
         >
           <div className='mx-auto flex flex-col items-center gap-4 text-center'>
@@ -40,12 +40,12 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
-      <div className='absolute bottom-10 left-1/2 -translate-x-1/2'>
+      <div className='3xl:relative 3xl:mt-40 mt-20 lg:absolute lg:bottom-10 lg:left-1/2 lg:mt-0 lg:-translate-x-1/2'>
         <div className='flex flex-col items-center gap-1' data-aos='fade-up'>
           <p className='text-center text-xs text-text-secondary'>Scroll</p>
           <ArrowsIcon className='h-5 w-5 animate-bounce text-text-secondary' />
         </div>
       </div>
-    </>
+    </div>
   )
 }

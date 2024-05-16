@@ -26,7 +26,7 @@ export default function CardsSection() {
     <div
       id={Sections.Airdrop}
       ref={containerRef}
-      className='container flex flex-col gap-50'
+      className='container flex flex-col gap-5 lg:gap-50'
     >
       <div className='sticky bottom-10 z-10'>
         <AirdropCard />
