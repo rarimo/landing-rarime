@@ -2,6 +2,7 @@
 
 import AnimatedNumber from '@/common/AnimatedNumber'
 import { Sections } from '@/constants/sections'
+import { Container } from '@/ui'
 import { calculateProgressiveNumber } from '@/utils/number'
 
 export default function AboutSection() {
@@ -18,9 +19,9 @@ export default function AboutSection() {
   })
 
   return (
-    <div
+    <Container
       id={Sections.Identity}
-      className='3xl:mt-0 container flex flex-col items-center lg:mt-60'
+      className='flex flex-col items-center lg:mt-60 3xl:mt-0'
     >
       <img
         src='/images/home/about-phone.png'
@@ -32,7 +33,7 @@ export default function AboutSection() {
         data-aos='fade-up'
       >
         <div className='flex flex-col items-center gap-6'>
-          <p className='text-h4 lg:text-h3 text-center text-text-primary'>
+          <p className='text-center text-h4 text-text-primary lg:text-h3'>
             Reclaim your online privacy as incognito, making your activity
             invisible and unlinkable to you
           </p>
@@ -41,19 +42,19 @@ export default function AboutSection() {
           <div className='flex flex-col items-center gap-6'>
             <p className='text-subtitle3 text-text-secondary'>Incognitos</p>
             <AnimatedNumber
-              className='text-h4 w-40 text-center text-primary-dark'
+              className='w-40 text-center text-h4 text-primary-dark'
               value={incognitosValue}
             />
           </div>
           <div className='flex flex-col items-center gap-6'>
             <p className='text-subtitle3 text-text-secondary'>Identifiers</p>
             <AnimatedNumber
-              className='text-h4 w-40 text-center text-primary-dark'
+              className='w-40 text-center text-h4 text-primary-dark'
               value={identifiersValue}
             />
           </div>
         </div>
       </div>
-    </div>
+    </Container>
   )
 }

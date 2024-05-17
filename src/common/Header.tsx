@@ -1,6 +1,7 @@
 import LogoIcon from '@/assets/icons/logo-icon.svg'
 import MenuIcon from '@/assets/icons/menu-icon.svg'
 import { Sections } from '@/constants/sections'
+import { Button, Container, Divider } from '@/ui'
 
 export default function Header() {
   const headerLinks = [
@@ -14,7 +15,7 @@ export default function Header() {
       className='sticky top-0 z-50 mt-1 bg-white bg-opacity-80 pt-5 backdrop-blur-md'
       data-aos='fade-up'
     >
-      <div className='container flex flex-col gap-4'>
+      <Container className='flex flex-col gap-4'>
         <div className='flex justify-between text-text-primary'>
           <div className='flex items-center gap-10'>
             <a href='/#'>
@@ -29,21 +30,23 @@ export default function Header() {
             </div>
           </div>
           <div className='flex items-center gap-4'>
-            <a
-              className='button-medium button-outlined w-30 lg:w-max'
+            <Button
+              as='a'
+              variant='outlined'
+              className='w-30 lg:w-max'
               href='https://app.rarime.com'
               target='_blank'
               rel='noreferrer'
             >
               Dashboard
-            </a>
+            </Button>
             <button className='flex h-10 w-10 items-center justify-center rounded-full bg-background-component lg:hidden'>
               <MenuIcon className='h-5' />
             </button>
           </div>
         </div>
-        <div className='divider-h' />
-      </div>
+        <Divider />
+      </Container>
     </header>
   )
 }

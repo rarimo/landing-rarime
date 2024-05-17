@@ -4,6 +4,7 @@ import { useMemo, useRef } from 'react'
 
 import { Sections } from '@/constants/sections'
 import { useWindowScroll } from '@/contexts/window-scroll'
+import { Container } from '@/ui'
 
 import AirdropCard from './AirdropCard'
 import PassportsCard from './PassportsCard'
@@ -23,10 +24,10 @@ export default function CardsSection() {
   }, [scrollY])
 
   return (
-    <div
+    <Container
       id={Sections.Airdrop}
       ref={containerRef}
-      className='container flex flex-col gap-5 lg:gap-50'
+      className='flex flex-col gap-5 lg:gap-50'
     >
       <div className='sticky bottom-10 z-10'>
         <AirdropCard />
@@ -40,6 +41,6 @@ export default function CardsSection() {
       >
         <PassportsCard />
       </div>
-    </div>
+    </Container>
   )
 }

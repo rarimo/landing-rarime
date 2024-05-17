@@ -9,6 +9,7 @@ import IdCardIcon from '@/assets/icons/id-card-icon.svg'
 import MessageIcon from '@/assets/icons/message-icon.svg'
 import StarIcon from '@/assets/icons/star-icon.svg'
 import { useWindowScroll } from '@/contexts/window-scroll'
+import { Container } from '@/ui'
 
 import HeroCard from './HeroCard'
 
@@ -106,8 +107,8 @@ export default function HeroCardsGrid() {
 
   return (
     <div className='fixed top-32 hidden h-[calc(100vh-128px)] w-screen xl:flex 3xl:hidden'>
-      <div
-        className='container sticky left-0 top-0 flex h-full w-full'
+      <Container
+        className='sticky left-0 top-0 flex h-full w-full'
         style={{ opacity: offsetCoeff > 0.95 ? 0 : 1 }}
       >
         {cards.map((card, index) => (
@@ -119,7 +120,7 @@ export default function HeroCardsGrid() {
             shakeDelta={shakeDelta}
           />
         ))}
-      </div>
+      </Container>
     </div>
   )
 }

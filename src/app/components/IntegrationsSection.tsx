@@ -7,6 +7,7 @@ import { useEffect } from 'react'
 
 import ArrowRightIcon from '@/assets/icons/arrow-right-icon.svg'
 import { Sections } from '@/constants/sections'
+import { Button, Container } from '@/ui'
 
 export default function IntegrationsSection() {
   const integrations = [
@@ -78,19 +79,19 @@ export default function IntegrationsSection() {
       className='flex flex-col gap-14 lg:gap-20'
       data-aos='fade-up'
     >
-      <div className='container flex flex-col justify-between gap-6 lg:flex-row lg:items-end'>
+      <Container className='flex flex-col justify-between gap-6 lg:flex-row lg:items-end'>
         <div className='flex flex-col gap-4 lg:gap-6'>
           <h2 className='text-subtitle1 text-text-secondary'>Integrations</h2>
-          <p className='text-h4 lg:text-h3 text-text-primary'>
+          <p className='text-h4 text-text-primary lg:text-h3'>
             Supported solutions
           </p>
         </div>
         {/* TODO: Add a link */}
-        <button className='button-large button-primary w-max'>
+        <Button className='w-max' size='large'>
           <span>Add your service</span>
           <ArrowRightIcon className='h-5 w-5' />
-        </button>
-      </div>
+        </Button>
+      </Container>
 
       <div className='splide'>
         <div className='splide__track'>
@@ -101,7 +102,7 @@ export default function IntegrationsSection() {
                 key={index}
               >
                 <img className='h-8 w-8' src={img} alt={title} />
-                <p className='text-caption1 text-center text-text-secondary'>
+                <p className='text-center text-caption1 text-text-secondary'>
                   {title}
                 </p>
               </div>

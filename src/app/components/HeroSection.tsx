@@ -5,6 +5,7 @@ import { useMemo } from 'react'
 import ArrowsIcon from '@/assets/icons/arrows-icon.svg'
 import AppStoreLinks from '@/common/AppStoreLinks'
 import { useWindowScroll } from '@/contexts/window-scroll'
+import { Container } from '@/ui'
 
 import HeroCardsGrid from './HeroCardsGrid'
 
@@ -19,7 +20,7 @@ export default function HeroSection() {
   return (
     <div>
       <HeroCardsGrid />
-      <div className='container mt-21 lg:mt-36 2xl:mt-56' data-aos='fade-up'>
+      <Container className='mt-21 lg:mt-36 2xl:mt-56' data-aos='fade-up'>
         <div
           className='mx-auto flex max-w-[480px] flex-col gap-30 lg:max-w-none'
           style={{ opacity: blockOpacity }}
@@ -39,7 +40,7 @@ export default function HeroSection() {
             <AppStoreLinks className='mt-4' />
           </div>
         </div>
-      </div>
+      </Container>
       <div className='mt-20 lg:absolute lg:bottom-10 lg:left-1/2 lg:mt-0 lg:-translate-x-1/2 3xl:relative 3xl:mt-40'>
         <div className='flex flex-col items-center gap-1' data-aos='fade-up'>
           <p className='text-center text-xs text-text-secondary'>Scroll</p>

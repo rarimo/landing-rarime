@@ -1,5 +1,6 @@
 import ChipIcon from '@/assets/icons/chip-icon.svg'
 import PlayIcon from '@/assets/icons/play-icon.svg'
+import { Button } from '@/ui'
 
 export default function PassportsCard() {
   return (
@@ -14,7 +15,7 @@ export default function PassportsCard() {
       </div>
       <div className='z-10 flex max-w-[840px] flex-col gap-6 lg:gap-10'>
         <div className='flex flex-col gap-4 lg:gap-6'>
-          <p className='text-subtitle3 lg:text-subtitle1 opacity-50'>
+          <p className='text-subtitle3 opacity-50 lg:text-subtitle1'>
             Passport Scan
           </p>
           <p className='text-h5 lg:text-h4'>
@@ -23,10 +24,14 @@ export default function PassportsCard() {
           </p>
         </div>
         {/* TODO: Play demo */}
-        <button className='button-large button-outlined w-max border-base-white'>
+        <Button
+          className='w-max border-base-white'
+          size='large'
+          variant='outlined'
+        >
           <span>Play Demo</span>
           <PlayIcon className='h-5 w-5' />
-        </button>
+        </Button>
       </div>
     </div>
   )
