@@ -75,13 +75,6 @@ const config: Config = {
           { lineHeight: '26px', fontWeight: '500', letterSpacing: '0.02em' },
         ],
       },
-      letterSpacing: {
-        tighter: '-0.04em',
-        tight: '-0.02em',
-        normal: '0em',
-        wide: '0.02em',
-        wider: '0.04em',
-      },
       borderRadius: {
         sm: '12px',
         md: '16px',

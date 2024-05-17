@@ -105,9 +105,9 @@ export default function HeroCardsGrid() {
   }, [])
 
   return (
-    <div className='3xl:hidden fixed top-32 hidden h-[calc(100vh-128px)] w-screen xl:flex'>
+    <div className='fixed top-32 hidden h-[calc(100vh-128px)] w-screen xl:flex 3xl:hidden'>
       <div
-        className='container pointer-events-none sticky left-0 top-0 flex h-full w-full'
+        className='container sticky left-0 top-0 flex h-full w-full'
         style={{ opacity: offsetCoeff > 0.95 ? 0 : 1 }}
       >
         {cards.map((card, index) => (

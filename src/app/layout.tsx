@@ -12,6 +12,8 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
+  // TODO: Change to rarime.com
+  metadataBase: new URL('https://rarime-landing-test.netlify.app/'),
   title: 'Go Incognito | RariMe',
   description:
     'RariMe is a self-custody identity wallet that allows users to verify their eligibility for Web3 services without exposing their personal data',
@@ -21,9 +23,10 @@ export const metadata: Metadata = {
     description:
       'RariMe is a self-custody identity wallet that allows users to verify their eligibility for Web3 services without exposing their personal data',
     type: 'website',
-    url: 'https://rarime.com/',
+    // TODO: Change to rarime.com
+    url: 'https://rarime-landing-test.netlify.app/',
     siteName: 'RariMe',
-    images: '/images/og-image.webp',
+    images: '/images/og-image.png',
   },
 
   twitter: {
@@ -31,7 +34,7 @@ export const metadata: Metadata = {
     description:
       'RariMe is a self-custody identity wallet that allows users to verify their eligibility for Web3 services without exposing their personal data',
     card: 'summary_large_image',
-    images: '/images/og-image.webp',
+    images: '/images/og-image.png',
     site: 'rarime.com',
   },
 }
