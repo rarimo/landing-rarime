@@ -1,10 +1,9 @@
 import defaultTheme from 'tailwindcss/defaultTheme'
 import { ThemeConfig } from 'tailwindcss/types/config'
 
-import { INTER_FONT_VARIABLE } from '../fonts'
-
+export const PRIMARY_FONT_VARIABLE = '--font-primary' as const
 export const fontFamily: ThemeConfig['fontFamily'] = {
-  sans: [`var(${INTER_FONT_VARIABLE}, ${defaultTheme.fontFamily.sans})`],
+  primary: [`var(${PRIMARY_FONT_VARIABLE}, ${defaultTheme.fontFamily.sans})`],
 }
 
 export const fontSize: ThemeConfig['fontSize'] = {
