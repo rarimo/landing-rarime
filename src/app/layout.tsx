@@ -1,15 +1,11 @@
 import '@/theme/styles.scss'
 
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import { ReactNode } from 'react'
 
 import AosInit from '@/common/AosInit'
-
-const inter = Inter({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
-})
+import { interFont } from '@/theme/fonts'
+import { cn } from '@/theme/utils'
 
 export const metadata: Metadata = {
   // TODO: Change to rarime.com
@@ -43,7 +39,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html
       lang='en'
-      className='scroll-pt-20 scroll-smooth bg-background-container'
+      className={cn(
+        interFont.variable,
+        'scroll-pt-20 scroll-smooth bg-background-container font-sans',
+      )}
     >
       <head>
         <script
@@ -62,7 +61,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           media='(prefers-color-scheme: dark)'
         />
       </head>
-      <body className={inter.className}>
+      <body>
         <AosInit />
         {children}
       </body>

@@ -1,4 +1,11 @@
+import defaultTheme from 'tailwindcss/defaultTheme'
 import { ThemeConfig } from 'tailwindcss/types/config'
+
+import { INTER_FONT_VARIABLE } from '../fonts'
+
+export const fontFamily: ThemeConfig['fontFamily'] = {
+  sans: [`var(${INTER_FONT_VARIABLE}, ${defaultTheme.fontFamily.sans})`],
+}
 
 export const fontSize: ThemeConfig['fontSize'] = {
   h1: ['96px', { lineHeight: '96px', fontWeight: '700' }],
