@@ -4,7 +4,7 @@ import type { Metadata } from 'next'
 import { ReactNode } from 'react'
 
 import AosInit from '@/common/AosInit'
-import { primaryFont } from '@/theme/fonts'
+import { appFontClassName } from '@/theme/fonts'
 import { cn } from '@/theme/utils'
 
 export const metadata: Metadata = {
@@ -40,7 +40,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html
       lang='en'
       className={cn(
-        primaryFont.variable,
+        appFontClassName,
         'scroll-pt-20 scroll-smooth bg-background-container font-primary',
       )}
     >
