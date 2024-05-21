@@ -10,14 +10,14 @@ export default function AirdropCard() {
         <span className='text-2xl'>🇺🇦</span>
       </div>
       <div className='z-10 flex max-w-[820px] flex-col gap-4 lg:gap-6'>
-        <p className='text-subtitle3 lg:text-subtitle1 text-[#F6CF02]'>
+        <p className='text-subtitle3 text-[#F6CF02] lg:text-subtitle1'>
           Programmable Airdrop
         </p>
-        <p className='text-h5 lg:text-h4 max-w-[720px]'>
+        <p className='max-w-[720px] text-h5 lg:text-h4'>
           The beta launch is focused on distributing tokens to Ukrainian
           citizens
         </p>
-        <p className='text-body3 lg:text-body2 opacity-50'>
+        <p className='text-body3 opacity-50 lg:text-body2'>
           This airdrop is part of a humanitarian effort to help direct funds
           towards Ukraine. It showcases Rarimo’s identity infrastructure. and
           how it can be used by projects and organizations to directly reach
@@ -29,7 +29,10 @@ export default function AirdropCard() {
             alt='Glo Dollar'
             className='h-5'
           />
-          <img src='/images/home/usdc-logo.svg' alt='USDC' className='h-5' />
+          <div className='flex items-center gap-2'>
+            <img src='/images/home/usdc-logo.svg' alt='USDC' className='h-5' />
+            <span className='text-subtitle4 opacity-60'>USDC</span>
+          </div>
         </div>
       </div>
     </div>

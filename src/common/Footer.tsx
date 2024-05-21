@@ -11,6 +11,11 @@ export default function Footer() {
     { label: 'Integrate', href: `#${Sections.Integrations}` },
   ]
 
+  const documetationLinks = [
+    { label: 'Integrations', href: 'https://docs.rarimo.com/products/rarime/' },
+    { label: 'GitHub', href: 'https://github.com./rarimo' },
+  ]
+
   return (
     <footer data-aos='fade-up'>
       <Container>
@@ -22,14 +27,22 @@ export default function Footer() {
             </a>
             <div className='flex flex-col gap-4 text-center lg:gap-8 lg:text-left'>
               <p className='text-sm-normal text-text-primary'>
-                Powered by Rarimo
+                <span>Powered by </span>
+                <a
+                  href='https://rarimo.com'
+                  className='text-text-primary hover:underline'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  Rarimo
+                </a>
               </p>
               <p className='text-sm-normal text-text-secondary'>
                 {new Date().getFullYear()} © All rights reserved
               </p>
             </div>
           </div>
-          <div className='grid grid-cols-1 gap-30 lg:grid-cols-[1fr_auto]'>
+          <div className='grid grid-cols-1 gap-30 lg:grid-cols-[1fr_1fr_auto]'>
             <div className='hidden flex-col gap-6 lg:flex'>
               <p className='text-subtitle4 text-text-primary'>
                 Navigation links
@@ -40,6 +53,22 @@ export default function Footer() {
                     key={label}
                     href={href}
                     className='text-body3 text-text-secondary hover:text-text-primary'
+                  >
+                    {label}
+                  </a>
+                ))}
+              </div>
+            </div>
+            <div className='hidden flex-col gap-6 lg:flex'>
+              <p className='text-subtitle4 text-text-primary'>Documentation</p>
+              <div className='flex flex-col gap-4'>
+                {documetationLinks.map(({ label, href }) => (
+                  <a
+                    key={label}
+                    href={href}
+                    className='text-body3 text-text-secondary hover:text-text-primary'
+                    target='_blank'
+                    rel='noreferrer'
                   >
                     {label}
                   </a>

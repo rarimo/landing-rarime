@@ -25,9 +25,9 @@ export default function PassportsCard() {
         </div>
         {/* TODO: Play demo */}
         <Button
-          className='w-max border-base-white'
+          className='w-max !border-base-white'
           size='large'
-          variant='outlined'
+          intent='outlined'
         >
           <span>Play Demo</span>
           <PlayIcon className='h-5 w-5' />

@@ -1,9 +1,14 @@
+'use client'
+import { useState } from 'react'
+
 import LogoIcon from '@/assets/icons/logo-icon.svg'
 import MenuIcon from '@/assets/icons/menu-icon.svg'
 import { Sections } from '@/constants/sections'
 import { Button, Container, Divider } from '@/ui'
 
 export default function Header() {
+  const [, setIsMenuOpen] = useState(false)
+
   const headerLinks = [
     { label: 'Identity', href: `#${Sections.Identity}` },
     { label: 'Rewards', href: `#${Sections.Rewards}` },
@@ -32,15 +37,19 @@ export default function Header() {
           <div className='flex items-center gap-4'>
             <Button
               as='a'
-              variant='outlined'
-              className='w-30 lg:w-max'
+              intent='outlined'
+              // TODO: Show the dashboard link when it's ready
+              className='hidden w-30 lg:w-max'
               href='https://app.rarime.com'
               target='_blank'
               rel='noreferrer'
             >
               Dashboard
             </Button>
-            <button className='flex h-10 w-10 items-center justify-center rounded-full bg-background-component lg:hidden'>
+            <button
+              className='flex h-10 w-10 items-center justify-center rounded-full bg-background-component lg:hidden'
+              onClick={() => setIsMenuOpen(true)}
+            >
               <MenuIcon className='h-5' />
             </button>
           </div>
