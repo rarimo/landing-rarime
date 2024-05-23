@@ -29,7 +29,7 @@ export default function AboutSection() {
         className='z-10 w-74'
       />
       <div
-        className='z-20 -mt-42 flex w-full max-w-[840px] flex-col items-center gap-20 lg:-mt-24'
+        className='z-20 -mt-42 flex w-full max-w-[840px] flex-col items-center gap-20 lg:-mt-32'
         data-aos='fade-up'
       >
         <div className='flex flex-col items-center gap-6'>

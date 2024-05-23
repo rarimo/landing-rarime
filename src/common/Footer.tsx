@@ -1,21 +1,10 @@
 import RarimeIcon from '@/assets/icons/rarime-icon.svg'
-import { Sections } from '@/constants/sections'
+import { documentationLinks, navLinks } from '@/constants/nav'
 import { Container, Divider } from '@/ui'
 
 import AppStoreLinks from './AppStoreLinks'
 
 export default function Footer() {
-  const navLinks = [
-    { label: 'Identity', href: `#${Sections.Identity}` },
-    { label: 'Rewards', href: `#${Sections.Rewards}` },
-    { label: 'Integrate', href: `#${Sections.Integrations}` },
-  ]
-
-  const documetationLinks = [
-    { label: 'Integrations', href: 'https://docs.rarimo.com/products/rarime/' },
-    { label: 'GitHub', href: 'https://github.com./rarimo' },
-  ]
-
   return (
     <footer data-aos='fade-up'>
       <Container>
@@ -62,7 +51,7 @@ export default function Footer() {
             <div className='hidden flex-col gap-6 lg:flex'>
               <p className='text-subtitle4 text-text-primary'>Documentation</p>
               <div className='flex flex-col gap-4'>
-                {documetationLinks.map(({ label, href }) => (
+                {documentationLinks.map(({ label, href }) => (
                   <a
                     key={label}
                     href={href}

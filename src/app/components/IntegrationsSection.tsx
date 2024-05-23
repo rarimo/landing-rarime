@@ -86,8 +86,14 @@ export default function IntegrationsSection() {
             Supported solutions
           </p>
         </div>
-        {/* TODO: Add a link */}
-        <Button className='w-max' size='large'>
+        <Button
+          as='a'
+          href='https://forms.gle/4owu3c9XfhK9KrL29'
+          target='_blank'
+          rel='noreferrer'
+          className='w-max'
+          size='large'
+        >
           <span>Add your service</span>
           <ArrowRightIcon className='h-5 w-5' />
         </Button>
