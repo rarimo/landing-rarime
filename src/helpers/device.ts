@@ -7,3 +7,7 @@ export function isMobile() {
     MOBILE_REGEX.test(window.navigator.userAgent)
   )
 }
+
+export function isSmallScreen() {
+  return typeof window !== 'undefined' && window.innerWidth < 1024
+}

@@ -1,8 +1,16 @@
+'use client'
+
+import { useState } from 'react'
+
 import ChipIcon from '@/assets/icons/chip-icon.svg'
 import PlayIcon from '@/assets/icons/play-icon.svg'
-import { Button } from '@/ui'
+import { Button, Modal } from '@/ui'
+
+import PassportDemo from './PassportDemo'
 
 export default function PassportsCard() {
+  const [isDemoModalOpen, setIsDemoModalOpen] = useState(false)
+
   return (
     <div className='relative flex h-[484px] flex-col justify-between overflow-hidden rounded-xl bg-secondary-base px-6 py-8 text-base-white lg:h-[582px] lg:rounded-3xl lg:px-16 lg:py-16'>
       <img
@@ -23,15 +31,21 @@ export default function PassportsCard() {
             activities private and untraceable
           </p>
         </div>
-        {/* TODO: Play demo */}
         <Button
           className='w-max !border-base-white'
           size='large'
           intent='outlined'
+          onClick={() => setIsDemoModalOpen(true)}
         >
           <span>Play Demo</span>
           <PlayIcon className='h-5 w-5' />
         </Button>
+        <Modal
+          isOpen={isDemoModalOpen}
+          onClose={() => setIsDemoModalOpen(false)}
+        >
+          <PassportDemo isOpen={isDemoModalOpen} />
+        </Modal>
       </div>
     </div>
   )

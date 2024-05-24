@@ -5,7 +5,7 @@ import CloseIcon from '@/assets/icons/close-icon.svg'
 import LogoIcon from '@/assets/icons/logo-icon.svg'
 import MenuIcon from '@/assets/icons/menu-icon.svg'
 import { navLinks } from '@/constants/nav'
-import { isMobile } from '@/helpers/device'
+import { isSmallScreen } from '@/helpers/device'
 import { cn } from '@/theme/utils'
 import { Button, Container, Divider } from '@/ui'
 
@@ -62,7 +62,7 @@ export default function Header() {
             </div>
           </div>
           <Divider />
-          {isMobile() && (
+          {isSmallScreen() && (
             <MobileMenu
               isOpen={isMenuOpen}
               onClose={() => setIsMenuOpen(false)}
