@@ -28,6 +28,8 @@ export default function Header() {
               <a href='/#'>
                 <LogoIcon className='h-8' />
               </a>
+            </div>
+            <div className='flex items-center gap-4'>
               <div className='hidden items-center gap-8 lg:flex'>
                 {navLinks.map(({ label, href }) => (
                   <a key={label} href={href} className='text-button-medium'>
@@ -35,8 +37,7 @@ export default function Header() {
                   </a>
                 ))}
               </div>
-            </div>
-            <div className='flex items-center gap-4'>
+
               <Button
                 as='a'
                 intent='outlined'

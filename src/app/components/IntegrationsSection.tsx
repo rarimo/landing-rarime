@@ -3,13 +3,14 @@ import '@splidejs/splide/css'
 
 import { Splide } from '@splidejs/splide'
 import { AutoScroll } from '@splidejs/splide-extension-auto-scroll'
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react'
 
 import ArrowRightIcon from '@/assets/icons/arrow-right-icon.svg'
 import { Sections } from '@/constants/sections'
 import { Button, Container } from '@/ui'
 
 export default function IntegrationsSection() {
+  const sliderRef = useRef<HTMLDivElement | null>(null)
   const integrations = [
     {
       title: 'Metamask',
@@ -58,7 +59,9 @@ export default function IntegrationsSection() {
   ]
 
   useEffect(() => {
-    new Splide('.splide', {
+    if (!sliderRef.current) return
+
+    new Splide(sliderRef?.current, {
       gap: '24px',
       arrows: false,
       pagination: false,
@@ -99,7 +102,7 @@ export default function IntegrationsSection() {
         </Button>
       </Container>
 
-      <div className='splide'>
+      <div ref={sliderRef} className='splide'>
         <div className='splide__track'>
           <div className='splide__list'>
             {integrations.map(({ title, img }, index) => (
