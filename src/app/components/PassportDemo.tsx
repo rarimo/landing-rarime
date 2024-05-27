@@ -107,23 +107,23 @@ export default function PassportDemo({ isOpen }: { isOpen: boolean }) {
         </div>
       </div>
 
-      <div className='absolute right-0 top-[220px] h-[600px] w-[800px] sm:bottom-0 sm:right-1/4 sm:top-auto xl:bottom-0 xl:right-[20%]'>
+      <div className='absolute right-0 top-[220px] h-[640px] w-[800px] sm:bottom-0 sm:right-1/4 sm:top-auto xl:bottom-0 xl:right-[20%]'>
         <img
           className='absolute bottom-0 right-0 h-full'
           src='/images/home/demo-hand.png'
           alt='Demo hand'
         />
 
-        <div className='absolute right-[95px] top-[8px] flex h-[432px] w-[200px] overflow-hidden rounded-[20px]'>
+        <div className='absolute right-[101px] top-[8px] flex w-[215px] overflow-hidden rounded-[20px]'>
           <div
             className='flex gap-[20px] transition-transform duration-300 ease-in-out'
-            style={{ transform: `translateX(-${step * 220}px)` }}
+            style={{ transform: `translateX(-${step * 235}px)` }}
           >
             {steps.map(({ image }, index) => (
               <img
                 key={index}
                 src={image}
-                className='h-[432px] w-[200px] cursor-pointer'
+                className='cursor-pointer'
                 alt='Demo mockup'
                 role='presentation'
                 onClick={() => splide.current?.go('+1')}

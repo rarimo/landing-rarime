@@ -36,7 +36,7 @@ export default function RewardsSection() {
           <div className='bottom-10 left-10 right-10 lg:absolute'>
             <img src='/images/home/rewards-levels.png' alt='Rewards Levels' />
             <img
-              className='absolute bottom-6 right-2 h-16 animate-swing lg:-right-4 lg:h-20'
+              className='absolute bottom-6 right-2 h-16 animate-swing lg:-right-4 lg:bottom-2 lg:h-20'
               src='/images/home/gift.svg'
               alt='Gift'
             />
