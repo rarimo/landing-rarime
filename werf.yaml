@@ -33,6 +33,6 @@ git:
   to: /etc/nginx/nginx.conf
 import:
 - image: builder
-  add: /app/dist
+  add: /app/out
   to: /usr/share/nginx/html
   after: setup
