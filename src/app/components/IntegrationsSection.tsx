@@ -33,8 +33,8 @@ export default function IntegrationsSection() {
       img: '/images/integrations/kleros-logo.svg',
     },
     {
-      title: 'Colab',
-      img: '/images/integrations/colab-logo.svg',
+      title: 'Collab',
+      img: '/images/integrations/collab-logo.svg',
     },
     {
       title: 'QuestN',
