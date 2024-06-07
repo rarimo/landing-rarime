@@ -33,9 +33,8 @@ export default function HeroSection() {
               GO INCOGNITO
             </h1>
             <p className='max-w-[720px] text-body2 text-text-secondary lg:text-body1'>
-              RariMe is a self-custody identity wallet that allows users to
-              verify their eligibility for Web3 services without exposing their
-              personal data
+              RariMe is a self-custody identity wallet, that unlocks fully
+              private but verifiable identity in the digital world
             </p>
             <AppStoreLinks className='mt-4' />
           </div>

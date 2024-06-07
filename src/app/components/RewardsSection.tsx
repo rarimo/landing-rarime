@@ -11,8 +11,8 @@ export default function RewardsSection() {
       <div className='flex flex-col gap-4 lg:gap-6'>
         <h2 className='text-subtitle1 text-text-secondary'>Rewards</h2>
         <p className='max-w-[860px] text-h4 text-text-primary lg:text-h3'>
-          You get rewards for using the app and identity proofs across different
-          ecosystems
+          Earn rewards by using the app and verifying your identity across
+          different platforms
         </p>
       </div>
       <div className='flex flex-col gap-6 md:grid md:grid-cols-2'>

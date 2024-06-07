@@ -14,13 +14,13 @@ export default function AirdropCard() {
           Programmable Airdrop
         </p>
         <p className='max-w-[720px] text-h5 lg:text-h4'>
-          The beta launch is focused on distributing tokens to Ukrainian
-          citizens
+          The beta launch includes the distribution of additional tokens to
+          Ukrainian citizens
         </p>
         <p className='text-body3 opacity-50 lg:text-body2'>
           This airdrop is part of a humanitarian effort to help direct funds
-          towards Ukraine. It showcases Rarimo’s identity infrastructure. and
-          how it can be used by projects and organizations to directly reach
+          towards Ukraine. It showcases Rarimo’s identity infrastructure and how
+          it can be used by projects and organizations to directly reach
           civilians
         </p>
         <div className='mt-2 flex items-center gap-10 lg:mt-4'>

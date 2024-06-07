@@ -85,9 +85,7 @@ export default function IntegrationsSection() {
       <Container className='flex flex-col justify-between gap-6 lg:flex-row lg:items-end'>
         <div className='flex flex-col gap-4 lg:gap-6'>
           <h2 className='text-subtitle1 text-text-secondary'>Integrations</h2>
-          <p className='text-h4 text-text-primary lg:text-h3'>
-            Supported solutions
-          </p>
+          <p className='text-h4 text-text-primary lg:text-h3'>Supported</p>
         </div>
         <Button
           as='a'
