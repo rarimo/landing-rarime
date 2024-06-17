@@ -1,5 +1,5 @@
 'use client'
-import { HTMLAttributes } from 'react'
+import { HTMLAttributes, useCallback, useEffect } from 'react'
 import { createPortal } from 'react-dom'
 
 import CloseIcon from '@/assets/icons/close-icon.svg'
@@ -12,6 +12,27 @@ interface Props extends HTMLAttributes<HTMLDivElement> {
 }
 
 export default function Modal({ isOpen, onClose, children, ...rest }: Props) {
+  const handleKeyDown = useCallback(
+    (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        onClose()
+      }
+    },
+    [onClose],
+  )
+
+  useEffect(() => {
+    if (isOpen) {
+      document.addEventListener('keydown', handleKeyDown)
+    } else {
+      document.removeEventListener('keydown', handleKeyDown)
+    }
+
+    return () => {
+      document.removeEventListener('keydown', handleKeyDown)
+    }
+  }, [isOpen, handleKeyDown])
+
   return (
     <ClientOnly>
       {() =>

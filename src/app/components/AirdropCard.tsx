@@ -23,8 +23,8 @@ export default function AirdropCard() {
           it can be used by projects and organizations to directly reach
           civilians
         </p>
-        <div className='mt-2 flex items-center gap-10 lg:mt-4'>
-          <p className='text-body2 opacity-50'>Distributing:</p>
+        <div className='mt-2 flex items-center gap-4 lg:mt-4 lg:gap-10'>
+          <p className='text-body3 opacity-50 lg:text-body2'>Distributing:</p>
           <img
             src='/images/home/glo-dollar-logo.svg'
             alt='Glo Dollar'

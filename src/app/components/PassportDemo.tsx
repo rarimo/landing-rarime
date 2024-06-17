@@ -8,28 +8,23 @@ import { cn } from '@/theme/utils'
 const steps = [
   {
     title:
-      'You get rewards for using the app and identity proofs across different ecosystems',
+      'To create an incognito profile, users should scan their biometric passport',
     image: '/images/home/demo-mockup-1.png',
   },
   {
     title:
-      '[Step 2] You get rewards for using the app and identity proofs across different ecosystems',
+      'The application will initially support a set of countries and, over time, will include other passports on the waitlist',
     image: '/images/home/demo-mockup-2.png',
   },
   {
     title:
-      '[Step 3] You get rewards for using the app and identity proofs across different ecosystems',
+      'The biggest innovation is that users self-issue digital passports, ensuring personal data never leaves their device',
     image: '/images/home/demo-mockup-3.png',
   },
   {
     title:
-      '[Step 4] You get rewards for using the app and identity proofs across different ecosystems',
+      'The incognito profile enables users to prove their eligibility and belonging and use country-specific mini-apps',
     image: '/images/home/demo-mockup-4.png',
-  },
-  {
-    title:
-      '[Step 5] You get rewards for using the app and identity proofs across different ecosystems',
-    image: '/images/home/demo-mockup-5.png',
   },
 ]
 
@@ -66,7 +61,7 @@ export default function PassportDemo({ isOpen }: { isOpen: boolean }) {
                   <p className='text-subtitle4 text-text-secondary lg:text-subtitle3'>
                     Step {index + 1}/{steps.length}
                   </p>
-                  <p className='text-subtitle2 text-text-primary lg:text-subtitle1'>
+                  <p className='text-subtitle3 text-text-primary lg:text-subtitle2'>
                     {title}
                   </p>
                 </div>
