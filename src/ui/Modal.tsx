@@ -42,7 +42,7 @@ export default function Modal({ isOpen, onClose, children, ...rest }: Props) {
               'fixed left-0 top-0 z-[100] flex h-screen w-screen bg-white transition-all duration-300 ease-in-out',
               isOpen
                 ? 'translate-y-0 opacity-100'
-                : 'pointer-events-none translate-y-full opacity-60',
+                : 'pointer-events-none translate-y-full opacity-0',
             )}
             {...rest}
           >
