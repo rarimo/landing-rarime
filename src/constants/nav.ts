@@ -33,3 +33,16 @@ export const documentationLinks: NavLink[] = [
     isExternal: true,
   },
 ]
+
+export const legalLinks: NavLink[] = [
+  {
+    label: 'Terms & Conditions',
+    href: '/general-terms.html',
+    isExternal: true,
+  },
+  {
+    label: 'Privacy Notice',
+    href: '/privacy-notice.html',
+    isExternal: true,
+  },
+]

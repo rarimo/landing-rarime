@@ -1,5 +1,5 @@
 import ClientOnly from '@/common/ClientOnly'
-import { documentationLinks, navLinks } from '@/constants/nav'
+import { documentationLinks, legalLinks, navLinks } from '@/constants/nav'
 import { cn } from '@/theme/utils'
 
 interface Props {
@@ -18,7 +18,7 @@ export default function MobileMenu({ isOpen, onClose }: Props) {
               isOpen ? 'scale-y-100' : 'scale-y-0',
             )}
           >
-            {[...navLinks, ...documentationLinks].map(
+            {[...navLinks, ...documentationLinks, ...legalLinks].map(
               ({ label, href, isExternal }) => (
                 <a
                   key={label}

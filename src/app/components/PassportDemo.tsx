@@ -102,14 +102,14 @@ export default function PassportDemo({ isOpen }: { isOpen: boolean }) {
         </div>
       </div>
 
-      <div className='h-sm:w-[480px] h-sm:h-[384px] h-sm:right-20 h-sm:-bottom-10 absolute right-0 top-[220px] h-[640px] w-[800px] sm:bottom-0 sm:right-1/4 sm:top-auto xl:bottom-0 xl:right-[20%]'>
+      <div className='absolute right-0 top-[220px] h-[640px] w-[800px] sm:bottom-0 sm:right-1/4 sm:top-auto xl:bottom-0 xl:right-[20%] h-sm:-bottom-10 h-sm:right-20 h-sm:h-[384px] h-sm:w-[480px]'>
         <img
           className='absolute bottom-0 right-0 h-full'
           src='/images/home/demo-hand.png'
           alt='Demo hand'
         />
 
-        <div className='h-sm:top-[5px] h-sm:right-[61px] h-sm:w-[128px] h-sm:rounded-[12px] absolute right-[101px] top-[8px] flex w-[215px] overflow-hidden rounded-[20px]'>
+        <div className='absolute right-[101px] top-[8px] flex w-[215px] overflow-hidden rounded-[20px] h-sm:right-[61px] h-sm:top-[5px] h-sm:w-[128px] h-sm:rounded-[12px]'>
           <div
             className='flex gap-[20px] transition-transform duration-300 ease-in-out'
             style={{
