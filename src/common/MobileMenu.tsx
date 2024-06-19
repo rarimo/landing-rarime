@@ -14,7 +14,7 @@ export default function MobileMenu({ isOpen, onClose }: Props) {
         <>
           <div
             className={cn(
-              'absolute bottom-0 left-0 z-50 flex w-screen origin-top translate-y-full flex-col items-center gap-6 bg-background-container p-16 transition-all duration-300 ease-in-out',
+              'absolute bottom-0 left-0 z-50 flex w-screen origin-top translate-y-full flex-col items-center gap-6 bg-background-container p-16 transition-all duration-300 ease-in-out h-sm:gap-4 h-sm:py-8',
               isOpen ? 'scale-y-100' : 'scale-y-0',
             )}
           >
@@ -23,7 +23,7 @@ export default function MobileMenu({ isOpen, onClose }: Props) {
                 <a
                   key={label}
                   href={href}
-                  className='text-subtitle2 text-text-primary'
+                  className='text-subtitle2 text-text-primary h-sm:text-subtitle3'
                   target={isExternal ? '_blank' : undefined}
                   rel={isExternal ? 'norefferer' : undefined}
                   onClick={onClose}
