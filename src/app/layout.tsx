@@ -8,8 +8,7 @@ import { appFontClassName } from '@/theme/fonts'
 import { cn } from '@/theme/utils'
 
 export const metadata: Metadata = {
-  // TODO: Change to rarime.com
-  metadataBase: new URL('https://rarime-landing-test.netlify.app/'),
+  metadataBase: new URL('https://rarime.com/'),
   title: 'Go Incognito | RariMe',
   description:
     'RariMe is a self-custody identity wallet that allows users to verify their eligibility for Web3 services without exposing their personal data',
@@ -19,8 +18,7 @@ export const metadata: Metadata = {
     description:
       'RariMe is a self-custody identity wallet that allows users to verify their eligibility for Web3 services without exposing their personal data',
     type: 'website',
-    // TODO: Change to rarime.com
-    url: 'https://rarime-landing-test.netlify.app/',
+    url: 'https://rarime.com/',
     siteName: 'RariMe',
     images: '/images/og-image.png',
   },
