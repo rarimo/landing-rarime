@@ -33,8 +33,8 @@ export default function HeroSection() {
               GO INCOGNITO
             </h1>
             <p className='max-w-[720px] text-body2 text-text-secondary lg:text-body1'>
-              RariMe is a self-custody identity wallet, that unlocks fully
-              private but verifiable identity in the digital world
+              RariMe is a self-custody identity wallet, that unlocks private but
+              verifiable identities
             </p>
             <AppStoreLinks className='mt-4' />
           </div>

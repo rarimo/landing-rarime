@@ -21,14 +21,15 @@ export default function PassportsCard() {
       <div className='flex h-16 w-16 items-center justify-center rounded-full bg-white bg-opacity-5 lg:h-18 lg:w-18'>
         <ChipIcon className='h-6 w-6 text-white' />
       </div>
-      <div className='z-10 flex max-w-[700px] flex-col gap-6 lg:gap-10'>
+      <div className='z-10 flex max-w-[820px] flex-col gap-6 lg:gap-10'>
         <div className='flex flex-col gap-4 lg:gap-6'>
           <p className='text-subtitle3 opacity-50 lg:text-subtitle1'>
             ZK Passport
           </p>
-          <p className='text-h5 lg:text-h4'>
-            Convert your passport into an incognito ID and keep your activities
-            private and untraceable
+          <p className='text-h6 lg:text-h4'>
+            Get started by converting your passport into an incognito profile
+            and generate zero-knowledge proofs that prove your age, citizenship,
+            or humanity
           </p>
         </div>
         <Button

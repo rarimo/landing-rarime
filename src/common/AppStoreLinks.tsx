@@ -4,32 +4,25 @@ export default function AppStoreLinks({ className }: { className?: string }) {
   const links = [
     {
       label: 'App Store',
-      // TODO: Update App Store link
-      href: 'https://www.apple.com/app-store/',
+      href: 'https://apps.apple.com/app/rarime/id6503300598',
       img: '/images/app-store.svg',
-      isDisabled: true,
     },
     {
       label: 'Google Play',
-      // TODO: Update Google Play link
-      href: 'https://play.google.com/store',
+      href: 'https://play.google.com/store/apps/details?id=com.rarilabs.rarime',
       img: '/images/google-play.svg',
-      isDisabled: true,
     },
   ]
 
   return (
     <div className={cn('flex h-max gap-4', className)}>
-      {links.map(({ label, href, img, isDisabled }, index) => (
+      {links.map(({ label, href, img }, index) => (
         <a
           key={index}
           href={href}
           target='_blank'
           rel='noreferrer'
-          className={cn(
-            'transition-transform duration-300 ease-in-out',
-            isDisabled ? 'pointer-events-none opacity-50' : 'hover:scale-110',
-          )}
+          className='transition-transform duration-300 ease-in-out hover:scale-110'
         >
           <img className='h-10' src={img} alt={label} />
         </a>

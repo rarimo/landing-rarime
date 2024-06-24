@@ -18,13 +18,13 @@ export default function MetamaskSection() {
           />
           <span className='hidden text-h6 lg:block'>MetaMask extension</span>
         </div>
-        <div className='z-10 flex max-w-[700px] flex-col gap-6 lg:gap-10'>
+        <div className='z-10 flex max-w-[640px] flex-col gap-6 lg:gap-10'>
           <div className='flex flex-col gap-4 lg:gap-6'>
             <p className='text-h5 lg:text-h4'>
-              Use your RariMe seamlessly across web3 via MetaMask
+              Use your RariMe seamlessly across web via MetaMask
             </p>
             <p className='text-subtitle3 opacity-50 lg:text-subtitle1'>
-              Your identity and crypto lives in a single place
+              Your identity and crypto live in a single place
             </p>
           </div>
           <Button

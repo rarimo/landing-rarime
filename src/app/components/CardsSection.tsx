@@ -30,7 +30,7 @@ export default function CardsSection() {
       className='flex flex-col gap-5 lg:gap-50'
     >
       <div className='sticky bottom-10 z-10'>
-        <AirdropCard />
+        <PassportsCard />
       </div>
       <div
         className='sticky bottom-5'
@@ -39,7 +39,7 @@ export default function CardsSection() {
           transformOrigin: 'center bottom',
         }}
       >
-        <PassportsCard />
+        <AirdropCard />
       </div>
     </Container>
   )

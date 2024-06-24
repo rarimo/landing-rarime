@@ -7,21 +7,19 @@ export default function AirdropCard() {
         alt='Airdrop Section'
       />
       <div className='flex h-16 w-16 items-center justify-center rounded-full bg-background-component px-5 py-6 lg:h-18 lg:w-18'>
-        <span className='text-2xl'>🇺🇦</span>
+        <span className='text-h5'>🇺🇦</span>
       </div>
-      <div className='z-10 flex max-w-[820px] flex-col gap-4 lg:gap-6'>
+      <div className='z-10 flex max-w-[840px] flex-col gap-4 lg:gap-6'>
         <p className='text-subtitle3 text-[#F6CF02] lg:text-subtitle1'>
           Programmable Airdrop
         </p>
-        <p className='max-w-[720px] text-h5 lg:text-h4'>
-          The beta launch includes the distribution of additional tokens to
-          Ukrainian citizens
+        <p className='max-w-[640px] text-h5 lg:text-h4'>
+          The beta launch includes a humanitarian airdrop to Ukrainian citizens
         </p>
         <p className='text-body3 opacity-50 lg:text-body2'>
-          This airdrop is part of a humanitarian effort to help direct funds
-          towards Ukraine. It showcases Rarimo’s identity infrastructure and how
-          it can be used by projects and organizations to directly reach
-          civilians
+          This airdrop is part of a humanitarian effort to help direct towards
+          Ukraine. It showcases Rarimo’s identity infrastructure and how it can
+          be used by projects and organizations to reach civilians directly
         </p>
         <div className='mt-2 flex items-center gap-4 lg:mt-4 lg:gap-10'>
           <p className='text-body3 opacity-50 lg:text-body2'>Distributing:</p>

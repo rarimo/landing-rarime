@@ -10,15 +10,14 @@ export default function RewardsSection() {
     >
       <div className='flex flex-col gap-4 lg:gap-6'>
         <h2 className='text-subtitle1 text-text-secondary'>Rewards</h2>
-        <p className='max-w-[860px] text-h4 text-text-primary lg:text-h3'>
-          Earn rewards by using the app and verifying your identity across
-          different platforms
+        <p className='max-w-[540px] text-h4 text-text-primary lg:text-h3'>
+          Earn early user rewards and get exclusive airdrops
         </p>
       </div>
       <div className='flex flex-col gap-6 md:grid md:grid-cols-2'>
         <div className='relative flex flex-col gap-6 rounded-xl bg-background-component p-6 lg:h-[450px] lg:gap-0 lg:p-8'>
           <h3 className='max-w-[428px] text-md-medium text-text-primary lg:text-lg-medium'>
-            Receive exclusive airdrops via referral program
+            Join the referral program and receive reserve tokens
           </h3>
           <div className='bottom-10 left-10 right-10 lg:absolute'>
             <img src='/images/home/rewards-tasks.png' alt='Rewards Tasks' />
