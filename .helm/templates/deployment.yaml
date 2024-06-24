@@ -29,6 +29,10 @@ spec:
       serviceAccountName: {{ include "template.serviceAccountName" . }}
       securityContext:
         {{- toYaml .Values.podSecurityContext | nindent 8 }}
+      volumes:
+      - name: association
+        configMap:
+          name: {{ include "template.fullname" . }}-config
       {{- if .Values.config.create }}
       volumes:
         - name:                              config
@@ -41,6 +45,10 @@ spec:
             {{- toYaml .Values.securityContext | nindent 12 }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
+          volumeMounts:
+            - name: association
+              mountPath: "/usr/share/nginx/html/.well-known/apple-app-site-association"
+              subPath: apple-app-site-association
           {{- if .Values.config.create }}
           volumeMounts:
             - name:                          config
