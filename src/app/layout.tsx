@@ -11,12 +11,12 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://rarime.com/'),
   title: 'Go Incognito | RariMe',
   description:
-    'RariMe is a self-custody identity wallet that allows users to verify their eligibility for Web3 services without exposing their personal data',
+    'RariMe is a self-custody identity wallet, that unlocks private but verifiable identities',
 
   openGraph: {
     title: 'Go Incognito | RariMe',
     description:
-      'RariMe is a self-custody identity wallet that allows users to verify their eligibility for Web3 services without exposing their personal data',
+      'RariMe is a self-custody identity wallet, that unlocks private but verifiable identities',
     type: 'website',
     url: 'https://rarime.com/',
     siteName: 'RariMe',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   twitter: {
     title: 'Go Incognito | RariMe',
     description:
-      'RariMe is a self-custody identity wallet that allows users to verify their eligibility for Web3 services without exposing their personal data',
+      'RariMe is a self-custody identity wallet, that unlocks private but verifiable identities',
     card: 'summary_large_image',
     images: '/images/og-image.png',
     site: 'rarime.com',
