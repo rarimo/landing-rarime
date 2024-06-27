@@ -27,9 +27,8 @@ export default function PassportsCard() {
             ZK Passport
           </p>
           <p className='text-h6 lg:text-h4'>
-            Get started by converting your passport into an incognito profile
-            and generate zero-knowledge proofs that prove your age, citizenship,
-            or humanity
+            Convert your passport into an incognito profile and generate
+            zero-knowledge proofs that verify your age, citizenship, or humanity
           </p>
         </div>
         <Button

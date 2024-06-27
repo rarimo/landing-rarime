@@ -29,13 +29,12 @@ export default function AboutSection() {
         className='z-10 w-74'
       />
       <div
-        className='z-20 -mt-42 flex w-full max-w-[910px] flex-col items-center gap-20 lg:-mt-32'
+        className='z-20 -mt-42 flex w-full max-w-[680px] flex-col items-center gap-20 lg:-mt-32'
         data-aos='fade-up'
       >
         <div className='flex flex-col items-center gap-6'>
           <p className='text-center text-h4 text-text-primary lg:text-h3'>
-            Reclaim your privacy and unlock the incognito mode through
-            zero-knowledge proofs
+            Reclaim your privacy through zero-knowledge proofs
           </p>
         </div>
         <div className='flex w-full max-w-[400px] justify-between'>
