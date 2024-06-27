@@ -7,7 +7,7 @@ import { useWindowScroll } from '@/contexts/window-scroll'
 import { Container } from '@/ui'
 
 import AirdropCard from './AirdropCard'
-import PassportsCard from './PassportsCard'
+import MetamaskCard from './MetamaskCard'
 
 export default function CardsSection() {
   const containerRef = useRef<HTMLDivElement>(null)
@@ -30,7 +30,7 @@ export default function CardsSection() {
       className='flex flex-col gap-5 lg:gap-50'
     >
       <div className='sticky bottom-10 z-10'>
-        <PassportsCard />
+        <AirdropCard />
       </div>
       <div
         className='sticky bottom-5'
@@ -39,7 +39,7 @@ export default function CardsSection() {
           transformOrigin: 'center bottom',
         }}
       >
-        <AirdropCard />
+        <MetamaskCard />
       </div>
     </Container>
   )

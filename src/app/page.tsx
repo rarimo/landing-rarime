@@ -6,7 +6,7 @@ import AboutSection from './components/AboutSection'
 import CardsSection from './components/CardsSection'
 import HeroSection from './components/HeroSection'
 import IntegrationsSection from './components/IntegrationsSection'
-import MetamaskSection from './components/MetamaskSection'
+import PassportsCard from './components/PassportsCard'
 import RewardsSection from './components/RewardsSection'
 
 export default function Home() {
@@ -17,9 +17,9 @@ export default function Home() {
         <WindowScrollProvider>
           <HeroSection />
           <AboutSection />
-          <CardsSection />
+          <PassportsCard />
           <RewardsSection />
-          <MetamaskSection />
+          <CardsSection />
           <IntegrationsSection />
         </WindowScrollProvider>
       </main>
