@@ -1,25 +1,25 @@
 configVersion: 1
 project: 'rarimo'
 ---
-image: builder              # Название собираемого образа.
-from: node:18               # Базовый образ.
-git:                        # Секция с директивами для добавления исходных файлов из git-репозитория.
-- add: /                    # Исходный путь в репозитории.
-  to: /app                  # Путь назначения в образе.
-  excludePaths:             # Набор путей или масок, применяемых для исключения файлов и папок при добавлении в образ.
+image: builder
+from: node:18
+git:
+- add: /
+  to: /app
+  excludePaths:
   - .helm
-  - Dockerfile  
-  stageDependencies:        # Настройка перевыполнения сборочных инструкций при изменениях определённых файлов в репозитории.
-    install:                # Для стадии Install.
-    - package.json 
+  - Dockerfile
+  stageDependencies:
+    install:
+    - package.json
     - yarn.lock
-    setup:                  # Для стадии Setup.
+    setup:
     - "**/*"
-shell:                      # Shell сборочные инструкции.
-  install:                  # Для стадии Install.
+shell:
+  install:
   - cd /app
   - yarn install
-  setup:                    # Для стадии Setup.
+  setup:
   - cd /app
   - yarn build
 
